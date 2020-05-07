@@ -7,15 +7,22 @@ def ensureInternet( semaphoreInternet,
   # while loop until the End Signal (Semaphore)
   # is set.
   while semaphoreEndInternet.acquire(False):
-    #do some stuff
+   
     semaphoreEndInternet.release()
-    time.sleep(0.1)
+    # release the semaphore inmediately
+    # to allow the acquire somewhere else 
+    # if this process needs to get a stop signal to end 
 
+    time.sleep(0.1) #do some stuff
+
+  # here you can make some arrangements before
+  # closing the process
   print("ensure Internet module - has ended ")
 
 
 
 if __name__ == '__main__':
  
-  ensureInternet()
+  ensureInternet( semaphoreInternet,
+                  semaphoreEndInternet)
   
