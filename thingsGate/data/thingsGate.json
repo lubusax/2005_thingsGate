@@ -1,0 +1,33 @@
+{
+	"thingsGate" : 	
+		{"gate" :
+			{"info" :
+				{ "connected": "no",
+					"key" : 0
+				},
+			"customizing":
+				 	{	"customizing1":
+						{"active"	: 0,
+						"options" : ["clock","feedback"] },
+					 	"customizing2":
+						{"active"	: 0,
+						"options" : ["bright","dark"]}
+					}
+			},
+			"display" :
+				{"info" :
+					{ "driver": "sh1106"
+					},
+				"customizing":
+						 {	"screen":
+							{"active"	: 0,
+							"options" : ["clock","feedback"] },
+							 "mode":
+							{"active"	: 0,
+							"options" : ["bright","dark"]}
+						}
+				},
+		"Buzzer" : "Standard",
+		"NFC-RFID Module" : "MFRC22"
+		}
+}
