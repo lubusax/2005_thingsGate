@@ -1,6 +1,6 @@
 import os, sys, time
 from crontab.crontabSetup import minuteTrigger
-from internet.ensureInternet import ensureInternet
+from internet.internet import ensureInternet
 from odoo.gate import gateInit
 from multiprocessing import Process, Manager
 
@@ -45,7 +45,7 @@ if __name__ == '__main__':
   for p in processes:
     p.start()
   
-  time.sleep(10)
+  time.sleep(2)
   print("Stop Signal module Internet sent ")
   semaphoreEndInternet.acquire()
   

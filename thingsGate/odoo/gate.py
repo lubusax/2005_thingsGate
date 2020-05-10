@@ -1,4 +1,5 @@
-import requests,json, logging
+import requests, json, logging
+from internet.internet import internetAccess,getInternet
 
 _logger = logging.getLogger(__name__)
 
@@ -7,29 +8,67 @@ class Gate:
   def __init__(self,dirPath):
     self.dirPath = dirPath
     self.thingsGateFilePath = self.dirPath+'/data/thingsGate.json'
+    self.setParams()
     _logger.debug("Gate Class Initialized")
 
+  def setParams(self):
+    _logger.debug("Params file is %s " % self.thingsGateFilePath)
+    thingsGateFile = open(self.thingsGateFilePath)
+    self.thingsGateDict = json.load(thingsGateFile)["thingsGate"]
+    thingsGateFile.close()
+    self.gateRegistered = True if (
+      self.thingsGateDict["registered"]=="yes") else False
+    print("gate registered: %s" % self.gateRegistered)
+    
+    # self.db = self.thingsGateDict["db"][0]
+    # self.user = self.thingsGateDict["user_name"][0]
+    # self.pswd = self.thingsGateDict["user_password"][0]
+    # self.host = self.thingsGateDict["odoo_host"][0]
+    # self.port = self.thingsGateDict["odoo_port"][0]
 
+    # self.adm = self.thingsGateDict["admin_id"][0]
+    # self.tz = self.thingsGateDict["timezone"][0]
 
-  def gateRegistered(self):
-    ''' returns true if the Gate has succesfully been registered in Odoo
-    in the past. This condition is signaled by a flag 
-    in the local file thingsGate.json '''
+    # os.environ["TZ"] = tz_dic.tz_dic[self.tz]
+    # time.tzset()
 
-    thingsGateFile = open(self.thingsGateFilePath,'r')
-    thingsGateDict = json.load(thingsGateFile)
-    print(thingsGateDict)
+    # if "https" not in self.thingsGateDict:
+    #     self.https_on = False
+    # else:
+    #     self.https_on = True
+
+    # if self.https_on:
+    #     if self.port:
+    #         self.url_template = "https://%s:%s" % (self.host, self.port)
+    #     else:
+    #         self.url_template = "https://%s" % self.host
+    # else:
+    #     if self.port:
+    #         self.url_template = "http://%s:%s" % (self.host, self.port)
+    #     else:
+    #         self.url_template = "http://%s" % self.host
+
+    # self.uid = self._get_user_id()
+
+  def internetSetup(self):
+    while not internetAccess():
+      getInternet()
+    return True
+  
+  def odooSetup(self):
     return True
 
-  def registerGate():
+  def gateSetup(self):
+    self.internetSetup()
+    self.odooSetup()
     return True
 
 
 
 def gateInit(dirPath):
 
-  print("ensure Gate Registered (on Odoo) module - has begun ")
+  print("gate init -has begun ")
   G = Gate(dirPath)
-  if not G.gateRegistered():
-    G.registerGate()
-  print("ensure Gate Registered (on Odoo) module - has ended ") 
+  if not G.gateRegistered:
+    G.gateSetup()
+  print("gate init- has ended ") 
