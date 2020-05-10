@@ -1,7 +1,7 @@
 import os, time, sys
 
-def setupCrontab(dirPath):
-  fileCrontab = 'crontabTask'
+def minuteTrigger(dirPath):
+  fileCrontab = 'crontabTask' # changing this File Name does not have consequences
   taskDir = '/display/'
   taskFileName = 'test3Display'
   file = open(fileCrontab, 'w')

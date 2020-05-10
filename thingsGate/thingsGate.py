@@ -1,26 +1,21 @@
 import os, sys, time
-from crontab.crontabSetup import setupCrontab
+from crontab.crontabSetup import minuteTrigger
 from internet.ensureInternet import ensureInternet
+from odoo.gate import gateInit
 from multiprocessing import Process, Manager
-
-def minuteTrigger(): # triggers a programm every minute
-  print('minute trigger - has begun')
-  dirPath = os.path.dirname(os.path.realpath(__file__))
-  #setupCrontab(dirPath)
-  print('minute trigger - has ended')
-  
-
-def connectToInternet(): # oversees that there is
-                      # always an internet connection
-  print('connect to internet - has begun')
-  ensureInternet()
-  print('connect to internet - has ended')                   
 
 
 if __name__ == '__main__':
-  print('main program - python version: ', sys.version)
+  
+  print('main program - running on python version: ', sys.version)
 
-  minuteTrigger() # this function runs only once.
+  dirPath = os.path.dirname(os.path.realpath(__file__))
+
+  print('running on directory: ', dirPath)
+  
+  gateInit(dirPath)
+
+  #minuteTrigger(dirPath) # this function runs only once.
                   # It sets a trigger
                   # to run a program every minute
 
