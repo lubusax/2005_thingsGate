@@ -3,15 +3,14 @@ from crontab.crontabSetup import minuteTrigger
 from internet.internet import ensureInternet
 from odoo.gate import gateInit
 from multiprocessing import Process, Manager
+import logging, logging.config
 
-
-if __name__ == '__main__':
-  
-  print('main program - running on python version: ', sys.version)
+def main():
+  logging.debug(f'running on python version: {sys.version}')
 
   dirPath = os.path.dirname(os.path.realpath(__file__))
 
-  print('running on directory: ', dirPath)
+  logging.debug(f'running on directory: {dirPath}')
   
   gateInit(dirPath)
 
@@ -46,10 +45,14 @@ if __name__ == '__main__':
     p.start()
   
   time.sleep(2)
-  print("Stop Signal module Internet sent ")
+  logging.debug(f'Stop Signal module Internet sent')
   semaphoreEndInternet.acquire()
   
   for p in processes:
     p.join()
   
   #connectToOdoo()
+
+if __name__ == '__main__':
+  logging.config.fileConfig(fname='./data/logging.conf', disable_existing_loggers=False)
+  main()

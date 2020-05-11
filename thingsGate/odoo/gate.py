@@ -1,24 +1,22 @@
 import requests, json, logging
 from internet.internet import internetAccess,getInternet
 
-_logger = logging.getLogger(__name__)
-
 class Gate:
 
   def __init__(self,dirPath):
     self.dirPath = dirPath
     self.thingsGateFilePath = self.dirPath+'/data/thingsGate.json'
     self.setParams()
-    _logger.debug("Gate Class Initialized")
+    logging.debug("Gate Class Initialized")
 
   def setParams(self):
-    _logger.debug("Params file is %s " % self.thingsGateFilePath)
+    logging.debug("Params file is %s " % self.thingsGateFilePath)
     thingsGateFile = open(self.thingsGateFilePath)
     self.thingsGateDict = json.load(thingsGateFile)["thingsGate"]
     thingsGateFile.close()
     self.gateRegistered = True if (
       self.thingsGateDict["registered"]=="yes") else False
-    print("gate registered: %s" % self.gateRegistered)
+    logging.debug(f'Is the gate registered: {self.gateRegistered}')
     
     # self.db = self.thingsGateDict["db"][0]
     # self.user = self.thingsGateDict["user_name"][0]
@@ -66,9 +64,8 @@ class Gate:
 
 
 def gateInit(dirPath):
-
-  print("gate init -has begun ")
+  logging.debug(f'gate init -has begun')
   G = Gate(dirPath)
   if not G.gateRegistered:
     G.gateSetup()
-  print("gate init- has ended ") 
+  logging.debug(f'gate init- has ended') 

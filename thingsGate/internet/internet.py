@@ -1,6 +1,12 @@
 import time,socket,fcntl,struct
-import shlex
+import shlex,logging
 from subprocess import call, PIPE, STDOUT, Popen
+
+def getInternet():
+  ''' get internet Access from the User
+      WiFi: SSID + Password
+  '''
+  return True
 
 def getReturnCode(cmd, stderr=STDOUT, timeout=1):
   """Execute a simple shell command
@@ -20,7 +26,7 @@ def internetAccess():
 
 def ensureInternet( semaphoreInternet,
                     semaphoreEndInternet):
-  print("ensure Internet module - has begun ")
+  logging.debug(f'ensure Internet module - has begun ')
 
   # while loop until the End Signal (Semaphore)
   # is set.
@@ -31,15 +37,15 @@ def ensureInternet( semaphoreInternet,
     # to allow the acquire somewhere else 
     # if this process needs to get a stop signal to end
     if not internetAccess(): 
-      print ('NOT connected to internet')
+      logging.debug(f'NOT connected to internet')
     else:
-      print ('connected to internet')
+      logging.debug(f'connected to internet')
 
     time.sleep(0.7) #do some stuff
 
   # here you can make some arrangements before
   # closing the process
-  print("ensure Internet module - has ended ")
+  logging.debug(f'ensure Internet module - has ended ')
 
 
 

@@ -1,0 +1,42 @@
+<DEBUG> <MainProcess(6604)> <11-May-20 13:36:26>     <running on python version: 3.7.0 (default, May  4 2020, 16:57:35) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 9>
+<DEBUG> <MainProcess(6604)> <11-May-20 13:36:26>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 13>
+<DEBUG> <MainProcess(6604)> <11-May-20 13:36:26>     <gate init -has begun>      <root-gate.py-gateInit-line 67>
+<DEBUG> <MainProcess(6604)> <11-May-20 13:36:26>     <Params file is /home/pi/Documents/2005_thingsGate/thingsGate/data/thingsGate.json >      <root-gate.py-setParams-line 13>
+<DEBUG> <MainProcess(6604)> <11-May-20 13:36:26>     <Gate Class Initialized>      <root-gate.py-__init__-line 10>
+<DEBUG> <MainProcess(6604)> <11-May-20 13:36:26>     <gate init- has ended>      <root-gate.py-gateInit-line 71>
+<DEBUG> <MainProcess(6644)> <11-May-20 13:36:48>     <running on python version: 3.7.0 (default, May  4 2020, 16:57:35) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 9>
+<DEBUG> <MainProcess(6644)> <11-May-20 13:36:48>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 13>
+<DEBUG> <MainProcess(6644)> <11-May-20 13:36:48>     <gate init -has begun>      <root-gate.py-gateInit-line 67>
+<DEBUG> <MainProcess(6644)> <11-May-20 13:36:48>     <Params file is /home/pi/Documents/2005_thingsGate/thingsGate/data/thingsGate.json >      <root-gate.py-setParams-line 13>
+<DEBUG> <MainProcess(6644)> <11-May-20 13:36:48>     <Gate Class Initialized>      <root-gate.py-__init__-line 10>
+<DEBUG> <MainProcess(6644)> <11-May-20 13:36:48>     <gate init- has ended>      <root-gate.py-gateInit-line 71>
+<DEBUG> <MainProcess(6681)> <11-May-20 13:37:38>     <running on python version: 3.7.0 (default, May  4 2020, 16:57:35) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 9>
+<DEBUG> <MainProcess(6681)> <11-May-20 13:37:38>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 13>
+<DEBUG> <MainProcess(6681)> <11-May-20 13:37:38>     <gate init -has begun>      <root-gate.py-gateInit-line 67>
+<DEBUG> <MainProcess(6681)> <11-May-20 13:37:38>     <Params file is /home/pi/Documents/2005_thingsGate/thingsGate/data/thingsGate.json >      <root-gate.py-setParams-line 13>
+<DEBUG> <MainProcess(6681)> <11-May-20 13:37:38>     <Gate Class Initialized>      <root-gate.py-__init__-line 10>
+<DEBUG> <MainProcess(6681)> <11-May-20 13:37:38>     <gate init- has ended>      <root-gate.py-gateInit-line 71>
+<DEBUG> <MainProcess(15041)> <11-May-20 21:21:08>     <running on python version: 3.7.0 (default, May  4 2020, 16:57:35) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 9>
+<DEBUG> <MainProcess(15041)> <11-May-20 21:21:08>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 13>
+<DEBUG> <MainProcess(15041)> <11-May-20 21:21:08>     <gate init -has begun>      <root-gate.py-gateInit-line 67>
+<DEBUG> <MainProcess(15041)> <11-May-20 21:21:08>     <Params file is /home/pi/Documents/2005_thingsGate/thingsGate/data/thingsGate.json >      <root-gate.py-setParams-line 13>
+<DEBUG> <MainProcess(15041)> <11-May-20 21:21:08>     <Gate Class Initialized>      <root-gate.py-__init__-line 10>
+<DEBUG> <MainProcess(15041)> <11-May-20 21:21:08>     <gate init- has ended>      <root-gate.py-gateInit-line 71>
+<DEBUG> <MainProcess(15246)> <11-May-20 21:25:07>     <running on python version: 3.7.0 (default, May  4 2020, 16:57:35) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 9>
+<DEBUG> <MainProcess(15246)> <11-May-20 21:25:07>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 13>
+<DEBUG> <MainProcess(15246)> <11-May-20 21:25:07>     <gate init -has begun>      <root-gate.py-gateInit-line 67>
+<DEBUG> <MainProcess(15246)> <11-May-20 21:25:07>     <Params file is /home/pi/Documents/2005_thingsGate/thingsGate/data/thingsGate.json >      <root-gate.py-setParams-line 13>
+<DEBUG> <MainProcess(15246)> <11-May-20 21:25:07>     <Is the gate registered: False>      <root-gate.py-setParams-line 19>
+<DEBUG> <MainProcess(15246)> <11-May-20 21:25:07>     <Gate Class Initialized>      <root-gate.py-__init__-line 10>
+<DEBUG> <MainProcess(15246)> <11-May-20 21:25:07>     <gate init- has ended>      <root-gate.py-gateInit-line 71>
+<DEBUG> <ensure internet connection(15259)> <11-May-20 21:25:07>     <ensure Internet module - has begun >      <root-internet.py-ensureInternet-line 29>
+<DEBUG> <ensure internet connection(15259)> <11-May-20 21:25:07>     <connected to internet>      <root-internet.py-ensureInternet-line 42>
+<DEBUG> <ensure internet connection(15259)> <11-May-20 21:25:08>     <connected to internet>      <root-internet.py-ensureInternet-line 42>
+<DEBUG> <ensure internet connection(15259)> <11-May-20 21:25:08>     <connected to internet>      <root-internet.py-ensureInternet-line 42>
+<DEBUG> <MainProcess(15246)> <11-May-20 21:25:09>     <Stop Signal module Internet sent>      <root-thingsGate.py-main-line 48>
+<DEBUG> <ensure internet connection(15259)> <11-May-20 21:25:09>     <ensure Internet module - has ended >      <root-internet.py-ensureInternet-line 48>
