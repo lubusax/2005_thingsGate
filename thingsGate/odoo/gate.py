@@ -16,7 +16,7 @@ class Gate:
     thingsGateFile.close()
     self.gateRegistered = True if (
       self.thingsGateDict["registered"]=="yes") else False
-    logging.debug(f'Is the gate registered: {self.gateRegistered}')
+    logging.debug(('Is the gate registered: {r}').format(r=self.gateRegistered))
     
     # self.db = self.thingsGateDict["db"][0]
     # self.user = self.thingsGateDict["user_name"][0]
@@ -64,8 +64,8 @@ class Gate:
 
 
 def gateInit(dirPath):
-  logging.debug(f'gate init -has begun')
+  logging.debug('gate init -has begun')
   G = Gate(dirPath)
   if not G.gateRegistered:
     G.gateSetup()
-  logging.debug(f'gate init- has ended') 
+  logging.debug('gate init- has ended') 

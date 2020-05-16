@@ -1,4 +1,4 @@
-import os, time, sys
+import os, sys
 
 def minuteTrigger(dirPath):
   fileCrontab = 'crontabTask' # changing this File Name does not have consequences

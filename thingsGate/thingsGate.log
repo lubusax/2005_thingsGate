@@ -54,3 +54,14 @@
 <DEBUG> <ensure internet connection(22293)> <14-May-20 18:16:50>     <connected to internet>      <root-internet.py-ensureInternet-line 42>
 <DEBUG> <MainProcess(22279)> <14-May-20 18:16:51>     <Stop Signal module Internet sent>      <root-thingsGate.py-main-line 48>
 <DEBUG> <ensure internet connection(22293)> <14-May-20 18:16:51>     <ensure Internet module - has ended >      <root-internet.py-ensureInternet-line 48>
+<DEBUG> <MainProcess(3200)> <16-May-20 16:31:39>     <running on python version: 3.5.3 (default, Sep 27 2018, 17:25:39) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(3200)> <16-May-20 16:31:39>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(3341)> <16-May-20 16:33:42>     <running on python version: 3.5.3 (default, Sep 27 2018, 17:25:39) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(3341)> <16-May-20 16:33:42>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(3341)> <16-May-20 16:33:42>     <setting hostname to: thingsGate00>      <root-rpiSetup.py-setHostname-line 9>
+<DEBUG> <MainProcess(3540)> <16-May-20 16:39:23>     <running on python version: 3.5.3 (default, Sep 27 2018, 17:25:39) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(3540)> <16-May-20 16:39:23>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(3540)> <16-May-20 16:39:23>     <setting hostname to: thingsGate00>      <root-rpiSetup.py-setHostname-line 9>

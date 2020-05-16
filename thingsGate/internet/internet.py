@@ -26,7 +26,7 @@ def internetAccess():
 
 def ensureInternet( semaphoreInternet,
                     semaphoreEndInternet):
-  logging.debug(f'ensure Internet module - has begun ')
+  logging.debug('ensure Internet module - has begun ')
 
   # while loop until the End Signal (Semaphore)
   # is set.
@@ -37,15 +37,15 @@ def ensureInternet( semaphoreInternet,
     # to allow the acquire somewhere else 
     # if this process needs to get a stop signal to end
     if not internetAccess(): 
-      logging.debug(f'NOT connected to internet')
+      logging.debug('NOT connected to internet')
     else:
-      logging.debug(f'connected to internet')
+      logging.debug('connected to internet')
 
     time.sleep(0.7) #do some stuff
 
   # here you can make some arrangements before
   # closing the process
-  logging.debug(f'ensure Internet module - has ended ')
+  logging.debug('ensure Internet module - has ended ')
 
 
 
