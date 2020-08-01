@@ -13,7 +13,7 @@ def main():
 
   logging.debug(('running on directory: {d}').format(d=dirPath))
 
-  setHostname('00')
+  setHostname('02')
   
   # #gateInit(dirPath)
 

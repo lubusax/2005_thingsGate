@@ -65,3 +65,18 @@
 [GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
 <DEBUG> <MainProcess(3540)> <16-May-20 16:39:23>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
 <DEBUG> <MainProcess(3540)> <16-May-20 16:39:23>     <setting hostname to: thingsGate00>      <root-rpiSetup.py-setHostname-line 9>
+<DEBUG> <MainProcess(23212)> <01-Aug-20 01:11:04>     <running on python version: 3.5.3 (default, Sep 27 2018, 17:25:39) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(23212)> <01-Aug-20 01:11:04>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(23241)> <01-Aug-20 01:11:29>     <running on python version: 3.5.3 (default, Sep 27 2018, 17:25:39) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(23241)> <01-Aug-20 01:11:29>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(23241)> <01-Aug-20 01:11:29>     <setting hostname to: thingsGate00>      <root-rpiSetup.py-setHostname-line 9>
+<DEBUG> <MainProcess(23283)> <01-Aug-20 01:11:47>     <running on python version: 3.5.3 (default, Sep 27 2018, 17:25:39) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(23283)> <01-Aug-20 01:11:47>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(23283)> <01-Aug-20 01:11:47>     <setting hostname to: thingsGate00>      <root-rpiSetup.py-setHostname-line 9>
+<DEBUG> <MainProcess(23527)> <01-Aug-20 01:13:24>     <running on python version: 3.5.3 (default, Sep 27 2018, 17:25:39) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(23527)> <01-Aug-20 01:13:24>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(23527)> <01-Aug-20 01:13:24>     <setting hostname to: thingsGate02>      <root-rpiSetup.py-setHostname-line 9>
