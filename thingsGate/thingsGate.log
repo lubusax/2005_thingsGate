@@ -80,3 +80,63 @@
 [GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
 <DEBUG> <MainProcess(23527)> <01-Aug-20 01:13:24>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
 <DEBUG> <MainProcess(23527)> <01-Aug-20 01:13:24>     <setting hostname to: thingsGate02>      <root-rpiSetup.py-setHostname-line 9>
+<DEBUG> <MainProcess(24006)> <28-Aug-20 12:30:06>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(24006)> <28-Aug-20 12:30:06>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(24301)> <28-Aug-20 12:33:26>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(24301)> <28-Aug-20 12:33:26>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(25162)> <28-Aug-20 12:43:35>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(25162)> <28-Aug-20 12:43:35>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(25162)> <28-Aug-20 12:43:35>     <PYTHONPATH: None>      <root-thingsGate.py-main-line 18>
+<DEBUG> <MainProcess(25410)> <28-Aug-20 12:46:06>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(25410)> <28-Aug-20 12:46:06>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(25410)> <28-Aug-20 12:46:06>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 20>
+<DEBUG> <MainProcess(25464)> <28-Aug-20 12:46:47>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 10>
+<DEBUG> <MainProcess(25464)> <28-Aug-20 12:46:47>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 14>
+<DEBUG> <MainProcess(25464)> <28-Aug-20 12:46:47>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 20>
+<DEBUG> <MainProcess(5966)> <28-Aug-20 15:36:31>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 23>
+<DEBUG> <MainProcess(5966)> <28-Aug-20 15:36:31>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 27>
+<DEBUG> <MainProcess(5966)> <28-Aug-20 15:36:31>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 33>
+<DEBUG> <MainProcess(5966)> <28-Aug-20 15:36:31>     <starting manager thread>      <root-thingsGate.py-managerThread-line 20>
+<DEBUG> <MainProcess(6906)> <28-Aug-20 15:48:27>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 39>
+<DEBUG> <MainProcess(6906)> <28-Aug-20 15:48:27>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 43>
+<DEBUG> <MainProcess(6906)> <28-Aug-20 15:48:27>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 49>
+<DEBUG> <MainProcess(6906)> <28-Aug-20 15:48:27>     <starting manager thread>      <root-thingsGate.py-managerThread-line 23>
+<DEBUG> <MainProcess(6906)> <28-Aug-20 15:48:27>     <thingsGate managerThread failed to start>      <root-thingsGate.py-main-line 66>
+<DEBUG> <MainProcess(7005)> <28-Aug-20 15:50:02>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 41>
+<DEBUG> <MainProcess(7005)> <28-Aug-20 15:50:02>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 45>
+<DEBUG> <MainProcess(7005)> <28-Aug-20 15:50:02>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 51>
+<DEBUG> <MainProcess(7005)> <28-Aug-20 15:50:02>     <starting manager thread>      <root-thingsGate.py-managerThread-line 23>
+<DEBUG> <MainProcess(7005)> <28-Aug-20 15:50:02>     <thingsGate managerThread failed to start>      <root-thingsGate.py-main-line 68>
+<DEBUG> <MainProcess(7248)> <28-Aug-20 15:51:53>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 41>
+<DEBUG> <MainProcess(7248)> <28-Aug-20 15:51:53>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 45>
+<DEBUG> <MainProcess(7248)> <28-Aug-20 15:51:53>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 51>
+<DEBUG> <MainProcess(7248)> <28-Aug-20 15:51:53>     <starting manager thread>      <root-thingsGate.py-managerThread-line 23>
+<DEBUG> <MainProcess(7248)> <28-Aug-20 15:51:53>     <thingsGate managerThread failed to start with exception name 'greenTempProcesses' is not defined>      <root-thingsGate.py-main-line 68>
+<DEBUG> <MainProcess(7485)> <28-Aug-20 15:53:37>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 51>
+<DEBUG> <MainProcess(7485)> <28-Aug-20 15:53:37>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 55>
+<DEBUG> <MainProcess(7485)> <28-Aug-20 15:53:37>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 61>
+<DEBUG> <MainProcess(7485)> <28-Aug-20 15:53:37>     <starting manager thread>      <root-thingsGate.py-managerThread-line 33>
+<DEBUG> <MainProcess(7485)> <28-Aug-20 15:53:37>     <starting python process bluetooth.devicesManager>      <root-thingsGate.py-startManagedProcess-line 23>
+<DEBUG> <MainProcess(7485)> <28-Aug-20 15:53:37>     <thingsGate managerThread failed to start with exception name 'running' is not defined>      <root-thingsGate.py-main-line 71>
+<DEBUG> <MainProcess(7562)> <28-Aug-20 15:54:19>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 53>
+<DEBUG> <MainProcess(7562)> <28-Aug-20 15:54:19>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 57>
+<DEBUG> <MainProcess(7562)> <28-Aug-20 15:54:19>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 63>
+<DEBUG> <MainProcess(7562)> <28-Aug-20 15:54:19>     <starting manager thread>      <root-thingsGate.py-managerThread-line 35>
+<DEBUG> <MainProcess(7562)> <28-Aug-20 15:54:19>     <starting python process bluetooth.devicesManager>      <root-thingsGate.py-startManagedProcess-line 25>
+<DEBUG> <MainProcess(7841)> <28-Aug-20 15:57:00>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-thingsGate.py-main-line 53>
+<DEBUG> <MainProcess(7841)> <28-Aug-20 15:57:00>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 57>
+<DEBUG> <MainProcess(7841)> <28-Aug-20 15:57:00>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 63>
+<DEBUG> <MainProcess(7841)> <28-Aug-20 15:57:00>     <starting manager thread>      <root-thingsGate.py-managerThread-line 35>
+<DEBUG> <MainProcess(7841)> <28-Aug-20 15:57:00>     <starting python process bluetooth.devicesManager>      <root-thingsGate.py-startManagedProcess-line 25>

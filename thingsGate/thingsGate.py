@@ -5,57 +5,92 @@ from internet.internet import ensureInternet
 from odoo.gate import gateInit
 from multiprocessing import Process, Manager
 import logging, logging.config
+from launcher import launcher
+
+managedProcesses = {
+    "devicesManager": "bluetooth.devicesManager",
+    #"newDevicesScout": "bluetooth.newDevicesScout",
+}
+
+greenTempProcesses = managedProcesses
+
+persistentProcesses = greenTempProcesses
+
+running = {}
+
+
+def startManagedProcess(name):
+  process = managedProcesses[name]
+
+  logging.debug(f"starting python process {process}")
+
+  running[name] = Process(name=name, target=launcher, args=(process,))
+
+  running[name].start()
+
+def killManagedProcess(name):
+  logging.debug(f"killing python process {process}")
+
+def managerThread():
+  logging.debug(f"starting manager thread") 
+  # Get thermal status through messaging -- msg = messaging.recv_sock(thermal_sock, wait=True)
+
+  # heavyweight batch processes run only when thermal conditions are favorable
+
+  thermalStatusCritical = False
+
+  print(greenTempProcesses)
+
+  if thermalStatusCritical:
+    for p in greenTempProcesses:
+      if p in persistentProcesses:
+        killManagedProcess(p)
+  else:
+    for p in greenTempProcesses:
+      startManagedProcess(p) 
 
 def main():
-  logging.debug(('running on python version: {v}').format(v=sys.version))
+  logging.debug(f'running on python version: {sys.version}')
 
   dirPath = os.path.dirname(os.path.realpath(__file__))
 
-  logging.debug(('running on directory: {d}').format(d=dirPath))
+  logging.debug(f'running on directory: {dirPath}')
 
-  setHostname('02')
-  
-  # #gateInit(dirPath)
+  os.environ['PYTHONPATH'] = dirPath
 
-  # #minuteTrigger(dirPath) # this function runs only once.
-  #                 # It sets a trigger
-  #                 # to run a program every minute
+  pythonPath = os.getenv('PYTHONPATH')
 
-  # manager = Manager()
-
-  # processes = []
-
-  # semaphoreInternet = manager.Semaphore()
-  # semaphoreEndInternet = manager.Semaphore()
-  # # Oversees that there is
-  # # always an internet connection.
-  # # The process runs until semaphoreEndInternet
-  # # is acquired.
-  # # When the other semaphore, semaphoreInternet is acquired,
-  # # it means that there is
-  # # no internet connection
-  # processEnsureInternet = Process(
-  #         target  = ensureInternet,
-  #         args    = (semaphoreInternet,
-  #                    semaphoreEndInternet),
-  #         name    = "ensure internet connection")
-  # processes.append(processEnsureInternet)
-
-  # semaphoreDisplay = manager.Semaphore()
+  logging.debug(f'PYTHONPATH: {pythonPath}')
 
 
-  # for p in processes:
-  #   p.start()
-  
-  # time.sleep(2)
-  # logging.debug(f'Stop Signal module Internet sent')
-  # semaphoreEndInternet.acquire()
-  
-  # for p in processes:
-  #   p.join()
-  
-  # #connectToOdoo()
 
-if __name__ == '__main__':
+
+
+  try:
+    managerThread()
+  except Exception as e:
+    #traceback.print_exc() ---- crash.capture_exception()
+    logging.debug(f'thingsGate managerThread failed to start with exception {e}')
+  finally:
+    #cleanupAllProcesses()
+    pass
+
+  # if params.get("DoUninstall", encoding='utf8') == "1":  uninstall()
+
+
+if __name__ == "__main__":
+
   logging.config.fileConfig(fname='./data/logging.conf', disable_existing_loggers=False)
-  main()
+
+  try:
+    main()
+  except Exception:
+    logging.debug(f'thingsGate Manager failed to start')    
+    # add_logentries_handler(cloudlog)
+    # # Show last 3 lines of traceback ---  error = "Manager failed to start\n \n" + traceback.format_exc(3)
+    # with TextWindow(error) as t:
+    #   t.wait_for_exit()
+    # raise
+
+  # manual exit because we are forked
+  # sys.exit(0)
