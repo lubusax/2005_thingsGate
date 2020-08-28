@@ -140,3 +140,150 @@
 <DEBUG> <MainProcess(7841)> <28-Aug-20 15:57:00>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-thingsGate.py-main-line 63>
 <DEBUG> <MainProcess(7841)> <28-Aug-20 15:57:00>     <starting manager thread>      <root-thingsGate.py-managerThread-line 35>
 <DEBUG> <MainProcess(7841)> <28-Aug-20 15:57:00>     <starting python process bluetooth.devicesManager>      <root-thingsGate.py-startManagedProcess-line 25>
+<DEBUG> <MainProcess(21460)> <28-Aug-20 20:58:52>     <test>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21460)> <28-Aug-20 20:58:52>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21460)> <28-Aug-20 20:58:52>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21460)> <28-Aug-20 20:58:52>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21460)> <28-Aug-20 20:58:52>     <starting manager thread>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21460)> <28-Aug-20 20:58:52>     <starting python process bluetooth.devicesManager>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21547)> <28-Aug-20 21:00:21>     <test>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21547)> <28-Aug-20 21:00:21>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21547)> <28-Aug-20 21:00:21>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21547)> <28-Aug-20 21:00:21>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21547)> <28-Aug-20 21:00:21>     <starting manager thread>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21547)> <28-Aug-20 21:00:21>     <starting python process bluetooth.devicesManager>      <root-myLogger.py-myLogger-line 7>
+<DEBUG> <MainProcess(21738)> <28-Aug-20 21:04:02>     <test>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(21738)> <28-Aug-20 21:04:02>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(21738)> <28-Aug-20 21:04:02>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(21738)> <28-Aug-20 21:04:02>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(21738)> <28-Aug-20 21:04:02>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(21738)> <28-Aug-20 21:04:02>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(21738)> <28-Aug-20 21:04:02>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(21771)> <28-Aug-20 21:04:02>     <time STAMP - devices Manager: Fri Aug 28 21:04:02 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(21771)> <28-Aug-20 21:04:11>     <time STAMP - devices Manager: Fri Aug 28 21:04:11 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(21771)> <28-Aug-20 21:04:20>     <time STAMP - devices Manager: Fri Aug 28 21:04:20 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22156)> <28-Aug-20 21:10:51>     <test>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22156)> <28-Aug-20 21:10:51>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22156)> <28-Aug-20 21:10:51>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22156)> <28-Aug-20 21:10:51>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22156)> <28-Aug-20 21:10:51>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22156)> <28-Aug-20 21:10:51>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22156)> <28-Aug-20 21:10:51>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22189)> <28-Aug-20 21:10:51>     <time STAMP - devices Manager: Fri Aug 28 21:10:51 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22189)> <28-Aug-20 21:11:00>     <time STAMP - devices Manager: Fri Aug 28 21:11:00 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22217)> <28-Aug-20 21:11:11>     <test>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22217)> <28-Aug-20 21:11:11>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22217)> <28-Aug-20 21:11:11>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22217)> <28-Aug-20 21:11:11>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22217)> <28-Aug-20 21:11:11>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22217)> <28-Aug-20 21:11:11>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22217)> <28-Aug-20 21:11:11>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22217)> <28-Aug-20 21:11:11>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22250)> <28-Aug-20 21:11:11>     <time STAMP - devices Manager: Fri Aug 28 21:11:11 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(22251)> <28-Aug-20 21:11:11>     <time STAMP - newDevicesScout: time.struct_time(tm_year=2020, tm_mon=8, tm_mday=28, tm_hour=19, tm_min=11, tm_sec=11, tm_wday=4, tm_yday=241, tm_isdst=0)>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22250)> <28-Aug-20 21:11:20>     <time STAMP - devices Manager: Fri Aug 28 21:11:20 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(22251)> <28-Aug-20 21:11:21>     <time STAMP - newDevicesScout: time.struct_time(tm_year=2020, tm_mon=8, tm_mday=28, tm_hour=19, tm_min=11, tm_sec=21, tm_wday=4, tm_yday=241, tm_isdst=0)>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22250)> <28-Aug-20 21:11:29>     <time STAMP - devices Manager: Fri Aug 28 21:11:29 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(22251)> <28-Aug-20 21:11:31>     <time STAMP - newDevicesScout: time.struct_time(tm_year=2020, tm_mon=8, tm_mday=28, tm_hour=19, tm_min=11, tm_sec=31, tm_wday=4, tm_yday=241, tm_isdst=0)>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22250)> <28-Aug-20 21:11:38>     <time STAMP - devices Manager: Fri Aug 28 21:11:38 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(22251)> <28-Aug-20 21:11:41>     <time STAMP - newDevicesScout: time.struct_time(tm_year=2020, tm_mon=8, tm_mday=28, tm_hour=19, tm_min=11, tm_sec=41, tm_wday=4, tm_yday=241, tm_isdst=0)>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22250)> <28-Aug-20 21:11:47>     <time STAMP - devices Manager: Fri Aug 28 21:11:47 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22457)> <28-Aug-20 21:11:58>     <test>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22457)> <28-Aug-20 21:11:58>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22457)> <28-Aug-20 21:11:58>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22457)> <28-Aug-20 21:11:58>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22457)> <28-Aug-20 21:11:58>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22457)> <28-Aug-20 21:11:58>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22457)> <28-Aug-20 21:11:58>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(22457)> <28-Aug-20 21:11:58>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22491)> <28-Aug-20 21:11:58>     <time STAMP - devices Manager: Fri Aug 28 21:11:58 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(22492)> <28-Aug-20 21:11:58>     <time STAMP - newDevicesScout: Fri Aug 28 21:11:58 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22491)> <28-Aug-20 21:12:07>     <time STAMP - devices Manager: Fri Aug 28 21:12:07 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(22492)> <28-Aug-20 21:12:08>     <time STAMP - newDevicesScout: Fri Aug 28 21:12:08 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22491)> <28-Aug-20 21:12:16>     <time STAMP - devices Manager: Fri Aug 28 21:12:16 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(22492)> <28-Aug-20 21:12:18>     <time STAMP - newDevicesScout: Fri Aug 28 21:12:18 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(22491)> <28-Aug-20 21:12:25>     <time STAMP - devices Manager: Fri Aug 28 21:12:25 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(22492)> <28-Aug-20 21:12:28>     <time STAMP - newDevicesScout: Fri Aug 28 21:12:28 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <test>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(23828)> <28-Aug-20 21:30:21>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:30:21>     <time STAMP - newDevicesScout: Fri Aug 28 21:30:21 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:30:21>     <time STAMP - devices Manager: Fri Aug 28 21:30:21 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:30:30>     <time STAMP - devices Manager: Fri Aug 28 21:30:30 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:30:31>     <time STAMP - newDevicesScout: Fri Aug 28 21:30:31 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:30:39>     <time STAMP - devices Manager: Fri Aug 28 21:30:39 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:30:41>     <time STAMP - newDevicesScout: Fri Aug 28 21:30:41 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:30:48>     <time STAMP - devices Manager: Fri Aug 28 21:30:48 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:30:51>     <time STAMP - newDevicesScout: Fri Aug 28 21:30:51 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:30:57>     <time STAMP - devices Manager: Fri Aug 28 21:30:57 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:31:01>     <time STAMP - newDevicesScout: Fri Aug 28 21:31:01 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:31:06>     <time STAMP - devices Manager: Fri Aug 28 21:31:06 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:31:11>     <time STAMP - newDevicesScout: Fri Aug 28 21:31:11 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:31:15>     <time STAMP - devices Manager: Fri Aug 28 21:31:15 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:31:21>     <time STAMP - newDevicesScout: Fri Aug 28 21:31:21 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:31:24>     <time STAMP - devices Manager: Fri Aug 28 21:31:24 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:31:31>     <time STAMP - newDevicesScout: Fri Aug 28 21:31:31 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:31:33>     <time STAMP - devices Manager: Fri Aug 28 21:31:33 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:31:41>     <time STAMP - newDevicesScout: Fri Aug 28 21:31:41 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:31:42>     <time STAMP - devices Manager: Fri Aug 28 21:31:42 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:31:51>     <time STAMP - newDevicesScout: Fri Aug 28 21:31:51 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:31:51>     <time STAMP - devices Manager: Fri Aug 28 21:31:51 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:32:00>     <time STAMP - devices Manager: Fri Aug 28 21:32:00 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:32:01>     <time STAMP - newDevicesScout: Fri Aug 28 21:32:01 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:32:09>     <time STAMP - devices Manager: Fri Aug 28 21:32:09 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:32:11>     <time STAMP - newDevicesScout: Fri Aug 28 21:32:11 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:32:18>     <time STAMP - devices Manager: Fri Aug 28 21:32:18 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:32:21>     <time STAMP - newDevicesScout: Fri Aug 28 21:32:21 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:32:27>     <time STAMP - devices Manager: Fri Aug 28 21:32:27 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:32:31>     <time STAMP - newDevicesScout: Fri Aug 28 21:32:31 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:32:36>     <time STAMP - devices Manager: Fri Aug 28 21:32:36 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:32:41>     <time STAMP - newDevicesScout: Fri Aug 28 21:32:41 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:32:45>     <time STAMP - devices Manager: Fri Aug 28 21:32:45 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:32:51>     <time STAMP - newDevicesScout: Fri Aug 28 21:32:51 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:32:54>     <time STAMP - devices Manager: Fri Aug 28 21:32:54 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:33:01>     <time STAMP - newDevicesScout: Fri Aug 28 21:33:01 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:33:03>     <time STAMP - devices Manager: Fri Aug 28 21:33:03 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:33:11>     <time STAMP - newDevicesScout: Fri Aug 28 21:33:11 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:33:12>     <time STAMP - devices Manager: Fri Aug 28 21:33:12 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:33:21>     <time STAMP - newDevicesScout: Fri Aug 28 21:33:21 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:33:21>     <time STAMP - devices Manager: Fri Aug 28 21:33:21 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:33:30>     <time STAMP - devices Manager: Fri Aug 28 21:33:30 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:33:31>     <time STAMP - newDevicesScout: Fri Aug 28 21:33:31 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:33:39>     <time STAMP - devices Manager: Fri Aug 28 21:33:39 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:33:41>     <time STAMP - newDevicesScout: Fri Aug 28 21:33:41 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:33:48>     <time STAMP - devices Manager: Fri Aug 28 21:33:48 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:33:51>     <time STAMP - newDevicesScout: Fri Aug 28 21:33:51 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:33:57>     <time STAMP - devices Manager: Fri Aug 28 21:33:57 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:34:01>     <time STAMP - newDevicesScout: Fri Aug 28 21:34:01 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:34:06>     <time STAMP - devices Manager: Fri Aug 28 21:34:06 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:34:11>     <time STAMP - newDevicesScout: Fri Aug 28 21:34:11 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(23861)> <28-Aug-20 21:34:15>     <time STAMP - devices Manager: Fri Aug 28 21:34:15 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(23862)> <28-Aug-20 21:34:21>     <time STAMP - newDevicesScout: Fri Aug 28 21:34:21 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(24529)> <28-Aug-20 21:34:26>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(24562)> <28-Aug-20 21:34:26>     <time STAMP - devices Manager: Fri Aug 28 21:34:26 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(24563)> <28-Aug-20 21:34:26>     <time STAMP - newDevicesScout: Fri Aug 28 21:34:26 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(24562)> <28-Aug-20 21:34:35>     <time STAMP - devices Manager: Fri Aug 28 21:34:35 2020>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(24563)> <28-Aug-20 21:34:36>     <time STAMP - newDevicesScout: Fri Aug 28 21:34:36 2020>      <root-logger.py-logger-line 7>

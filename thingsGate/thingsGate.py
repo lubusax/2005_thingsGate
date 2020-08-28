@@ -4,12 +4,16 @@ from rpi.rpiSetup import setHostname
 from internet.internet import ensureInternet
 from odoo.gate import gateInit
 from multiprocessing import Process, Manager
-import logging, logging.config
+#import logging, logging.config
 from launcher import launcher
+from log.logger import logger
+import importlib
+
+logger(f'running on python version: {sys.version}')
 
 managedProcesses = {
     "devicesManager": "bluetooth.devicesManager",
-    #"newDevicesScout": "bluetooth.newDevicesScout",
+    "newDevicesScout": "bluetooth.newDevicesScout",
 }
 
 greenTempProcesses = managedProcesses
@@ -18,28 +22,46 @@ persistentProcesses = greenTempProcesses
 
 running = {}
 
+def defineDirectories():
+
+  dirPath = os.path.dirname(os.path.realpath(__file__))
+
+  logger(f'running on directory: {dirPath}')
+
+  os.environ['PYTHONPATH'] = dirPath
+
+  pythonPath = os.getenv('PYTHONPATH')
+
+  logger(f'PYTHONPATH: {pythonPath}')
 
 def startManagedProcess(name):
+  if name in running or name not in managedProcesses: return
+
   process = managedProcesses[name]
 
-  logging.debug(f"starting python process {process}")
+  logger(f"starting python process {process}")
 
   running[name] = Process(name=name, target=launcher, args=(process,))
 
   running[name].start()
 
 def killManagedProcess(name):
-  logging.debug(f"killing python process {process}")
+  logger(f"killing python process {process}")
+
+def preImportMethods():
+  for i, p in enumerate(managedProcesses):
+    process = managedProcesses[p]
+    logger(f"process number {i}, preimporting {process}")
+    importlib.import_module(process)
 
 def managerThread():
-  logging.debug(f"starting manager thread") 
+  logger(f"starting manager thread") 
   # Get thermal status through messaging -- msg = messaging.recv_sock(thermal_sock, wait=True)
-
   # heavyweight batch processes run only when thermal conditions are favorable
 
   thermalStatusCritical = False
 
-  print(greenTempProcesses)
+  logger(f"green Temp Processes {greenTempProcesses}")
 
   if thermalStatusCritical:
     for p in greenTempProcesses:
@@ -50,27 +72,16 @@ def managerThread():
       startManagedProcess(p) 
 
 def main():
-  logging.debug(f'running on python version: {sys.version}')
 
-  dirPath = os.path.dirname(os.path.realpath(__file__))
+  defineDirectories()
 
-  logging.debug(f'running on directory: {dirPath}')
-
-  os.environ['PYTHONPATH'] = dirPath
-
-  pythonPath = os.getenv('PYTHONPATH')
-
-  logging.debug(f'PYTHONPATH: {pythonPath}')
-
-
-
-
+  preImportMethods()
 
   try:
     managerThread()
   except Exception as e:
     #traceback.print_exc() ---- crash.capture_exception()
-    logging.debug(f'thingsGate managerThread failed to start with exception {e}')
+    logger(f'thingsGate managerThread failed to start with exception {e}')
   finally:
     #cleanupAllProcesses()
     pass
@@ -80,12 +91,12 @@ def main():
 
 if __name__ == "__main__":
 
-  logging.config.fileConfig(fname='./data/logging.conf', disable_existing_loggers=False)
+  #logging.config.fileConfig(fname='./data/logging.conf', disable_existing_loggers=False)
 
   try:
     main()
   except Exception:
-    logging.debug(f'thingsGate Manager failed to start')    
+    logger(f'thingsGate Manager failed to start')    
     # add_logentries_handler(cloudlog)
     # # Show last 3 lines of traceback ---  error = "Manager failed to start\n \n" + traceback.format_exc(3)
     # with TextWindow(error) as t:

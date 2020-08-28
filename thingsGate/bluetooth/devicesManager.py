@@ -1,4 +1,5 @@
 from common.device import Device
+from log.logger import logger
 import time
 
 # device= 
@@ -6,8 +7,8 @@ import time
 
 def devicesManagerThread():
   while 1:
-    print(f"time STAMP - devices Manager: {time.ctime()}")
-    time.sleep(10)
+    logger(f"time STAMP - devices Manager: {time.ctime()}")
+    time.sleep(9)
 
 def main():
   devicesManagerThread()

@@ -1,12 +1,10 @@
 from common.device import Device
+from log.logger import logger
 import time
-
-# device= 
-# device = Device()
 
 def newDevicesScoutThread():
   while 1:
-    print(f"time STAMP - newDevicesScout: {time.gmtime()}")
+    logger(f"time STAMP - newDevicesScout: {time.ctime()}")
     time.sleep(10)
 
 def main():
