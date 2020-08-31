@@ -12,6 +12,7 @@ import importlib
 logger(f'running on python version: {sys.version}')
 
 managedProcesses = {
+    "zmqProxy": "messaging.zmqProxy",
     "devicesManager": "bluetooth.devicesManager",
     "newDevicesScout": "bluetooth.newDevicesScout",
 }
@@ -95,8 +96,8 @@ if __name__ == "__main__":
 
   try:
     main()
-  except Exception:
-    logger(f'thingsGate Manager failed to start')    
+  except Exception as e:
+    logger(f'thingsGate Manager failed to start with exception {e}')    
     # add_logentries_handler(cloudlog)
     # # Show last 3 lines of traceback ---  error = "Manager failed to start\n \n" + traceback.format_exc(3)
     # with TextWindow(error) as t:

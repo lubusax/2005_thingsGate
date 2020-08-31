@@ -36,3 +36,38 @@ class zmqPublisher():
     logger(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
     string= topic+" "+ message
     self.socket.send_string(string)
+
+class zmqRequester():
+
+  def __init__(self,port):
+    self.context = zmq.Context()  
+    self.socket = self.context.socket(zmq.REQ)
+    self.socket.connect("tcp://localhost:"+port)
+    self.port=port
+
+  def request(self, topic, message):
+    logger(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    string= topic+" "+ message
+    self.socket.send(bytes(string, 'utf-8'))
+    message = self.socket.recv()
+    answerString = str(message, 'utf-8')
+    topic, message = answerString.split()
+    return topic, message
+
+class zmqReplier():
+  def __init__(self,port):
+    self.context = zmq.Context()  
+    self.socket = self.context.socket(zmq.REP)
+    self.socket.connect("tcp://localhost:"+port)
+    self.port=port
+
+  def receive(self):
+    message = self.socket.recv()
+    answerString = str(message, 'utf-8')
+    topic, message = answerString.split()
+    logger(Fore.RED + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    return topic, message
+  
+  def reply(self, topic, message):
+    string= topic+" "+ message
+    self.socket.send(bytes(string, 'utf-8'))

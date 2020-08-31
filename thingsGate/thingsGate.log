@@ -937,3 +937,153 @@
 <DEBUG> <newDevicesScout(30322)> <31-Aug-20 19:03:48>     <[36mtimestamp: Mon Aug 31 19:03:48 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
 <DEBUG> <devicesManager(30321)> <31-Aug-20 19:03:48>     <[32mtime STAMP: Mon Aug 31 19:03:48 2020; topic:newDevice; message: 12:34:AB:CD [0m>      <root-logger.py-logger-line 7>
 <DEBUG> <devicesManager(30321)> <31-Aug-20 19:03:48>     <[31mtime STAMP before recv_string: Mon Aug 31 19:03:48 2020 [0m>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2606)> <31-Aug-20 20:05:18>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2606)> <31-Aug-20 20:05:18>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2606)> <31-Aug-20 20:05:18>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2606)> <31-Aug-20 20:05:18>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2606)> <31-Aug-20 20:05:18>     <thingsGate Manager failed to start>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2667)> <31-Aug-20 20:05:59>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2667)> <31-Aug-20 20:05:59>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2667)> <31-Aug-20 20:05:59>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2667)> <31-Aug-20 20:05:59>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2667)> <31-Aug-20 20:05:59>     <thingsGate Manager failed to start>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2941)> <31-Aug-20 20:07:55>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2941)> <31-Aug-20 20:07:55>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2941)> <31-Aug-20 20:07:55>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2941)> <31-Aug-20 20:07:55>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(2941)> <31-Aug-20 20:07:55>     <thingsGate Manager failed to start>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3166)> <31-Aug-20 20:09:48>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3166)> <31-Aug-20 20:09:48>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3166)> <31-Aug-20 20:09:48>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3166)> <31-Aug-20 20:09:48>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3166)> <31-Aug-20 20:09:48>     <thingsGate Manager failed to start with exception invalid syntax (messaging.py, line 70)>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3239)> <31-Aug-20 20:10:37>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(3273)> <31-Aug-20 20:10:37>     <[36mtimestamp: Mon Aug 31 20:10:37 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3357)> <31-Aug-20 20:11:45>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(3391)> <31-Aug-20 20:11:45>     <[36mtimestamp: Mon Aug 31 20:11:45 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3595)> <31-Aug-20 20:13:45>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(3631)> <31-Aug-20 20:13:45>     <[36mtimestamp: Mon Aug 31 20:13:45 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(3687)> <31-Aug-20 20:14:57>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(3722)> <31-Aug-20 20:14:57>     <[36mtimestamp: Mon Aug 31 20:14:57 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <process number 0, preimporting messaging.zmqProxy>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <process number 1, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <process number 2, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <green Temp Processes {'zmqProxy': 'messaging.zmqProxy', 'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <starting python process messaging.zmqProxy>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4366)> <31-Aug-20 20:24:14>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:14>     <[36mtimestamp: Mon Aug 31 20:24:14 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:16>     <[31mtimestamp: Mon Aug 31 20:24:16 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:16>     <[31mtimestamp: Mon Aug 31 20:24:16 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:16>     <[31mtimestamp: Mon Aug 31 20:24:16 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:16>     <[31mtimestamp: Mon Aug 31 20:24:16 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:16>     <[31mtimestamp: Mon Aug 31 20:24:16 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:18>     <[36mtimestamp: Mon Aug 31 20:24:18 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:18>     <[31mtimestamp: Mon Aug 31 20:24:18 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:20>     <[36mtimestamp: Mon Aug 31 20:24:20 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:20>     <[31mtimestamp: Mon Aug 31 20:24:20 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:22>     <[36mtimestamp: Mon Aug 31 20:24:22 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:22>     <[31mtimestamp: Mon Aug 31 20:24:22 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:24>     <[36mtimestamp: Mon Aug 31 20:24:24 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:24>     <[31mtimestamp: Mon Aug 31 20:24:24 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:26>     <[36mtimestamp: Mon Aug 31 20:24:26 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:26>     <[31mtimestamp: Mon Aug 31 20:24:26 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:28>     <[36mtimestamp: Mon Aug 31 20:24:28 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:28>     <[31mtimestamp: Mon Aug 31 20:24:28 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:30>     <[36mtimestamp: Mon Aug 31 20:24:30 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:30>     <[31mtimestamp: Mon Aug 31 20:24:30 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:32>     <[36mtimestamp: Mon Aug 31 20:24:32 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:32>     <[31mtimestamp: Mon Aug 31 20:24:32 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:34>     <[36mtimestamp: Mon Aug 31 20:24:34 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:34>     <[31mtimestamp: Mon Aug 31 20:24:34 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:36>     <[36mtimestamp: Mon Aug 31 20:24:36 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:36>     <[31mtimestamp: Mon Aug 31 20:24:36 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4403)> <31-Aug-20 20:24:38>     <[36mtimestamp: Mon Aug 31 20:24:38 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4400)> <31-Aug-20 20:24:38>     <[31mtimestamp: Mon Aug 31 20:24:38 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:56>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:56>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:56>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:56>     <process number 0, preimporting messaging.zmqProxy>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:57>     <process number 1, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:57>     <process number 2, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:57>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:57>     <green Temp Processes {'zmqProxy': 'messaging.zmqProxy', 'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:57>     <starting python process messaging.zmqProxy>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:57>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(4691)> <31-Aug-20 20:26:57>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:26:57>     <[36mtimestamp: Mon Aug 31 20:26:57 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:26:57>     <[31mtimestamp: Mon Aug 31 20:26:57 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:26:59>     <[36mtimestamp: Mon Aug 31 20:26:59 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:26:59>     <[31mtimestamp: Mon Aug 31 20:26:59 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:01>     <[36mtimestamp: Mon Aug 31 20:27:01 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:01>     <[31mtimestamp: Mon Aug 31 20:27:01 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:03>     <[36mtimestamp: Mon Aug 31 20:27:03 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:03>     <[31mtimestamp: Mon Aug 31 20:27:03 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:05>     <[36mtimestamp: Mon Aug 31 20:27:05 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:05>     <[31mtimestamp: Mon Aug 31 20:27:05 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:07>     <[36mtimestamp: Mon Aug 31 20:27:07 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:07>     <[31mtimestamp: Mon Aug 31 20:27:07 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:09>     <[36mtimestamp: Mon Aug 31 20:27:09 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:09>     <[31mtimestamp: Mon Aug 31 20:27:09 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:11>     <[36mtimestamp: Mon Aug 31 20:27:11 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:11>     <[31mtimestamp: Mon Aug 31 20:27:11 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:13>     <[36mtimestamp: Mon Aug 31 20:27:13 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:13>     <[31mtimestamp: Mon Aug 31 20:27:13 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:15>     <[36mtimestamp: Mon Aug 31 20:27:15 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:15>     <[31mtimestamp: Mon Aug 31 20:27:15 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:17>     <[36mtimestamp: Mon Aug 31 20:27:17 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:17>     <[31mtimestamp: Mon Aug 31 20:27:17 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:19>     <[36mtimestamp: Mon Aug 31 20:27:19 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:19>     <[31mtimestamp: Mon Aug 31 20:27:19 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:21>     <[36mtimestamp: Mon Aug 31 20:27:21 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:21>     <[31mtimestamp: Mon Aug 31 20:27:21 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:23>     <[36mtimestamp: Mon Aug 31 20:27:23 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:23>     <[31mtimestamp: Mon Aug 31 20:27:23 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(4728)> <31-Aug-20 20:27:25>     <[36mtimestamp: Mon Aug 31 20:27:25 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(4725)> <31-Aug-20 20:27:25>     <[31mtimestamp: Mon Aug 31 20:27:25 2020, topic: newDevice, message: 12:34:AB:CD[0m>      <root-logger.py-logger-line 7>

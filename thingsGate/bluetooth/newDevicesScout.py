@@ -2,17 +2,19 @@ from common.device import Device
 from log.logger import logger
 import time
 
-from messaging.messaging import zmqPublisher, zmqSubscriber
+from messaging.messaging import zmqRequester
 
 
 def newDevicesScoutThread():
 
-  newDevicesPublication     = zmqPublisher("5556")
+  newDevicesAnnouncer  = zmqRequester("5559")
 
 
   while True:
     newDeviceAddress = "12:34:AB:CD"
-    newDevicesPublication.publish("newDevice", newDeviceAddress)
+    topic, message = newDevicesAnnouncer.request("newDevice", newDeviceAddress)
+    if topic=="received" and message==newDeviceAddress:
+      print("DEVICE REGISTERED -- "*12)
 
     time.sleep(2)
 
