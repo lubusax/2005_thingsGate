@@ -19,11 +19,11 @@ class zmqSubscriber():
   def subscribe(self, topic):
     self.socket.setsockopt_string(zmq.SUBSCRIBE, topic)
 
-  def receiveSubscription(self):
-    logger(Fore.RED + f"time STAMP before recv_string: {time.ctime()} " + Style.RESET_ALL)
+  def receive(self):
     string = self.socket.recv_string() # this call is blocking
-    zipcode, temperature, relhumidity = string.split()
-    logger(Fore.GREEN + f"time STAMP: {time.ctime()}; zipcode:{zipcode}; temperature:{temperature}; relhumidity:{relhumidity} " + Style.RESET_ALL)
+    topic, message = string.split()
+    logger(Fore.GREEN + f"time STAMP: {time.ctime()}; topic:{topic}; message: {message} " + Style.RESET_ALL)
+    return topic, message
 
 class zmqPublisher():
   def __init__(self,port):
@@ -32,9 +32,7 @@ class zmqPublisher():
     self.socket.bind("tcp://*:"+port)
     self.port=port
 
-  def publish(self):
-    zipcode     = randrange(60435, 60438)
-    temperature = randrange(14, 24)
-    relhumidity = randrange(15, 55)
-    logger(Fore.CYAN + f"timestamp: {time.ctime()}, zipcode: {zipcode}, temperature: {temperature}, rel. humidity: {relhumidity}" + Style.RESET_ALL)
-    self.socket.send_string("%i %i %i" % (zipcode, temperature, relhumidity))
+  def publish(self, topic, message):
+    logger(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    string= topic+" "+ message
+    self.socket.send_string(string)
