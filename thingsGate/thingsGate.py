@@ -12,9 +12,9 @@ import importlib
 logger(f'running on python version: {sys.version}')
 
 managedProcesses = {
-    "zmqProxy": "messaging.zmqProxy",
     "devicesManager": "bluetooth.devicesManager",
     "newDevicesScout": "bluetooth.newDevicesScout",
+    "zmqLazyPirateServer": "messaging.zmqLazyPirateServer",    
 }
 
 greenTempProcesses = managedProcesses

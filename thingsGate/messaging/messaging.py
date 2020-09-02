@@ -1,5 +1,6 @@
 import time
 import zmq
+import itertools
 
 from colorama import Fore, Back, Style
 # Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
@@ -8,6 +9,56 @@ from colorama import Fore, Back, Style
 
 from log.logger import logger
 from random import randrange
+
+class zmqLazyPirateClient():
+
+  def __init__(self, port, timeout=2500, retries=20):
+    self.requestTimeout = timeout # in ms
+    self.requestRetries = retries
+    self.serverEndpoint = "tcp://localhost:"+port
+    self.context = zmq.Context()
+    self.connectToServer()
+
+  def connectToServer(self):
+    logger("Connecting to server…")
+    self.client = self.context.socket(zmq.REQ)
+    self.client.connect(self.serverEndpoint)
+
+  def closeAndRemoveSocket(self):
+    self.client.setsockopt(zmq.LINGER, 0)
+    self.client.close()
+
+  def sendRequest(self):
+    for sequence in itertools.count():
+      request = str(sequence).encode()
+      logger(f"Sending {request}")
+      self.client.send(request)
+
+      retries_left = self.requestRetries
+      while True:
+        if (self.client.poll(self.requestTimeout) & zmq.POLLIN) != 0:
+          reply = self.client.recv()
+          if int(reply) == sequence:
+            logger(f"Server replied OK  {reply}")
+            break
+          else:
+            logger(f"Malformed reply from server:  {reply}")
+            continue
+
+        retries_left -= 1
+        logger("No response from server")
+        # Socket is confused. Close and remove it.
+        self.closeAndRemoveSocket()
+        if retries_left == 0:
+          logger("Server seems to be offline, abandoning")
+          return "Server seems to be offline"
+        else:
+          logger("Reconnecting to server…")
+          # Create new connection
+          self.connectToServer()
+          logger(f"Resending  {request}")
+          self.client.send(request)
+
 
 class zmqSubscriber():
   def __init__(self,port):
