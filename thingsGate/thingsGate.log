@@ -1325,3 +1325,291 @@
 <DEBUG> <newDevicesScout(19240)> <02-Sep-20 11:49:20>     <No response from server>      <root-logger.py-logger-line 7>
 <DEBUG> <newDevicesScout(19240)> <02-Sep-20 11:49:20>     <Server seems to be offline, abandoning>      <root-logger.py-logger-line 7>
 <DEBUG> <newDevicesScout(19240)> <02-Sep-20 11:49:20>     <[31mnewDEVICES scout[0mrequest result: Server seems to be offline >      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <process number 2, preimporting messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout', 'zmqLazyPirateServer': 'messaging.zmqLazyPirateServer'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19700)> <02-Sep-20 11:53:20>     <starting python process messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:20>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:20>     <Sending b'0'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:20>     <[34m[47mNormal request b'0'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:21>     <Server replied OK  b'0'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:21>     <Sending b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:21>     <[34m[47mNormal request b'1'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:22>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:22>     <Sending b'2'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:22>     <[34m[47mNormal request b'2'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:23>     <Server replied OK  b'2'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:23>     <Sending b'3'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:23>     <[34m[47mNormal request b'3'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:24>     <Server replied OK  b'3'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:24>     <Sending b'4'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:24>     <[34m[47mNormal request b'4'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:25>     <Server replied OK  b'4'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:25>     <Sending b'5'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:25>     <[34m[47mNormal request b'5'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:26>     <Server replied OK  b'5'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:26>     <Sending b'6'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:26>     <[34m[47mNormal request b'6'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:27>     <Server replied OK  b'6'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:27>     <Sending b'7'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:27>     <[34m[47mNormal request b'7'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:28>     <Server replied OK  b'7'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:28>     <Sending b'8'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:28>     <[34m[47mNormal request b'8'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:29>     <Server replied OK  b'8'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:29>     <Sending b'9'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:29>     <[34m[47mNormal request b'9'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:30>     <Server replied OK  b'9'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:30>     <Sending b'10'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:30>     <[34m[47mSimulating CPU overload[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:32>     <[34m[47mNormal request b'10'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:33>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:33>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:33>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:33>     <Resending  b'10'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:33>     <[34m[47mSimulating CPU overload[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:35>     <[34m[47mNormal request b'10'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:35>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:35>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:35>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:35>     <Resending  b'10'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:36>     <[34m[47mNormal request b'10'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:37>     <Server replied OK  b'10'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:37>     <Sending b'11'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:37>     <[34m[47mNormal request b'11'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:38>     <Server replied OK  b'11'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:38>     <Sending b'12'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:38>     <[34m[47mNormal request b'12'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:39>     <Server replied OK  b'12'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:39>     <Sending b'13'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(19737)> <02-Sep-20 11:53:39>     <[34m[47mSimulating a crash[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:42>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:42>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:42>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:42>     <Resending  b'13'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:44>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:44>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:44>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:44>     <Resending  b'13'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:47>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:47>     <Server seems to be offline, abandoning>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19734)> <02-Sep-20 11:53:47>     <[31mnewDEVICES scout[0mrequest result: Server seems to be offline >      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <process number 2, preimporting messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout', 'zmqLazyPirateServer': 'messaging.zmqLazyPirateServer'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(32502)> <02-Sep-20 16:58:31>     <starting python process messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:31>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:31>     <Sending b'0'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(32539)> <02-Sep-20 16:58:31>     <[34m[47mNormal request b'0'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:32>     <Server replied OK  b'0'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:32>     <Sending b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(32539)> <02-Sep-20 16:58:32>     <[34m[47mNormal request b'1'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:33>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:33>     <Sending b'2'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(32539)> <02-Sep-20 16:58:33>     <[34m[47mNormal request b'2'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:34>     <Server replied OK  b'2'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:34>     <Sending b'3'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(32539)> <02-Sep-20 16:58:34>     <[34m[47mNormal request b'3'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:35>     <Server replied OK  b'3'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:35>     <Sending b'4'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(32539)> <02-Sep-20 16:58:35>     <[34m[47mNormal request b'4'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:36>     <Server replied OK  b'4'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:36>     <Sending b'5'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(32539)> <02-Sep-20 16:58:36>     <[34m[47mSimulating a crash[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:39>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:39>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:39>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:39>     <Resending  b'5'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:41>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:41>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:41>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:41>     <Resending  b'5'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:44>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:44>     <Server seems to be offline, abandoning>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(32536)> <02-Sep-20 16:58:44>     <[31mnewDEVICES scout[0mrequest result: Server seems to be offline >      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:36>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:36>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:36>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:36>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:36>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:36>     <process number 2, preimporting messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:36>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:36>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout', 'zmqLazyPirateServer': 'messaging.zmqLazyPirateServer'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:37>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:37>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(1314)> <02-Sep-20 17:12:37>     <starting python process messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:37>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:37>     <Sending b'0'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:37>     <[34m[47mNormal request b'0'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:38>     <Server replied OK  b'0'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:38>     <Sending b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:38>     <[34m[47mNormal request b'1'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:39>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:39>     <Sending b'2'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:39>     <[34m[47mNormal request b'2'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:40>     <Server replied OK  b'2'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:40>     <Sending b'3'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:40>     <[34m[47mNormal request b'3'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:41>     <Server replied OK  b'3'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:41>     <Sending b'4'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:41>     <[34m[47mNormal request b'4'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:42>     <Server replied OK  b'4'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:42>     <Sending b'5'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:42>     <[34m[47mNormal request b'5'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:43>     <Server replied OK  b'5'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:43>     <Sending b'6'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:43>     <[34m[47mSimulating CPU overload[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:45>     <[34m[47mNormal request b'6'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:45>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:45>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:45>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:45>     <Resending  b'6'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:46>     <[34m[47mNormal request b'6'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:47>     <Server replied OK  b'6'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:47>     <Sending b'7'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(1351)> <02-Sep-20 17:12:47>     <[34m[47mSimulating a crash[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:49>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:49>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:49>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:49>     <Resending  b'7'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:52>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:52>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:52>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:52>     <Resending  b'7'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:54>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:54>     <Server seems to be offline, abandoning>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(1348)> <02-Sep-20 17:12:54>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server seems to be offline >      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <process number 2, preimporting messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout', 'zmqLazyPirateServer': 'messaging.zmqLazyPirateServer'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(5883)> <02-Sep-20 18:10:36>     <starting python process messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <process number 2, preimporting messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout', 'zmqLazyPirateServer': 'messaging.zmqLazyPirateServer'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6065)> <02-Sep-20 18:11:02>     <starting python process messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6111)> <02-Sep-20 18:11:02>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6111)> <02-Sep-20 18:11:02>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(6112)> <02-Sep-20 18:11:02>     <[34m[47mNormal request b'12:34:AB:CD'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <process number 2, preimporting messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout', 'zmqLazyPirateServer': 'messaging.zmqLazyPirateServer'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6178)> <02-Sep-20 18:12:02>     <starting python process messaging.zmqLazyPirateServer>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6212)> <02-Sep-20 18:12:02>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6212)> <02-Sep-20 18:12:02>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <zmqLazyPirateServer(6213)> <02-Sep-20 18:12:02>     <[34m[47mNormal request b'12:34:AB:CD'[0m>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6234)> <02-Sep-20 18:12:12>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:12>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:12>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:15>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:15>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:15>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:15>     <Resending  b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:17>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:17>     <Reconnecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:17>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:17>     <Resending  b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:20>     <No response from server>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:20>     <Server seems to be offline, abandoning>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:20>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server seems to be offline >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6268)> <02-Sep-20 18:12:22>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(6505)> <02-Sep-20 18:14:22>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:22>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:22>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:22>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:22>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:22>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:24>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:24>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:24>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:24>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:26>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:26>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:26>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:26>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:28>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:28>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:28>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:28>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:30>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:30>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:30>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:30>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:32>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:32>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:32>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:32>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:34>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:34>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:35>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:35>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:37>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:37>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:37>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:37>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:39>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:39>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:39>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:39>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:41>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(6538)> <02-Sep-20 18:14:41>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:41>     <Server replied OK  b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(6539)> <02-Sep-20 18:14:41>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>

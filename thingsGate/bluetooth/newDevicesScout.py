@@ -10,22 +10,24 @@ import time
 from messaging.messaging import zmqLazyPirateClient
 
 def newDevicesScoutThread():
-  port    = "5555"
-  timeout = 2500 #ms
-  retries = 3
-  newDevicesAnnouncer  = zmqLazyPirateClient(port, timeout, retries)
+  portServerEndpoint    = "5555"
+  newDevicesAnnouncer  = zmqLazyPirateClient(portServerEndpoint)
 
-  result = newDevicesAnnouncer.sendRequest()
+  while True:
+    newDeviceAddress = "12:34:AB:CD"
+    replyFromDevicesManager = newDevicesAnnouncer.send(newDeviceAddress)
 
-  logger(Fore.RED + "newDEVICES scout"+ Style.RESET_ALL + f"request result: {result} ")
+    logger(Fore.RED + "newDEVICES scout"+ Style.RESET_ALL + f"replyFromDevicesManager: {replyFromDevicesManager} ")
+    time.sleep(2)
 
-  # while True:
+
+  # 
   #   #newDeviceAddress = "12:34:AB:CD"
   #   result = newDevicesAnnouncer.sendRequest()
     
   #   logger(Fore.RED + "newDEVICES scout"+ Style.RESET_ALL + f"request result: {result} ")
 
-  #   time.sleep(2)
+  #   
 
 def main():
   newDevicesScoutThread()

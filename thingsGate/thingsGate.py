@@ -14,7 +14,7 @@ logger(f'running on python version: {sys.version}')
 managedProcesses = {
     "devicesManager": "bluetooth.devicesManager",
     "newDevicesScout": "bluetooth.newDevicesScout",
-    "zmqLazyPirateServer": "messaging.zmqLazyPirateServer",    
+    #"zmqLazyPirateServer": "messaging.zmqLazyPirateServer",    
 }
 
 greenTempProcesses = managedProcesses

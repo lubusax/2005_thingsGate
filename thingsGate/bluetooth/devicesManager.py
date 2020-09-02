@@ -2,22 +2,22 @@ from common.device import Device
 from log.logger import logger
 import time
 
-from messaging.messaging import zmqReplier
+from messaging.messaging import zmqLazyPirateServer
 
 # device= 
 # device = Device()
 
 def devicesManagerThread():
-  newDevicesReceiverAndReplier = zmqReplier("5560")
+  portServerEndpoint    = "5555"
+  newDevicesReceiverAndReplier = zmqLazyPirateServer(portServerEndpoint)
   #time.sleep(2)
 
   while True:
-    topic, newDeviceAddress = newDevicesReceiverAndReplier.receive()
-    if topic == "newDevice":
-      print("NEW DEVICE ---"*10)
-      newDevicesReceiverAndReplier.reply("received", newDeviceAddress)
-    else:
-      newDevicesReceiverAndReplier.reply("notReceived", newDeviceAddress)
+    newDeviceAddress = newDevicesReceiverAndReplier.receive()
+
+    logger(f"devices Manager - NEW DEVICE --- newDeviceAddress: {newDeviceAddress}")
+    newDevicesReceiverAndReplier.reply("1")
+
       
 def main():
   devicesManagerThread()
