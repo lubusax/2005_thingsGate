@@ -30,33 +30,24 @@ class zmqLazyPirateClient():
 
   def send(self, message):
     request = str(message).encode()
-    logger(f"Sending {request}")
-    self.client.send(request)
-
-    retries_left = self.requestRetries
-    while True:
+    
+    for _ in range(self.requestRetries):
+      logger(f"Sending {request}")
+      self.client.send(request)
       if (self.client.poll(self.requestTimeout) & zmq.POLLIN) != 0:
         reply = self.client.recv()
         if int(reply) == 1:
-          logger(f"Server replied OK  {reply}")
+          logger(f"Server replied OK: {reply}")
           return "Server replied OK"
         else:
-          logger(f"Malformed reply from server:  {reply}")
-          continue
-
-      retries_left -= 1
+          logger(f"Server replied, but it was not an OK:  {reply}")
       logger("No response from server")
-      # Socket is confused. Close and remove it.
-      self.closeAndRemoveSocket()
-      if retries_left == 0:
-        logger("Server seems to be offline, abandoning")
-        return "Server seems to be offline"
-      else:
-        logger("Reconnecting to server…")
-        # Create new connection
-        self.connectToServer()
-        logger(f"Resending  {request}")
-        self.client.send(request)
+      self.closeAndRemoveSocket()    # Socket is confused. Close and remove it.
+      logger("Reconnecting to server…")
+      self.connectToServer()    # Create new connection
+
+    logger("Server seems to be offline, abandoning")
+    return "Server seems to be offline"
 
 class zmqLazyPirateServer():
     def __init__(self, port):
