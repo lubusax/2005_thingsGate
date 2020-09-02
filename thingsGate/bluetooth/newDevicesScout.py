@@ -7,11 +7,11 @@ from colorama import Fore, Back, Style
 
 import time
 
-from messaging.messaging import zmqLazyPirateClient
+from messaging.messaging import zmqLazyPirateRequester
 
 def newDevicesScoutThread():
-  portServerEndpoint    = "5555"
-  newDevicesAnnouncer  = zmqLazyPirateClient(portServerEndpoint)
+  portReplierDevicesManager    = "5555"
+  newDevicesAnnouncer  = zmqLazyPirateRequester(portReplierDevicesManager)
 
   while True:
     newDeviceAddress = "12:34:AB:CD"

@@ -10,58 +10,58 @@ from colorama import Fore, Back, Style
 from log.logger import logger
 from random import randrange
 
-class zmqLazyPirateClient():
+class zmqLazyPirateRequester():
 
   def __init__(self, port, timeout=2500, retries=3):
     self.requestTimeout = timeout # in ms
     self.requestRetries = retries
-    self.serverEndpoint = "tcp://localhost:"+port
+    self.replierEndpoint = "tcp://localhost:"+port
     self.context = zmq.Context()
-    self.connectToServer()
+    self.connectToReplier()
 
-  def connectToServer(self):
+  def connectToReplier(self):
     logger("Connecting to server…")
-    self.client = self.context.socket(zmq.REQ)
-    self.client.connect(self.serverEndpoint)
+    self.requester = self.context.socket(zmq.REQ)
+    self.requester.connect(self.replierEndpoint)
 
   def closeAndRemoveSocket(self):
-    self.client.setsockopt(zmq.LINGER, 0)
-    self.client.close()
+    self.requester.setsockopt(zmq.LINGER, 0)
+    self.requester.close()
 
   def send(self, message):
-    request = str(message).encode()
-    
+    #request = str(message).encode()
+    request = message
     for _ in range(self.requestRetries):
       logger(f"Sending {request}")
-      self.client.send(request)
-      if (self.client.poll(self.requestTimeout) & zmq.POLLIN) != 0:
-        reply = self.client.recv()
-        if int(reply) == 1:
-          logger(f"Server replied OK: {reply}")
-          return "Server replied OK"
+      self.requester.send_pyobj(request)
+      if (self.requester.poll(self.requestTimeout) & zmq.POLLIN) != 0:
+        reply = self.requester.recv_pyobj()
+        if reply == "OK":
+          logger(f"Replier replied OK: {reply}")
+          return "Replier replied OK"
         else:
           logger(f"Server replied, but it was not an OK:  {reply}")
-      logger("No response from server")
+      logger("No response from replier")
       self.closeAndRemoveSocket()    # Socket is confused. Close and remove it.
-      logger("Reconnecting to server…")
-      self.connectToServer()    # Create new connection
+      logger("Reconnecting to replier…")
+      self.connectToReplier()    # Create new connection
 
-    logger("Server seems to be offline, abandoning")
-    return "Server seems to be offline"
+    logger("Replier seems to be offline, abandoning")
+    return "Replier seems to be offline"
 
-class zmqLazyPirateServer():
+class zmqLazyPirateReplier():
     def __init__(self, port):
-      self.serverEndpoint = "tcp://*:"+port
+      self.replierEndpoint = "tcp://*:"+port
       self.context = zmq.Context()
-      self.server = self.context.socket(zmq.REP)
-      self.server.bind(self.serverEndpoint)
+      self.replier = self.context.socket(zmq.REP)
+      self.replier.bind(self.replierEndpoint)
 
     def receive(self):
-      self.requestMessage = self.server.recv()
-      return str(self.requestMessage, 'utf-8')
+      self.requestMessage = self.replier.recv_pyobj()
+      return self.requestMessage
 
     def reply(self,replyMessage):
-    	self.server.send(bytes(replyMessage, 'utf-8'))
+    	self.replier.send_pyobj(replyMessage)
 
 class zmqSubscriber():
   def __init__(self,port):

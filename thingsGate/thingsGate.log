@@ -1644,3 +1644,80 @@
 <DEBUG> <devicesManager(16397)> <02-Sep-20 22:13:14>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
 <DEBUG> <newDevicesScout(16398)> <02-Sep-20 22:13:14>     <Server replied OK: b'1'>      <root-logger.py-logger-line 7>
 <DEBUG> <newDevicesScout(16398)> <02-Sep-20 22:13:14>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Server replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17602)> <02-Sep-20 22:27:49>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17602)> <02-Sep-20 22:27:49>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17602)> <02-Sep-20 22:27:49>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17602)> <02-Sep-20 22:27:49>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17602)> <02-Sep-20 22:27:49>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17602)> <02-Sep-20 22:27:49>     <thingsGate Manager failed to start with exception cannot import name 'zmqLazyPirateRequirer' from 'messaging.messaging' (/home/pi/Documents/2005_thingsGate/thingsGate/messaging/messaging.py)>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:03>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:03>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:03>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:03>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:04>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:04>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:04>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:04>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(17978)> <02-Sep-20 22:32:04>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:04>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:04>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(18011)> <02-Sep-20 22:32:04>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:04>     <Replier replied OK: b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:04>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:06>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(18011)> <02-Sep-20 22:32:06>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:06>     <Replier replied OK: b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:06>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:08>     <Sending b'12:34:AB:CD'>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(18011)> <02-Sep-20 22:32:08>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:08>     <Replier replied OK: b'1'>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(18012)> <02-Sep-20 22:32:08>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:10>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:10>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:10>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:10>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:11>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:11>     <starting manager thread>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:11>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:11>     <starting python process bluetooth.devicesManager>      <root-logger.py-logger-line 7>
+<DEBUG> <MainProcess(19873)> <02-Sep-20 23:05:11>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:11>     <Connecting to server…>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:11>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:11>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:11>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:11>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:13>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:13>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:13>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:13>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:15>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:15>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:15>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:15>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:17>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:17>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:17>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:17>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:19>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:19>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:19>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:19>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:21>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:21>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:21>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:21>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:23>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:23>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:23>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:23>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:25>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:25>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:25>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:25>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:27>     <Sending 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <devicesManager(19943)> <02-Sep-20 23:05:27>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:27>     <Replier replied OK: OK>      <root-logger.py-logger-line 7>
+<DEBUG> <newDevicesScout(19944)> <02-Sep-20 23:05:27>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-logger-line 7>
