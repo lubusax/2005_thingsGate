@@ -7,11 +7,13 @@ from colorama import Fore, Back, Style
 # Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 # Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
-from log.logger import logger
+from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL
 from random import randrange
 
-class zmqLazyPirateRequester():
-
+class Requester():
+  '''
+    zmq Lazy Pirate Client (Requester)
+  '''
   def __init__(self, port, timeout=2500, retries=3):
     self.requestTimeout = timeout # in ms
     self.requestRetries = retries
@@ -20,7 +22,7 @@ class zmqLazyPirateRequester():
     self.connectToReplier()
 
   def connectToReplier(self):
-    logger("Connecting to server…")
+    loggerDEBUG("Connecting to server…")
     self.requester = self.context.socket(zmq.REQ)
     self.requester.connect(self.replierEndpoint)
 
@@ -32,36 +34,39 @@ class zmqLazyPirateRequester():
     #request = str(message).encode()
     request = message
     for _ in range(self.requestRetries):
-      logger(f"Sending {request}")
+      loggerDEBUG(f"Sending {request}")
       self.requester.send_pyobj(request)
       if (self.requester.poll(self.requestTimeout) & zmq.POLLIN) != 0:
         reply = self.requester.recv_pyobj()
         if reply == "OK":
-          logger(f"Replier replied OK: {reply}")
+          loggerDEBUG(f"Replier replied OK: {reply}")
           return "Replier replied OK"
         else:
-          logger(f"Server replied, but it was not an OK:  {reply}")
-      logger("No response from replier")
+          loggerWARNING(f"Server replied, but it was not an OK:  {reply}")
+      loggerERROR("No response from replier")
       self.closeAndRemoveSocket()    # Socket is confused. Close and remove it.
-      logger("Reconnecting to replier…")
+      loggerDEBUG("Reconnecting to replier…")
       self.connectToReplier()    # Create new connection
 
-    logger("Replier seems to be offline, abandoning")
+    loggerERROR("Replier seems to be offline, abandoning")
     return "Replier seems to be offline"
 
-class zmqLazyPirateReplier():
-    def __init__(self, port):
-      self.replierEndpoint = "tcp://*:"+port
-      self.context = zmq.Context()
-      self.replier = self.context.socket(zmq.REP)
-      self.replier.bind(self.replierEndpoint)
+class Replier():
+  '''
+    zmq Lazy Pirate Server (Replier)
+  '''
+  def __init__(self, port):
+    self.replierEndpoint = "tcp://*:"+port
+    self.context = zmq.Context()
+    self.replier = self.context.socket(zmq.REP)
+    self.replier.bind(self.replierEndpoint)
 
-    def receive(self):
-      self.requestMessage = self.replier.recv_pyobj()
-      return self.requestMessage
+  def receive(self):
+    self.requestMessage = self.replier.recv_pyobj()
+    return self.requestMessage
 
-    def reply(self,replyMessage):
-    	self.replier.send_pyobj(replyMessage)
+  def reply(self,replyMessage):
+    self.replier.send_pyobj(replyMessage)
 
 class zmqSubscriber():
   def __init__(self,port):
@@ -76,7 +81,7 @@ class zmqSubscriber():
   def receive(self):
     string = self.socket.recv_string() # this call is blocking
     topic, message = string.split()
-    logger(Fore.GREEN + f"time STAMP: {time.ctime()}; topic:{topic}; message: {message} " + Style.RESET_ALL)
+    loggerDEBUG(Fore.GREEN + f"time STAMP: {time.ctime()}; topic:{topic}; message: {message} " + Style.RESET_ALL)
     return topic, message
 
 class zmqPublisher():
@@ -87,7 +92,7 @@ class zmqPublisher():
     self.port=port
 
   def publish(self, topic, message):
-    logger(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
     string= topic+" "+ message
     self.socket.send_string(string)
 
@@ -100,7 +105,7 @@ class zmqRequester():
     self.port=port
 
   def request(self, topic, message):
-    logger(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
     string= topic+" "+ message
     self.socket.send(bytes(string, 'utf-8'))
     message = self.socket.recv()
@@ -119,7 +124,7 @@ class zmqReplier():
     message = self.socket.recv()
     answerString = str(message, 'utf-8')
     topic, message = answerString.split()
-    logger(Fore.RED + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    loggerDEBUG(Fore.RED + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
     return topic, message
   
   def reply(self, topic, message):

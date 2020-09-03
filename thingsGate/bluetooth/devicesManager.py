@@ -1,21 +1,21 @@
 from common.device import Device
-from log.logger import logger
+from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL
 import time
 
-from messaging.messaging import zmqLazyPirateReplier
+from messaging.messaging import Replier
 
 # device= 
 # device = Device()
 
 def devicesManagerThread():
   portReplierDevicesManager   = "5555"
-  newDevicesReceiverAndReplier = zmqLazyPirateReplier(portReplierDevicesManager)
+  newDevicesReceiverAndReplier = Replier(portReplierDevicesManager)
   #time.sleep(2)
 
   while True:
     newDeviceAddress = newDevicesReceiverAndReplier.receive()
 
-    logger(f"devices Manager - NEW DEVICE --- newDeviceAddress: {newDeviceAddress}")
+    loggerINFO(f"devices Manager - NEW DEVICE --- newDeviceAddress: {newDeviceAddress}")
     newDevicesReceiverAndReplier.reply("OK")
 
       
