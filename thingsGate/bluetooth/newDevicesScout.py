@@ -9,6 +9,8 @@ import time
 
 from messaging.messaging import Requester
 
+from bluetooth.dBusBluezConnection import dBusBluezConnection
+
 def newDevicesScoutThread():
   portReplierDevicesManager    = "5555"
   newDevicesAnnouncer  = Requester(portReplierDevicesManager)

@@ -1801,3 +1801,70 @@
 <INFO> <devicesManager(23987)> <03-Sep-20 12:17:16>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
 <DEBUG> <newDevicesScout(23988)> <03-Sep-20 12:17:16>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
 <INFO> <newDevicesScout(23988)> <03-Sep-20 12:17:16>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(25019)> <03-Sep-20 12:27:42>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(25019)> <03-Sep-20 12:27:42>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(25019)> <03-Sep-20 12:27:42>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(25019)> <03-Sep-20 12:27:42>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(25019)> <03-Sep-20 12:27:42>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-loggerINFO-line 9>
+<CRITICAL> <MainProcess(25019)> <03-Sep-20 12:27:42>     <thingsGate Manager failed to start with exception No module named 'dBusBluezConnection'>      <root-logger.py-loggerCRITICAL-line 18>
+<INFO> <MainProcess(25113)> <03-Sep-20 12:28:30>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(25113)> <03-Sep-20 12:28:30>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(25113)> <03-Sep-20 12:28:30>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(25113)> <03-Sep-20 12:28:30>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(25113)> <03-Sep-20 12:28:30>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-loggerINFO-line 9>
+<CRITICAL> <MainProcess(25113)> <03-Sep-20 12:28:30>     <thingsGate Manager failed to start with exception No module named 'thingsSpecificClasses'>      <root-logger.py-loggerCRITICAL-line 18>
+<INFO> <MainProcess(4395)> <03-Sep-20 15:02:30>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(4395)> <03-Sep-20 15:02:30>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(4395)> <03-Sep-20 15:02:30>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(4395)> <03-Sep-20 15:02:30>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(4395)> <03-Sep-20 15:02:30>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-loggerINFO-line 9>
+<CRITICAL> <MainProcess(4395)> <03-Sep-20 15:02:30>     <thingsGate Manager failed to start with exception No module named 'thingsSpecificClasses'>      <root-logger.py-loggerCRITICAL-line 18>
+<INFO> <MainProcess(4515)> <03-Sep-20 15:03:46>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(4515)> <03-Sep-20 15:03:46>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(4515)> <03-Sep-20 15:03:46>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(4515)> <03-Sep-20 15:03:46>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(4515)> <03-Sep-20 15:03:46>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-loggerINFO-line 9>
+<CRITICAL> <MainProcess(4515)> <03-Sep-20 15:03:47>     <thingsGate Manager failed to start with exception No module named 'thingsSpecificClasses'>      <root-logger.py-loggerCRITICAL-line 18>
+<INFO> <MainProcess(4759)> <03-Sep-20 15:04:24>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(4759)> <03-Sep-20 15:04:24>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(4759)> <03-Sep-20 15:04:24>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(4759)> <03-Sep-20 15:04:24>     <process number 0, preimporting bluetooth.devicesManager>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(4759)> <03-Sep-20 15:04:24>     <process number 1, preimporting bluetooth.newDevicesScout>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(4759)> <03-Sep-20 15:04:25>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(4759)> <03-Sep-20 15:04:25>     <green Temp Processes {'devicesManager': 'bluetooth.devicesManager', 'newDevicesScout': 'bluetooth.newDevicesScout'}>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(4759)> <03-Sep-20 15:04:25>     <starting python process bluetooth.devicesManager>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(4759)> <03-Sep-20 15:04:25>     <starting python process bluetooth.newDevicesScout>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:25>     <Connecting to server…>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:25>     <Sending 12:34:AB:CD>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <devicesManager(4792)> <03-Sep-20 15:04:25>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:25>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <newDevicesScout(4793)> <03-Sep-20 15:04:25>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:27>     <Sending 12:34:AB:CD>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <devicesManager(4792)> <03-Sep-20 15:04:27>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:27>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <newDevicesScout(4793)> <03-Sep-20 15:04:27>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:29>     <Sending 12:34:AB:CD>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <devicesManager(4792)> <03-Sep-20 15:04:29>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:29>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <newDevicesScout(4793)> <03-Sep-20 15:04:29>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:31>     <Sending 12:34:AB:CD>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <devicesManager(4792)> <03-Sep-20 15:04:31>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:31>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <newDevicesScout(4793)> <03-Sep-20 15:04:31>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:33>     <Sending 12:34:AB:CD>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <devicesManager(4792)> <03-Sep-20 15:04:33>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:33>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <newDevicesScout(4793)> <03-Sep-20 15:04:33>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:35>     <Sending 12:34:AB:CD>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <devicesManager(4792)> <03-Sep-20 15:04:35>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:35>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <newDevicesScout(4793)> <03-Sep-20 15:04:35>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:37>     <Sending 12:34:AB:CD>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <devicesManager(4792)> <03-Sep-20 15:04:37>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:37>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <newDevicesScout(4793)> <03-Sep-20 15:04:37>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
