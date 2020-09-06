@@ -1,5 +1,5 @@
-import os, sys, time
-from crontab.crontabSetup import minuteTrigger
+import os, sys, time # pylint: disable=import-error
+from crontab.crontabSetup import minuteTrigger 
 from rpi.rpiSetup import setHostname
 from internet.internet import ensureInternet
 from odoo.gate import gateInit
@@ -13,8 +13,7 @@ loggerINFO(f'running on python version: {sys.version}')
 
 managedProcesses = {
     "devicesManager": "bluetooth.devicesManager",
-    "newDevicesScout": "bluetooth.newDevicesScout",
-    #"zmqLazyPirateServer": "messaging.zmqLazyPirateServer",    
+    "newDevicesScout": "bluetooth.newDevicesScout",    
 }
 
 greenTempProcesses = managedProcesses
