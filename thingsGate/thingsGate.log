@@ -1868,3 +1868,209 @@
 <INFO> <devicesManager(4792)> <03-Sep-20 15:04:37>     <devices Manager - NEW DEVICE --- newDeviceAddress: 12:34:AB:CD>      <root-logger.py-loggerINFO-line 9>
 <DEBUG> <newDevicesScout(4793)> <03-Sep-20 15:04:37>     <Replier replied OK: OK>      <root-logger.py-loggerDEBUG-line 6>
 <INFO> <newDevicesScout(4793)> <03-Sep-20 15:04:37>     <[31mnewDEVICES scout[0mreplyFromDevicesManager: Replier replied OK >      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(28143)> <07-Sep-20 16:14:57>     <TIMESTAMP __init__ class dBusBluezConnection (ms): 97042 >      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(28451)> <07-Sep-20 16:17:10>     <TIMESTAMP __init__ class dBusBluezConnection (ms): 30s 106ms >      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(29796)> <07-Sep-20 16:46:05>     <TIMESTAMP __init__ class dBusBluezConnection: 65s 934ms >      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(29873)> <07-Sep-20 16:46:48>     <TIMESTAMP __init__ class dBusBluezConnection: 8s 208ms >      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(29873)> <07-Sep-20 16:46:48>     <TIMESTAMP just before asking to connect w/o discovery  8s 226ms >      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(29927)> <07-Sep-20 16:47:12>     <TIMESTAMP __init__ class dBusBluezConnection: 32s 504ms >      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(29927)> <07-Sep-20 16:47:12>     <TIMESTAMP just before asking to connect w/o discovery  32s 521ms >      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(29998)> <07-Sep-20 16:47:51>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(29998)> <07-Sep-20 16:47:51>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(29998)> <07-Sep-20 16:47:51>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(29998)> <07-Sep-20 16:47:51>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(29998)> <07-Sep-20 16:47:52>     <TIMESTAMP __init__ class dBusBluezConnection: 72s 43ms >      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(29998)> <07-Sep-20 16:48:12>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(29998)> <07-Sep-20 16:48:12>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(29998)> <07-Sep-20 16:48:12>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(30225)> <07-Sep-20 16:49:18>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(30225)> <07-Sep-20 16:49:18>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(30225)> <07-Sep-20 16:49:18>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(30225)> <07-Sep-20 16:49:18>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(30225)> <07-Sep-20 16:49:18>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(30225)> <07-Sep-20 16:49:18>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(30225)> <07-Sep-20 16:49:18>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <bluetoothConnection(30258)> <07-Sep-20 16:49:18>     <TIMESTAMP __init__ class dBusBluezConnection: 58s 361ms >      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(31240)> <07-Sep-20 17:02:07>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(31240)> <07-Sep-20 17:02:07>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(31240)> <07-Sep-20 17:02:07>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(31240)> <07-Sep-20 17:02:07>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(31240)> <07-Sep-20 17:02:08>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(31240)> <07-Sep-20 17:02:08>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 9>
+<INFO> <MainProcess(31240)> <07-Sep-20 17:02:08>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <bluetoothConnection(31273)> <07-Sep-20 17:02:08>     <[2mTIMESTAMP __init__ class dBusBluezConnection: 28s 93ms [0m>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(31646)> <07-Sep-20 17:06:58>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 9>
+<DEBUG> <MainProcess(31646)> <07-Sep-20 17:06:58>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<DEBUG> <MainProcess(31646)> <07-Sep-20 17:06:58>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 6>
+<INFO> <MainProcess(31646)> <07-Sep-20 17:06:58>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 9>
+<CRITICAL> <MainProcess(31646)> <07-Sep-20 17:06:59>     <thingsGate Manager failed to start with exception cannot import name 'loggerDEBUGdim' from 'log.logger' (/home/pi/Documents/2005_thingsGate/thingsGate/log/logger.py)>      <root-logger.py-loggerCRITICAL-line 18>
+<INFO> <MainProcess(31795)> <07-Sep-20 17:07:16>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 17>
+<DEBUG> <MainProcess(31795)> <07-Sep-20 17:07:16>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 11>
+<DEBUG> <MainProcess(31795)> <07-Sep-20 17:07:16>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 11>
+<INFO> <MainProcess(31795)> <07-Sep-20 17:07:16>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 17>
+<DEBUG> <MainProcess(31795)> <07-Sep-20 17:07:16>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 11>
+<INFO> <MainProcess(31795)> <07-Sep-20 17:07:16>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 17>
+<INFO> <MainProcess(31795)> <07-Sep-20 17:07:16>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 17>
+<DEBUG> <bluetoothConnection(31828)> <07-Sep-20 17:07:16>     <[2mTIMESTAMP __init__ class dBusBluezConnection: 36s 690ms [0m>      <root-logger.py-loggerDEBUG-line 11>
+<INFO> <MainProcess(31894)> <07-Sep-20 17:08:27>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 17>
+<DEBUG> <MainProcess(31894)> <07-Sep-20 17:08:27>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 11>
+<DEBUG> <MainProcess(31894)> <07-Sep-20 17:08:27>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 11>
+<INFO> <MainProcess(31894)> <07-Sep-20 17:08:27>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 17>
+<DEBUG> <MainProcess(31894)> <07-Sep-20 17:08:28>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 11>
+<INFO> <MainProcess(31894)> <07-Sep-20 17:08:28>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 17>
+<INFO> <MainProcess(31894)> <07-Sep-20 17:08:28>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 17>
+<DEBUG> <bluetoothConnection(31927)> <07-Sep-20 17:08:28>     <[2mTIMESTAMP __init__ class dBusBluezConnection: 8s 183ms [0m>      <root-logger.py-loggerDEBUG-line 11>
+<INFO> <MainProcess(1010)> <07-Sep-20 17:26:54>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 20>
+<DEBUG> <MainProcess(1010)> <07-Sep-20 17:26:54>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 11>
+<DEBUG> <MainProcess(1010)> <07-Sep-20 17:26:54>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 11>
+<INFO> <MainProcess(1010)> <07-Sep-20 17:26:54>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 20>
+<DEBUG> <MainProcess(1010)> <07-Sep-20 17:26:54>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 11>
+<INFO> <MainProcess(1010)> <07-Sep-20 17:26:54>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 20>
+<INFO> <MainProcess(1010)> <07-Sep-20 17:26:54>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 20>
+<INFO> <MainProcess(1156)> <07-Sep-20 17:27:46>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(1156)> <07-Sep-20 17:27:46>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(1156)> <07-Sep-20 17:27:46>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(1156)> <07-Sep-20 17:27:46>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(1156)> <07-Sep-20 17:27:46>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(1156)> <07-Sep-20 17:27:46>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(1156)> <07-Sep-20 17:27:46>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(1193)> <07-Sep-20 17:27:46>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 66s 473ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(2294)> <07-Sep-20 17:40:37>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(2294)> <07-Sep-20 17:40:37>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(2294)> <07-Sep-20 17:40:37>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(2294)> <07-Sep-20 17:40:37>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(2294)> <07-Sep-20 17:40:37>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(2294)> <07-Sep-20 17:40:37>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(2294)> <07-Sep-20 17:40:37>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(2327)> <07-Sep-20 17:40:37>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 37s 921ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<ERROR> <bluetoothConnection(2327)> <07-Sep-20 17:40:38>     <Exception in handler for D-Bus signal:>      <dbus.connection-connection.py-maybe_handle_message-line 236>
+Traceback (most recent call last):
+  File "/home/pi/.pyenv/versions/3.8.5/lib/python3.8/site-packages/dbus/connection.py", line 232, in maybe_handle_message
+    self._handler(*args, **kwargs)
+  File "/home/pi/Documents/2005_thingsGate/thingsGate/bluetooth/dBusBluezConnection.py", line 237, in propertiesChanged
+    self.updateRegisteredDevices()
+  File "/home/pi/Documents/2005_thingsGate/thingsGate/bluetooth/dBusBluezConnection.py", line 164, in updateRegisteredDevices
+    "deviceInterface":  self.getDeviceInterface(path),
+AttributeError: 'dBusBluezConnection' object has no attribute 'getDeviceInterface'
+<INFO> <MainProcess(2804)> <07-Sep-20 17:47:21>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(2804)> <07-Sep-20 17:47:21>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(2804)> <07-Sep-20 17:47:21>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(2804)> <07-Sep-20 17:47:21>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(2804)> <07-Sep-20 17:47:21>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(2804)> <07-Sep-20 17:47:21>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(2804)> <07-Sep-20 17:47:21>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(2837)> <07-Sep-20 17:47:21>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 41s 708ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(2872)> <07-Sep-20 17:47:50>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(2872)> <07-Sep-20 17:47:50>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(2872)> <07-Sep-20 17:47:50>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(2872)> <07-Sep-20 17:47:50>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(2872)> <07-Sep-20 17:47:50>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(2872)> <07-Sep-20 17:47:50>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(2872)> <07-Sep-20 17:47:50>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(2905)> <07-Sep-20 17:47:50>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 70s 867ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(3126)> <07-Sep-20 17:50:32>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(3126)> <07-Sep-20 17:50:32>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(3126)> <07-Sep-20 17:50:32>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(3126)> <07-Sep-20 17:50:32>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(3126)> <07-Sep-20 17:50:32>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(3126)> <07-Sep-20 17:50:32>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(3126)> <07-Sep-20 17:50:32>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(3160)> <07-Sep-20 17:50:32>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 32s 391ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(3160)> <07-Sep-20 17:50:34>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 34s 370ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(3268)> <07-Sep-20 17:52:06>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(3268)> <07-Sep-20 17:52:06>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(3268)> <07-Sep-20 17:52:06>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(3268)> <07-Sep-20 17:52:06>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(3268)> <07-Sep-20 17:52:06>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(3268)> <07-Sep-20 17:52:06>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(3268)> <07-Sep-20 17:52:06>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(3301)> <07-Sep-20 17:52:06>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 26s 665ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(3301)> <07-Sep-20 17:52:07>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 27s 865ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(4127)> <07-Sep-20 18:01:37>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(4127)> <07-Sep-20 18:01:37>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(4127)> <07-Sep-20 18:01:37>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(4127)> <07-Sep-20 18:01:37>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(4127)> <07-Sep-20 18:01:37>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(4127)> <07-Sep-20 18:01:37>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(4127)> <07-Sep-20 18:01:37>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(4160)> <07-Sep-20 18:01:37>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 97s 456ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(4160)> <07-Sep-20 18:01:38>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 98s 283ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5355)> <07-Sep-20 18:17:49>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(5355)> <07-Sep-20 18:17:49>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(5355)> <07-Sep-20 18:17:49>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5355)> <07-Sep-20 18:17:50>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(5355)> <07-Sep-20 18:17:50>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5355)> <07-Sep-20 18:17:50>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(5355)> <07-Sep-20 18:17:50>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(5388)> <07-Sep-20 18:17:50>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 70s 368ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5388)> <07-Sep-20 18:17:51>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 71s 217ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5466)> <07-Sep-20 18:19:15>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(5466)> <07-Sep-20 18:19:15>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(5466)> <07-Sep-20 18:19:15>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5466)> <07-Sep-20 18:19:15>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(5466)> <07-Sep-20 18:19:15>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5466)> <07-Sep-20 18:19:15>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(5466)> <07-Sep-20 18:19:15>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(5499)> <07-Sep-20 18:19:15>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 55s 722ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5672)> <07-Sep-20 18:20:24>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(5672)> <07-Sep-20 18:20:24>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(5672)> <07-Sep-20 18:20:24>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5672)> <07-Sep-20 18:20:24>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(5672)> <07-Sep-20 18:20:24>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5672)> <07-Sep-20 18:20:24>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(5672)> <07-Sep-20 18:20:24>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(5705)> <07-Sep-20 18:20:24>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 24s 713ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5705)> <07-Sep-20 18:20:24>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5747)> <07-Sep-20 18:20:51>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(5747)> <07-Sep-20 18:20:51>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(5747)> <07-Sep-20 18:20:51>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5747)> <07-Sep-20 18:20:51>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(5747)> <07-Sep-20 18:20:51>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(5747)> <07-Sep-20 18:20:51>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(5747)> <07-Sep-20 18:20:51>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:51>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 51s 376ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:51>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:51>     <[2m   ---- device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 not connected[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:51>     <[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 51s 405ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:53>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 53s 222ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:53>     <[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 53s 225ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:53>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 53s 783ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 712ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 717ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 720ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007/desc0009[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 725ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0032[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 728ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0032/char0033[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 732ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0032/char0035[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 735ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0032/char0035/desc0037[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 738ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0032/char0038[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Interfaces Added : 54s 742ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0032/char003a[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 54s 745ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 54s 748ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:55>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 55s 138ms[0m>      <root-logger.py-loggerDEBUG-line 13>

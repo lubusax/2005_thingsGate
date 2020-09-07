@@ -20,9 +20,9 @@ prettyPrint = PrettyPrinter(indent=1).pprint
 myBluezConnection = dBusBluezConnection()
 #myBluezConnection.setAdvertisementInterval("90")
 
-#myBluezConnection.connectDeviceWithoutDiscovery("B8:27:EB:4D:68:70")
+myBluezConnection.connectDeviceWithoutDiscovery("B8:27:EB:4D:68:70")
 
-myBluezConnection.discoverThingsInTouchDevices()
+#myBluezConnection.discoverThingsInTouchDevices()
 
 #while not myBluezConnection.flagToExit: time.sleep(0.5)
 

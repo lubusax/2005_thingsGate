@@ -5,20 +5,14 @@ import dbus
 from dbus.mainloop.glib import DBusGMainLoop
 from gi.repository import GObject
 from bluetooth.thingsSpecificClasses import Thing
-from    common.common import prettyPrint
 import time
 import threading
 import os
 import subprocess
 
-from colorama import Fore, Back, Style
-# Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
-# Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
-# Style: DIM, NORMAL, BRIGHT, RESET_ALL
+from pprint import PrettyPrinter
 
-from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL, loggerDEBUGdim, loggerTIMESTAMP
-from common.common import nowInSecondsAndMilliseconds, runShellCommand
-
+prettyPrint = PrettyPrinter(indent=1).pprint
 
 BLUEZ 															= 'org.bluez'
 IFACE_OBJECT_MANAGER_DBUS						= 'org.freedesktop.DBus.ObjectManager'
@@ -47,19 +41,26 @@ DEVICE_NAME 												= 'ThingsInTouch-Gate-01'
 
 class dBusBluezConnection():
   def __init__(self):
-    
-    loggerTIMESTAMP("__init__ class dBusBluezConnection")
+    self.counterTimeToConnect = time.time()
+    print("TIMESTAMP __init__ class dBusBluezConnection (ms): ", self.nowInMilliseconds())
 
     DBusGMainLoop(set_as_default=True)
 
-    self.systemBus 	                = dbus.SystemBus()
+    self.dictOfDevices ={}
+    self.flagToExit = False
+    #self.exitFlag = {}
 
-    self.hci0 	                    = self.systemBus.get_object(BLUEZ, PATH_HCI0)
-    self.bluez                      = self.systemBus.get_object(BLUEZ , "/")
-    self.adapterInterface           = dbus.Interface( self.hci0,   IFACE_ADAPTER)
-    self.objectManagerInterface     = dbus.Interface(self.bluez, IFACE_OBJECT_MANAGER_DBUS)
+    self.systemBus 	= dbus.SystemBus()
 
-    self.deviceInterfacesWaitingForServicesResolved = {}
+    self.hci0 	= self.systemBus.get_object(BLUEZ, PATH_HCI0)
+    self.bluez = self.systemBus.get_object(BLUEZ , "/")
+    self.adapterInterface = dbus.Interface( self.hci0,   IFACE_ADAPTER)
+    self.objectManagerInterface = dbus.Interface(self.bluez, IFACE_OBJECT_MANAGER_DBUS)
+
+    self.updateRegisteredDevices()
+
+    #self.deleteRegisteredDevices()
+    self.ServicesResolved = {}
 
     self.listenToPropertiesChanged()
     self.listenToInterfacesAdded()
@@ -76,109 +77,22 @@ class dBusBluezConnection():
     self.adapterInterface.SetDiscoveryFilter(scanFilter)
     self.adapterInterface.StartDiscovery()
 
-  def listenToPropertiesChanged(self):
-    self.systemBus.add_signal_receiver(self.propertiesChanged, dbus_interface = IFACE_PROPERTIES_DBUS,
-                        signal_name = "PropertiesChanged", arg0 = IFACE_DEVICE, path_keyword = "path")
-
-  def listenToInterfacesAdded(self):
-    self.systemBus.add_signal_receiver(self.interfacesAdded, dbus_interface = IFACE_OBJECT_MANAGER_DBUS,
-                        signal_name = "InterfacesAdded")
-
-  def interfacesAdded(self, path, interfaces):
-    loggerTIMESTAMP("Interfaces Added")
-    try:
-      if dbus.String(IFACE_DEVICE) in interfaces:
-        self.connectToDevice(path)
-      else:
-        loggerDEBUGdim(f"An interface that was not a Device was added on path: {path}")
-    except Exception as e:
-      loggerERROR(f"Exception in  -interfaces added-: {e}")
-
-  def getDeviceInterface(self, path):
-    deviceObject = self.systemBus.get_object( BLUEZ, path)
-    return dbus.Interface( deviceObject, IFACE_DEVICE)
-
-  def connectToDevice(self,path):
-    deviceInterface = self.deviceInterfacesWaitingForServicesResolved[path]   = self.getDeviceInterface(path)
-    loggerTIMESTAMP(f"asking to connect to device {path}")
-    deviceInterface.Connect(path, dbus_interface=IFACE_DEVICE)
-
-  def propertiesChanged(self, interface, changed, invalidated, path):
-    loggerTIMESTAMP(f"Properties Changed on path {path}")
-    prettyPrint(changed)
-    #self.updateRegisteredDevices()
-    try:
-      for key in changed:
-        if str(key) == "Connected":
-          loggerTIMESTAMP(f"Device on path {path} connected")
-          #self.registeredDevices[str(devicePath)]["Connected"] = bool(changed[dbus.String('Connected')])
-          #print("DEVÌCE CONNECTED - time ellapsed in seconds since asking to connect: ", int(time.time() - self.counterTimeToConnect))
-        if str(key) == "ServicesResolved":
-          #print("SERVICES RESOLVED - time ellapsed in milliseconds since asking to connect: ", int(1000*(time.time() - self.counterTimeToConnect)))
-          loggerTIMESTAMP(f"SERVICES RESOLVED on path {path}")
-          # servicesResolved =  bool(changed[key])
-          # self.ServicesResolved[path]= servicesResolved
-          # self.registeredDevices[str(devicePath)]["ServicesResolved"] =  servicesResolved 
-          # self.registeredDevices[str(devicePath)]["Services"] = self.getServicesOfDevice(devicePath)
-          # if servicesResolved and self.ensureDeviceKnown(devicePath):
-          #   self.establishBluetoothConnection(devicePath)
-          # else:
-          #   print ("No Bluetooth Connection Established")
-    except KeyError:
-      loggerERROR(f"Device on path {path} was removed")
-    except Exception as e:
-      loggerERROR(f"error in Properties Changed - Callback Method: {e}")
-
-  def connectThingsInTouchDevicesStoredLocally(self):
-    self.objects = self.objectManagerInterface.GetManagedObjects()
-    self.thingsInTouchDevicesStoredLocally = {}
-    for path in self.objects:
-      if IFACE_DEVICE in self.objects[path]:
-        deviceObject = self.systemBus.get_object(BLUEZ , path)
-        deviceProperties = deviceObject.GetAll(IFACE_DEVICE, dbus_interface=IFACE_PROPERTIES_DBUS)
-        self.thingsInTouchDevicesStoredLocally[str(path)]= {
-          "Alias":            self.alias(path),
-          "Address":          str(deviceProperties["Address"]),
-          "Connected":        bool(deviceProperties["Connected"]),
-          "ServicesResolved": False,
-          "Services":         None,
-          "deviceInterface":  self.getDeviceInterface(path),
-          "SerialNumber":     None}
-        loggerDEBUG(f"ThingsInTouch device stored locally on path: {path}")
-        self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
-        if  UUID_GATESETUP_SERVICE not in self.thingsInTouchDevicesStoredLocally[str(path)]["Services"]:
-          loggerDEBUGdim(f"   ---- device on path {path} not connected")
-          self.connectToDevice(path)
-
-          # else:
-          #   print(f"   ---- services of connected devices")
-          #   prettyPrint(self.registeredDevices[str(path)]["Services"])
-          #   self.establishBluetoothConnection(path)
-
-  def alias(self, path):
-    return str(self.objects[path][IFACE_DEVICE]["Alias"])
-
-
-
-
-
-
-
-
-
+  def nowInMilliseconds(self):
+    t = time.time()
+    return (int((t - int(t/100)*100) *1000))
 
   def connectDeviceWithoutDiscovery(self,Address, AddressType ="public"):
     connectFilter ={}
     connectFilter["Address"]= str(Address)
     connectFilter["AddressType"]= str(AddressType)
     #self.counterTimeToConnect = time.time()
-    loggerDEBUG(f"TIMESTAMP just before asking to connect w/o discovery  {nowInSecondsAndMilliseconds()} ")
+    print("TIMESTAMP just before asking to connect w/o discovery (ms): ", self.nowInMilliseconds())
     try:
       deviceConnected = self.adapterInterface.ConnectDevice(connectFilter)
-      print("TIMESTAMP just after asking to connect w/o discovery (ms): ", nowInSecondsAndMilliseconds())
+      print("TIMESTAMP just after asking to connect w/o discovery (ms): ", self.nowInMilliseconds())
       prettyPrint(deviceConnected)
     except:
-      print("TIMESTAMP error (ms): ", nowInSecondsAndMilliseconds())
+      print("TIMESTAMP error (ms): ", self.nowInMilliseconds())
       print("some error while connectDeviceWithoutDiscovery")
 
 
@@ -255,7 +169,9 @@ class dBusBluezConnection():
     else:
       return False
   
-
+  def getDeviceInterface(self, path):
+    deviceObject = self.systemBus.get_object( BLUEZ, path)
+    return dbus.Interface( deviceObject, IFACE_DEVICE)
 
 
   def getServicesOfDevice(self, devicePath):
@@ -288,7 +204,9 @@ class dBusBluezConnection():
 
     return servicesOfDevice
 
-
+  def connectToDevice(self,path):
+    self.registeredDevices[str(path)]["deviceInterface"].Connect(path, dbus_interface=IFACE_DEVICE)
+    print("Connect to device  - timestamp (ms): ", self.nowInMilliseconds())
 
   def pairToDevice(self,path):
     self.registeredDevices[str(path)]["deviceInterface"].Pair(path, dbus_interface=IFACE_DEVICE)
@@ -300,8 +218,32 @@ class dBusBluezConnection():
   def disconnectDevice(self, path):
     self.registeredDevices[str(path)]["deviceInterface"].Disconnect(path, dbus_interface=IFACE_DEVICE)
 
-
-
+  def propertiesChanged(self, interface, changed, invalidated, path):
+    self.updateRegisteredDevices()
+    devicePath = path
+    try:
+      for key in changed:
+        if str(key) == "Connected":
+          print("CONNECTED - timestamp (ms): ", self.nowInMilliseconds())
+          self.registeredDevices[str(devicePath)]["Connected"] = bool(changed[dbus.String('Connected')])
+          print("DEVÌCE CONNECTED - time ellapsed in seconds since asking to connect: ", int(time.time() - self.counterTimeToConnect))
+        if str(key) == "ServicesResolved":
+          print("SERVICES RESOLVED - time ellapsed in milliseconds since asking to connect: ", int(1000*(time.time() - self.counterTimeToConnect)))
+          print("SERVICES RESOLVED - timestamp (ms): ", self.nowInMilliseconds())
+          servicesResolved =  bool(changed[key])
+          self.ServicesResolved[path]= servicesResolved
+          self.registeredDevices[str(devicePath)]["ServicesResolved"] =  servicesResolved 
+          self.registeredDevices[str(devicePath)]["Services"] = self.getServicesOfDevice(devicePath)
+          if servicesResolved and self.ensureDeviceKnown(devicePath):
+            self.establishBluetoothConnection(devicePath)
+          else:
+            print ("No Bluetooth Connection Established")
+    except KeyError:
+      print(f"Device {devicePath} was removed")
+    except:
+      print("error in Properties Changed - Callback Method")
+    # print("+#-- "*20)
+    # prettyPrint(changed)
 
   def establishBluetoothConnection(self,devicePath):
     self.readCharacteristicStringValue( devicePath, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC) # async answer
@@ -314,7 +256,7 @@ class dBusBluezConnection():
 
   def showReadStringValue(self, value):
     valueString = ''.join([str(v) for v in value])
-    print("TIMESTAMP (ms): ", nowInSecondsAndMilliseconds())
+    print("TIMESTAMP (ms): ", self.nowInMilliseconds())
     print("read Value: ", valueString)
 
   def genericErrorCallback(self, error):
@@ -344,19 +286,31 @@ class dBusBluezConnection():
   def updateRegisteredServices(self,devicePath):
     self.updateCharacteristics()
 
+  def listenToPropertiesChanged(self):
+    self.systemBus.add_signal_receiver(self.propertiesChanged, dbus_interface = IFACE_PROPERTIES_DBUS,
+                        signal_name = "PropertiesChanged", arg0 = IFACE_DEVICE, path_keyword = "path")
+
+  def listenToInterfacesAdded(self):
+    self.systemBus.add_signal_receiver(self.interfacesAdded, dbus_interface = IFACE_OBJECT_MANAGER_DBUS,
+                        signal_name = "InterfacesAdded")
+
+  def interfacesAdded(self, path, interfaces):
+    print("TIMESTAMP (ms)- Interfaces Added : ", self.nowInMilliseconds())
+    try:
+      if dbus.String(IFACE_DEVICE) in interfaces:
+        self.launchThreadForNewDevice(path)
+      else:
+        print("An interface that was not a Device was added :) (interfacesAdded)")
+        print("it happened on path: ", path, "+- # -+ "*15)
+        prettyPrint(interfaces)
+        print("-"*90)
+    except Exception as e:
+      print(f"Exception in  -interfaces added-   was : {e}")
 
   def launchThreadForNewDevice(self,devicePath):
     prettyPrint(self.updateRegisteredDevices())
     self.counterTimeToConnect = time.time()
-    print("TIMESTAMP (ms) - asked to connect : ", nowInSecondsAndMilliseconds())
-    self.connectToDevice(devicePath)
-    #self.flagToExit = True
-
-
-  def launchThreadForNewDevice(self,devicePath):
-    prettyPrint(self.updateRegisteredDevices())
-    self.counterTimeToConnect = time.time()
-    print("TIMESTAMP (ms) - asked to connect : ", nowInSecondsAndMilliseconds())
+    print("TIMESTAMP (ms) - asked to connect : ", self.nowInMilliseconds())
     self.connectToDevice(devicePath)
     #self.flagToExit = True
 
@@ -384,9 +338,9 @@ class dBusBluezConnection():
     self.runShellCommand("echo $ADVMININTERVAL | sudo tee /sys/kernel/debug/bluetooth/hci0/adv_min_interval > /dev/null")
     self.runShellCommand("echo $ADVMAXINTERVAL | sudo tee /sys/kernel/debug/bluetooth/hci0/adv_max_interval > /dev/null")
 
-  # def runShellCommand(self, command):
-  #   try:
-  #     completed = subprocess.run(command.split())
-  #     loggerDEBUG(f'command {command} - returncode: {completed.returncode}')
-  #   except:
-  #     loggerERROR(f"error on method run shell command: {command}")       
+  def runShellCommand(self, command):
+    try:
+      completed = subprocess.run(command.split())
+      # print(f'command {command} - returncode: {completed.returncode}')
+    except:
+      print(f"error on method run shell command: {command}")       

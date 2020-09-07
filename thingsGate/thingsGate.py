@@ -12,8 +12,9 @@ import importlib
 loggerINFO(f'running on python version: {sys.version}')
 
 managedProcesses = {
-    "devicesManager": "bluetooth.devicesManager",
-    "newDevicesScout": "bluetooth.newDevicesScout",    
+    "bluetoothConnection": "bluetooth.bluetooth",
+    #"devicesManager": "bluetooth.devicesManager",
+    #"newDevicesScout": "bluetooth.newDevicesScout",    
 }
 
 greenTempProcesses = managedProcesses
