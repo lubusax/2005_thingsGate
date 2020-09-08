@@ -10,7 +10,7 @@ def bluetoothConnectionThread():
 
   myBluezConnection.connectThingsInTouchDevicesStoredLocally()
 
-  myBluezConnection.discoverThingsInTouchDevices()
+  #myBluezConnection.discoverThingsInTouchDevices()
 
   #while not myBluezConnection.flagToExit: time.sleep(0.5)
 

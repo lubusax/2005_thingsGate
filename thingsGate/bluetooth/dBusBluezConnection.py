@@ -100,34 +100,24 @@ class dBusBluezConnection():
 
   def connectToDevice(self,path):
     deviceInterface = self.deviceInterfacesWaitingForServicesResolved[path]   = self.getDeviceInterface(path)
-    loggerTIMESTAMP(f"asking to connect to device {path}")
+    loggerTIMESTAMP(Fore.RED+"ASK TO CONNECT "+ Fore.RESET+f" to device {path}")
     deviceInterface.Connect(path, dbus_interface=IFACE_DEVICE)
+    loggerTIMESTAMP(Fore.RED+"CONNECTED "+ Fore.RESET+f" to device {path}")
+    self.readCharacteristicStringValue( path, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC)
 
   def propertiesChanged(self, interface, changed, invalidated, path):
     loggerTIMESTAMP(f"Properties Changed on path {path}")
-    prettyPrint(changed)
-    #self.updateRegisteredDevices()
+    #prettyPrint(changed)
     try:
       for key in changed:
         if str(key) == "Connected":
-          loggerTIMESTAMP(f"Device on path {path} connected")
-          #self.registeredDevices[str(devicePath)]["Connected"] = bool(changed[dbus.String('Connected')])
-          #print("DEVÌCE CONNECTED - time ellapsed in seconds since asking to connect: ", int(time.time() - self.counterTimeToConnect))
+          loggerTIMESTAMP(f"DEVICE CONNECTED on path {path}")
         if str(key) == "ServicesResolved":
-          #print("SERVICES RESOLVED - time ellapsed in milliseconds since asking to connect: ", int(1000*(time.time() - self.counterTimeToConnect)))
           loggerTIMESTAMP(f"SERVICES RESOLVED on path {path}")
-          # servicesResolved =  bool(changed[key])
-          # self.ServicesResolved[path]= servicesResolved
-          # self.registeredDevices[str(devicePath)]["ServicesResolved"] =  servicesResolved 
-          # self.registeredDevices[str(devicePath)]["Services"] = self.getServicesOfDevice(devicePath)
-          # if servicesResolved and self.ensureDeviceKnown(devicePath):
-          #   self.establishBluetoothConnection(devicePath)
-          # else:
-          #   print ("No Bluetooth Connection Established")
     except KeyError:
-      loggerERROR(f"Device on path {path} was removed")
+      loggerERROR(f"DEVICE REMOVED on path {path}")
     except Exception as e:
-      loggerERROR(f"error in Properties Changed - Callback Method: {e}")
+      loggerERROR(f"ERROR in Properties Changed (callback method): {e}")
 
   def connectThingsInTouchDevicesStoredLocally(self):
     self.objects = self.objectManagerInterface.GetManagedObjects()
@@ -145,11 +135,18 @@ class dBusBluezConnection():
           "deviceInterface":  self.getDeviceInterface(path),
           "SerialNumber":     None}
         loggerDEBUG(f"ThingsInTouch device stored locally on path: {path}")
-        self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
-        if  UUID_GATESETUP_SERVICE not in self.thingsInTouchDevicesStoredLocally[str(path)]["Services"]:
-          loggerDEBUGdim(f"   ---- device on path {path} not connected")
+        services = self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
+        #prettyPrint(services)
+        gateServiceAvailable = UUID_GATESETUP_SERVICE in self.thingsInTouchDevicesStoredLocally[str(path)]["Services"]
+        loggerDEBUGdim(f"Gate Service Available: {gateServiceAvailable}")
+        if  gateServiceAvailable:
+          loggerDEBUGdim(f"CONNECT DEVICE on path {path}")
           self.connectToDevice(path)
-
+          
+        else:
+          loggerDEBUGdim(f"DEVICE NOT AVAILABLE TO CONNECT on path {path}")
+          #loggerDEBUGdim(f"   ---- delete local stored device on path {path}")
+          #self.deleteDevice(path)
           # else:
           #   print(f"   ---- services of connected devices")
           #   prettyPrint(self.registeredDevices[str(path)]["Services"])
@@ -158,8 +155,32 @@ class dBusBluezConnection():
   def alias(self, path):
     return str(self.objects[path][IFACE_DEVICE]["Alias"])
 
+  def deleteDevice(self, devicePath):
+    self.objects = self.objectManagerInterface.GetManagedObjects()
+    for path in self.objects:
+      if IFACE_ADAPTER in self.objects[path]:
+        loggerDEBUGdim(f"path (adapter object): {path} -- devicePath (to delete): {devicePath} ")
+        adapterObject =  self.systemBus.get_object(BLUEZ , path)
+        adapterProperties = adapterObject.GetAll(IFACE_ADAPTER, dbus_interface=IFACE_PROPERTIES_DBUS)
+        #adapterAddress = adapterProperties["Address"]
+        #deviceAddress = self.registeredDevices[devicePath]["Address"]
+        #print("Device Address: ",deviceAddress)
+        #print("Adapter Address: ",adapterAddress)
+        adapterInterface = dbus.Interface(adapterObject, IFACE_ADAPTER)
+        adapterInterface.RemoveDevice(devicePath)
+        #print("Device removed - Address: ",deviceAddress)
 
+  def readCharacteristicStringValue(self,devicePath, uuidService, uuidCharacteristic):
+    characteristicObject = self.thingsInTouchDevicesStoredLocally[str(devicePath)]["Services"][uuidService]["Characteristics"][uuidCharacteristic]["CharacteristicObject"]
+    characteristicObject.ReadValue({}, reply_handler= self.showReadStringValue,
+        error_handler=self.genericErrorCallback, dbus_interface=IFACE_GATT_CHARACTERISTIC)
 
+  def showReadStringValue(self, value):
+    valueString = ''.join([str(v) for v in value])
+    loggerTIMESTAMP(Fore.RED+"READ CHARACTERISTIC "+ Fore.RESET+f" Value {valueString}")
+
+  def genericErrorCallback(self, error):
+    print('D-Bus call failed: ' + str(error))
 
 
 
@@ -197,19 +218,7 @@ class dBusBluezConnection():
       self.deleteDevice(devicePath)
     self.updateRegisteredDevices()
 
-  def deleteDevice(self, devicePath):
-    self.objects = self.objectManagerInterface.GetManagedObjects()
-    for path in self.objects:
-      if IFACE_ADAPTER in self.objects[path]:
-        adapterObject =  self.systemBus.get_object(BLUEZ , path)
-        adapterProperties = adapterObject.GetAll(IFACE_ADAPTER, dbus_interface=IFACE_PROPERTIES_DBUS)
-        adapterAddress = adapterProperties["Address"]
-        deviceAddress = self.registeredDevices[devicePath]["Address"]
-        print("Device Address: ",deviceAddress)
-        print("Adapter Address: ",adapterAddress)
-        adapterInterface = dbus.Interface(adapterObject, IFACE_ADAPTER)
-        adapterInterface.RemoveDevice(devicePath)
-        print("Device removed - Address: ",deviceAddress)
+
 
     return True
 
@@ -307,18 +316,7 @@ class dBusBluezConnection():
     self.readCharacteristicStringValue( devicePath, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC) # async answer
 
 
-  def readCharacteristicStringValue(self,devicePath, uuidService, uuidCharacteristic):
-    characteristicObject = self.registeredDevices[str(devicePath)]["Services"][uuidService]["Characteristics"][uuidCharacteristic]["CharacteristicObject"]
-    characteristicObject.ReadValue({}, reply_handler= self.showReadStringValue,
-        error_handler=self.genericErrorCallback, dbus_interface=IFACE_GATT_CHARACTERISTIC)
 
-  def showReadStringValue(self, value):
-    valueString = ''.join([str(v) for v in value])
-    print("TIMESTAMP (ms): ", nowInSecondsAndMilliseconds())
-    print("read Value: ", valueString)
-
-  def genericErrorCallback(self, error):
-    print('D-Bus call failed: ' + str(error))
 
   def ensureDeviceKnown(self,path):
     # look into a list of known devices , checking the serial number

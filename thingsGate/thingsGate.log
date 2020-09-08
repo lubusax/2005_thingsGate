@@ -2074,3 +2074,795 @@ AttributeError: 'dBusBluezConnection' object has no attribute 'getDeviceInterfac
 <DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 54s 745ms[0m>      <root-logger.py-loggerDEBUG-line 13>
 <DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:54>     <[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 54s 748ms[0m>      <root-logger.py-loggerDEBUG-line 13>
 <DEBUG> <bluetoothConnection(5780)> <07-Sep-20 18:20:55>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 55s 138ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27460)> <08-Sep-20 13:32:03>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(27460)> <08-Sep-20 13:32:03>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(27460)> <08-Sep-20 13:32:03>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27460)> <08-Sep-20 13:32:03>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(27460)> <08-Sep-20 13:32:03>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27460)> <08-Sep-20 13:32:03>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(27460)> <08-Sep-20 13:32:03>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(27493)> <08-Sep-20 13:32:03>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 23s 584ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(27493)> <08-Sep-20 13:32:03>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(27493)> <08-Sep-20 13:32:04>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 24s 840ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27517)> <08-Sep-20 13:32:17>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(27517)> <08-Sep-20 13:32:17>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(27517)> <08-Sep-20 13:32:17>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27517)> <08-Sep-20 13:32:17>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(27517)> <08-Sep-20 13:32:18>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27517)> <08-Sep-20 13:32:18>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(27517)> <08-Sep-20 13:32:18>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(27550)> <08-Sep-20 13:32:18>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 38s 166ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(27550)> <08-Sep-20 13:32:18>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(27550)> <08-Sep-20 13:32:18>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 38s 956ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27817)> <08-Sep-20 13:35:32>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(27817)> <08-Sep-20 13:35:32>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(27817)> <08-Sep-20 13:35:32>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27817)> <08-Sep-20 13:35:32>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(27817)> <08-Sep-20 13:35:32>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(27817)> <08-Sep-20 13:35:32>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(27817)> <08-Sep-20 13:35:32>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(27850)> <08-Sep-20 13:35:32>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 32s 594ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(27850)> <08-Sep-20 13:35:32>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(27850)> <08-Sep-20 13:35:32>     <[2m   ---- gate Service Available - Stored Locally: False[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(27850)> <08-Sep-20 13:35:32>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 32s 702ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(28018)> <08-Sep-20 13:36:31>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(28018)> <08-Sep-20 13:36:31>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(28018)> <08-Sep-20 13:36:31>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(28018)> <08-Sep-20 13:36:31>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(28018)> <08-Sep-20 13:36:31>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(28018)> <08-Sep-20 13:36:31>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(28018)> <08-Sep-20 13:36:31>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(28051)> <08-Sep-20 13:36:31>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 91s 531ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28051)> <08-Sep-20 13:36:31>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28051)> <08-Sep-20 13:36:31>     <[2m   ---- gate Service Available - Stored Locally: False[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28051)> <08-Sep-20 13:36:31>     <[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28051)> <08-Sep-20 13:36:31>     <[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 91s 638ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28051)> <08-Sep-20 13:36:31>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 91s 715ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(28567)> <08-Sep-20 13:42:57>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(28567)> <08-Sep-20 13:42:57>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(28567)> <08-Sep-20 13:42:57>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(28567)> <08-Sep-20 13:42:57>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(28567)> <08-Sep-20 13:42:57>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(28567)> <08-Sep-20 13:42:57>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(28567)> <08-Sep-20 13:42:57>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:42:57>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 77s 841ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:42:57>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:42:57>     <[2m   ---- gate Service Available ,i.e. stored locally: False[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:42:57>     <[2m   ---- delete local stored device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:42:57>     <[2mpath (adapter object): /org/bluez/hci0 -- devicePath (to delete): /org/bluez/hci0/dev_B8_27_EB_4D_68_70 [0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:43:00>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 557ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:43:00>     <[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 559ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:43:00>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 580ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:43:00>     <[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 80s 583ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:43:00>     <[2mTIMESTAMP - Interfaces Added : 80s 778ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(28600)> <08-Sep-20 13:43:00>     <[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 782ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(29103)> <08-Sep-20 13:44:24>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(29103)> <08-Sep-20 13:44:24>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(29103)> <08-Sep-20 13:44:24>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(29103)> <08-Sep-20 13:44:24>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(29103)> <08-Sep-20 13:44:24>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(29103)> <08-Sep-20 13:44:24>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(29103)> <08-Sep-20 13:44:24>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:24>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 64s 863ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:24>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:24>     <[2m   ---- gate Service Available ,i.e. stored locally: False[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:24>     <[2m   ---- delete local stored device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:24>     <[2mpath (adapter object): /org/bluez/hci0 -- devicePath (to delete): /org/bluez/hci0/dev_B8_27_EB_4D_68_70 [0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:27>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 67s 557ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:27>     <[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 67s 559ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:27>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 67s 582ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:27>     <[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 67s 583ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:27>     <[2mTIMESTAMP - Interfaces Added : 67s 775ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29136)> <08-Sep-20 13:44:27>     <[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 67s 781ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(29862)> <08-Sep-20 13:48:20>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(29862)> <08-Sep-20 13:48:20>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(29862)> <08-Sep-20 13:48:20>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(29862)> <08-Sep-20 13:48:20>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(29862)> <08-Sep-20 13:48:20>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(29862)> <08-Sep-20 13:48:20>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(29862)> <08-Sep-20 13:48:20>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:20>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 0s 386ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:20>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:20>     <[2m   ---- gate Service Available ,i.e. stored locally: False[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:20>     <[2m   ---- delete local stored device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:20>     <[2mpath (adapter object): /org/bluez/hci0 -- devicePath (to delete): /org/bluez/hci0/dev_B8_27_EB_4D_68_70 [0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:22>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 2s 528ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:22>     <[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 2s 530ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:22>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 2s 557ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:22>     <[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 2s 559ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:22>     <[2mTIMESTAMP - Interfaces Added : 2s 751ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:22>     <[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 2s 758ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:35>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 15s 797ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:35>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 15s 800ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:35>     <[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 15s 802ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 378ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 382ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 386ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007/desc0009[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 393ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 401ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003d[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 412ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003f[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 418ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003f/desc0041[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 428ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char0042[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Interfaces Added : 16s 433ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char0044[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 16s 443ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 16s 446ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:36>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 16s 587ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:37>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 456ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(29895)> <08-Sep-20 13:48:46>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 419ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(30515)> <08-Sep-20 13:50:21>     <running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(30515)> <08-Sep-20 13:50:21>     <running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <MainProcess(30515)> <08-Sep-20 13:50:21>     <PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(30515)> <08-Sep-20 13:50:21>     <process number 0, preimporting bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <MainProcess(30515)> <08-Sep-20 13:50:21>     <starting manager thread>      <root-logger.py-loggerDEBUG-line 13>
+<INFO> <MainProcess(30515)> <08-Sep-20 13:50:21>     <green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>      <root-logger.py-loggerINFO-line 22>
+<INFO> <MainProcess(30515)> <08-Sep-20 13:50:21>     <starting python process bluetooth.bluetooth>      <root-logger.py-loggerINFO-line 22>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:21>     <[2mTIMESTAMP - __init__ class dBusBluezConnection : 21s 649ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:21>     <ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:21>     <[2m   ---- gate Service Available ,i.e. stored locally: False[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:21>     <[2m   ---- delete local stored device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:21>     <[2mpath (adapter object): /org/bluez/hci0 -- devicePath (to delete): /org/bluez/hci0/dev_B8_27_EB_4D_68_70 [0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:23>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 23s 529ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:23>     <[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 23s 531ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:23>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 23s 553ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:23>     <[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 23s 554ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:23>     <[2mTIMESTAMP - Interfaces Added : 23s 748ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:23>     <[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 23s 753ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:36>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 36s 795ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:36>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 36s 797ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:36>     <[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 36s 799ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 329ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 333ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 338ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007/desc0009[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 342ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 347ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003d[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 352ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003f[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 361ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003f/desc0041[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 365ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char0042[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Interfaces Added : 37s 368ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char0044[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 37s 373ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 37s 375ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:37>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 37s 488ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:38>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 38s 96ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+<DEBUG> <bluetoothConnection(30548)> <08-Sep-20 13:50:49>     <[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 49s 178ms[0m>      <root-logger.py-loggerDEBUG-line 13>
+INFO<MainProcess>08Sep13:54<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep13:54<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep13:54<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep13:54<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep13:54<starting manager thread>
+INFO<MainProcess>08Sep13:54<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep13:54<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - __init__ class dBusBluezConnection : 56s 116ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep13:54<[2m   ---- gate Service Available ,i.e. stored locally: False[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2m   ---- delete local stored device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mpath (adapter object): /org/bluez/hci0 -- devicePath (to delete): /org/bluez/hci0/dev_B8_27_EB_4D_68_70 [0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 58s 555ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 58s 558ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 58s 579ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 58s 582ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 58s 777ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 58s 783ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 71s 807ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 71s 809ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 71s 811ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 353ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 368ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 374ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007/desc0009[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 384ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 389ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003d[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 396ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003f[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 402ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003f/desc0041[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 406ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char0042[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Interfaces Added : 72s 410ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char0044[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 72s 413ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 72s 416ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 72s 503ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 73s 140ms[0m>
+DEBUG<bluetoothConnection>08Sep13:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 82s 96ms[0m>
+INFO<MainProcess>08Sep13:56<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep13:56<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep13:56<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep13:56<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep13:56<starting manager thread>
+INFO<MainProcess>08Sep13:56<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep13:56<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep13:56<[2mTIMESTAMP - __init__ class dBusBluezConnection : 14s 943ms[0m>
+DEBUG<bluetoothConnection>08Sep13:56<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep13:56<[2m   ---- gate Service Available ,i.e. stored locally: False[0m>
+DEBUG<bluetoothConnection>08Sep13:56<[2m   ---- delete local stored device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep13:56<[2mpath (adapter object): /org/bluez/hci0 -- devicePath (to delete): /org/bluez/hci0/dev_B8_27_EB_4D_68_70 [0m>
+DEBUG<bluetoothConnection>08Sep13:56<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 565ms[0m>
+DEBUG<bluetoothConnection>08Sep13:56<[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 567ms[0m>
+DEBUG<bluetoothConnection>08Sep13:56<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 592ms[0m>
+DEBUG<bluetoothConnection>08Sep13:56<[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 17s 594ms[0m>
+DEBUG<bluetoothConnection>08Sep13:56<[2mTIMESTAMP - Interfaces Added : 17s 783ms[0m>
+DEBUG<bluetoothConnection>08Sep13:56<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 788ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 30s 839ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 30s 842ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 30s 845ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 412ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 416ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 422ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007/desc0009[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 428ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 433ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003d[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 437ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003f[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 441ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char003f/desc0041[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 445ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char0042[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Interfaces Added : 31s 448ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service003c/char0044[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 31s 452ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 31s 455ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 31s 589ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 32s 496ms[0m>
+DEBUG<bluetoothConnection>08Sep13:57<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 732ms[0m>
+INFO<MainProcess>08Sep13:58<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep13:58<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep13:58<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep13:58<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep13:58<starting manager thread>
+INFO<MainProcess>08Sep13:58<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep13:58<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep13:58<[2mTIMESTAMP - __init__ class dBusBluezConnection : 83s 587ms[0m>
+DEBUG<bluetoothConnection>08Sep13:58<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep13:58<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep13:58<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep13:58<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 83s 656ms[0m>
+DEBUG<bluetoothConnection>08Sep13:58<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 85s 70ms[0m>
+DEBUG<bluetoothConnection>08Sep13:58<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 95s 355ms[0m>
+DEBUG<bluetoothConnection>08Sep13:58<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 5s 585ms[0m>
+INFO<MainProcess>08Sep13:58<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep13:58<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep13:58<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep13:58<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep13:58<starting manager thread>
+INFO<MainProcess>08Sep13:58<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep13:58<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep13:58<[2mTIMESTAMP - __init__ class dBusBluezConnection : 38s 544ms[0m>
+DEBUG<bluetoothConnection>08Sep13:58<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep13:58<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep13:58<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep13:58<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 38s 671ms[0m>
+INFO<MainProcess>08Sep13:59<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep13:59<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep13:59<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep13:59<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep13:59<starting manager thread>
+INFO<MainProcess>08Sep13:59<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep13:59<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep13:59<[2mTIMESTAMP - __init__ class dBusBluezConnection : 75s 126ms[0m>
+DEBUG<bluetoothConnection>08Sep13:59<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep13:59<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep13:59<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep13:59<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 75s 248ms[0m>
+INFO<MainProcess>08Sep13:59<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep13:59<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep13:59<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep13:59<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep13:59<starting manager thread>
+INFO<MainProcess>08Sep13:59<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep13:59<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep13:59<[2mTIMESTAMP - __init__ class dBusBluezConnection : 91s 265ms[0m>
+DEBUG<bluetoothConnection>08Sep13:59<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep13:59<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep13:59<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep13:59<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 91s 333ms[0m>
+DEBUG<bluetoothConnection>08Sep13:59<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 91s 716ms[0m>
+DEBUG<bluetoothConnection>08Sep14:00<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 4s 547ms[0m>
+DEBUG<bluetoothConnection>08Sep14:00<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 14s 666ms[0m>
+INFO<MainProcess>08Sep14:00<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep14:00<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep14:00<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep14:00<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep14:00<starting manager thread>
+INFO<MainProcess>08Sep14:00<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep14:00<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep14:00<[2mTIMESTAMP - __init__ class dBusBluezConnection : 48s 184ms[0m>
+DEBUG<bluetoothConnection>08Sep14:00<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep14:00<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep14:00<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep14:00<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 48s 249ms[0m>
+DEBUG<bluetoothConnection>08Sep14:00<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 51s 953ms[0m>
+DEBUG<bluetoothConnection>08Sep14:00<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 59s 589ms[0m>
+DEBUG<bluetoothConnection>08Sep14:01<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 71s 131ms[0m>
+INFO<MainProcess>08Sep14:29<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep14:29<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep14:29<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep14:29<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep14:29<starting manager thread>
+INFO<MainProcess>08Sep14:29<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep14:29<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep14:29<[2mTIMESTAMP - __init__ class dBusBluezConnection : 69s 602ms[0m>
+DEBUG<bluetoothConnection>08Sep14:29<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep14:29<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep14:29<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep14:29<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 69s 722ms[0m>
+INFO<MainProcess>08Sep17:54<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep17:54<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep17:54<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep17:54<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep17:54<starting manager thread>
+INFO<MainProcess>08Sep17:54<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep17:54<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep17:54<[2mTIMESTAMP - __init__ class dBusBluezConnection : 85s 760ms[0m>
+DEBUG<bluetoothConnection>08Sep17:54<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep17:54<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep17:54<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep17:54<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 85s 826ms[0m>
+DEBUG<bluetoothConnection>08Sep17:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 86s 911ms[0m>
+DEBUG<bluetoothConnection>08Sep17:54<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 98s 461ms[0m>
+DEBUG<bluetoothConnection>08Sep17:55<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 8s 728ms[0m>
+INFO<MainProcess>08Sep17:56<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep17:56<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep17:56<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep17:56<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep17:56<starting manager thread>
+INFO<MainProcess>08Sep17:56<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep17:56<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep17:56<[2mTIMESTAMP - __init__ class dBusBluezConnection : 64s 612ms[0m>
+DEBUG<bluetoothConnection>08Sep17:56<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep17:56<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep17:56<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep17:56<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 685ms[0m>
+DEBUG<bluetoothConnection>08Sep17:56<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 65s 185ms[0m>
+DEBUG<bluetoothConnection>08Sep17:56<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 76s 739ms[0m>
+DEBUG<bluetoothConnection>08Sep17:56<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 87s 261ms[0m>
+INFO<MainProcess>08Sep17:58<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep17:58<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep17:58<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep17:58<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep17:58<starting manager thread>
+INFO<MainProcess>08Sep17:58<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep17:58<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep17:58<[2mTIMESTAMP - __init__ class dBusBluezConnection : 32s 534ms[0m>
+DEBUG<bluetoothConnection>08Sep17:58<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep17:58<[2m   ---- gate Service Available ,i.e. stored locally: False[0m>
+DEBUG<bluetoothConnection>08Sep17:58<[2m   ---- delete local stored device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep17:58<[2mpath (adapter object): /org/bluez/hci0 -- devicePath (to delete): /org/bluez/hci0/dev_B8_27_EB_4D_68_70 [0m>
+DEBUG<bluetoothConnection>08Sep17:58<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 34s 527ms[0m>
+DEBUG<bluetoothConnection>08Sep17:58<[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 34s 539ms[0m>
+DEBUG<bluetoothConnection>08Sep17:58<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 34s 550ms[0m>
+DEBUG<bluetoothConnection>08Sep17:58<[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 34s 552ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 45s 998ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 46s 3ms[0m>
+ERROR<bluetoothConnection>08Sep17:59<Exception in  -interfaces added-: '5468696e-6773-496e-546f-756368000100'>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 59s 34ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 59s 39ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 connected : 59s 41ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 52ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 56ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 59ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007/desc0009[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 64ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0050[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 67ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0050/char0051[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 71ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0050/char0053[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 74ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0050/char0053/desc0055[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 77ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0050/char0056[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Interfaces Added : 60s 80ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0050/char0058[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 60s 83ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 60s 85ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 60s 216ms[0m>
+DEBUG<bluetoothConnection>08Sep17:59<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 60s 841ms[0m>
+INFO<MainProcess>08Sep18:02<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep18:02<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep18:02<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep18:02<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep18:02<starting manager thread>
+INFO<MainProcess>08Sep18:02<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep18:02<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep18:02<[2mTIMESTAMP - __init__ class dBusBluezConnection : 65s 256ms[0m>
+DEBUG<bluetoothConnection>08Sep18:02<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep18:02<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep18:02<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep18:02<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 65s 405ms[0m>
+DEBUG<bluetoothConnection>08Sep18:02<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 68s 412ms[0m>
+DEBUG<bluetoothConnection>08Sep18:02<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 77s 397ms[0m>
+INFO<MainProcess>08Sep18:03<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep18:03<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep18:03<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep18:03<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep18:03<starting manager thread>
+INFO<MainProcess>08Sep18:03<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep18:03<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - __init__ class dBusBluezConnection : 87s 652ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 87s 662ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep18:03<[2m   ---- gate Service Available ,i.e. stored locally: True[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2m   ---- connect device on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - asking to connect to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 87s 737ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 1s 10ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 1s 10ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 13s 324ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 13s 324ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 21s 24ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 21s 24ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 32s 595ms[0m>
+DEBUG<bluetoothConnection>08Sep18:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 32s 595ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 44s 111ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 44s 111ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 54s 376ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 54s 376ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 645ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 645ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 76s 188ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 76s 188ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 87s 735ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 87s 735ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 98s 150ms[0m>
+DEBUG<bluetoothConnection>08Sep18:04<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 98s 150ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 9s 587ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 9s 587ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 19s 834ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 19s 834ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 32s 677ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 32s 677ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 655ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 655ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 53s 200ms[0m>
+DEBUG<bluetoothConnection>08Sep18:05<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 53s 200ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 744ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 744ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 75s 11ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 75s 11ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 87s 853ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 87s 853ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 96s 832ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 96s 832ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 8s 637ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 8s 637ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 662ms[0m>
+DEBUG<bluetoothConnection>08Sep18:06<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 662ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 30s 204ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 30s 204ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 43s 38ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 43s 38ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 52s 23ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 52s 23ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 859ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 859ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 75s 118ms[0m>
+DEBUG<bluetoothConnection>08Sep18:07<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 75s 118ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 85s 382ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 85s 382ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 95s 651ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 95s 651ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 8s 486ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 8s 486ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 805ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 805ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 29s 165ms[0m>
+DEBUG<bluetoothConnection>08Sep18:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 29s 165ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 967ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 967ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 50s 836ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 50s 836ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 62s 386ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 62s 386ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 72s 642ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 72s 642ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 84s 221ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 84s 221ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 95s 740ms[0m>
+DEBUG<bluetoothConnection>08Sep18:09<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 95s 740ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 9s 849ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 9s 849ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 546ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 546ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 29s 101ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 29s 101ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 39s 367ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 39s 367ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 49s 639ms[0m>
+DEBUG<bluetoothConnection>08Sep18:10<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 49s 639ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 61s 198ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 61s 202ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 72s 746ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 72s 746ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 86s 852ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 86s 854ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 95s 827ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 95s 827ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 6s 90ms[0m>
+DEBUG<bluetoothConnection>08Sep18:11<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 6s 90ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 20s 212ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 20s 212ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 630ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 630ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 38s 211ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 38s 211ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 49s 732ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 49s 732ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 62s 349ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 62s 349ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 71s 547ms[0m>
+DEBUG<bluetoothConnection>08Sep18:12<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 71s 547ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 81s 819ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 81s 819ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 93s 380ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 93s 380ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 784ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 786ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 15s 267ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 15s 267ms[0m>
+INFO<MainProcess>08Sep18:13<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep18:13<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep18:13<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep18:13<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep18:13<starting manager thread>
+INFO<MainProcess>08Sep18:13<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep18:13<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - __init__ class dBusBluezConnection : 25s 81ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep18:13<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mCONNECT DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 25s 188ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 25s 195ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 25s 317ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 892ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 892ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 894ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 37s 6ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 37s 6ms[0m>
+DEBUG<bluetoothConnection>08Sep18:13<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 37s 8ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 50s 51ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 50s 51ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 50s 51ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 58s 931ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 58s 931ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 70s 370ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 70s 370ms[0m>
+INFO<MainProcess>08Sep18:14<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep18:14<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep18:14<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep18:14<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep18:14<starting manager thread>
+INFO<MainProcess>08Sep18:14<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep18:14<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - __init__ class dBusBluezConnection : 78s 252ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep18:14<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mCONNECT DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 78s 309ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 78s 313ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 78s 405ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 638ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 638ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 641ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 93s 474ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 93s 474ms[0m>
+DEBUG<bluetoothConnection>08Sep18:14<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 93s 477ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 975ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 977ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 975ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 14s 10ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 14s 10ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 25s 769ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 25s 769ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 35s 808ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 35s 808ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 49s 325ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 49s 325ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 57s 611ms[0m>
+DEBUG<bluetoothConnection>08Sep18:15<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 57s 611ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 69s 157ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 69s 157ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 702ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 702ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 90s 963ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 90s 963ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 2s 504ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 2s 504ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 12s 767ms[0m>
+DEBUG<bluetoothConnection>08Sep18:16<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 12s 767ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 25s 598ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 25s 598ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 34s 580ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 34s 580ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 46s 127ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 46s 127ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 57s 671ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 57s 671ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 69s 214ms[0m>
+DEBUG<bluetoothConnection>08Sep18:17<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 69s 214ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 89s 738ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 89s 738ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 1s 289ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 1s 289ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 11s 559ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 11s 559ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 23s 192ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 23s 192ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 35s 343ms[0m>
+DEBUG<bluetoothConnection>08Sep18:18<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 35s 343ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 44s 929ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 44s 929ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 56s 464ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 56s 464ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 70s 572ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 70s 572ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 78s 276ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 78s 276ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 88s 529ms[0m>
+DEBUG<bluetoothConnection>08Sep18:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 88s 529ms[0m>
+DEBUG<bluetoothConnection>08Sep18:20<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 0s 93ms[0m>
+DEBUG<bluetoothConnection>08Sep18:20<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 0s 93ms[0m>
+DEBUG<bluetoothConnection>08Sep18:20<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 11s 638ms[0m>
+DEBUG<bluetoothConnection>08Sep18:20<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 11s 638ms[0m>
+DEBUG<bluetoothConnection>08Sep18:20<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 21s 904ms[0m>
+DEBUG<bluetoothConnection>08Sep18:20<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 21s 904ms[0m>
+DEBUG<bluetoothConnection>08Sep18:20<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 33s 885ms[0m>
+INFO<MainProcess>08Sep18:22<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep18:22<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep18:22<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep18:22<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep18:22<starting manager thread>
+INFO<MainProcess>08Sep18:22<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep18:22<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep18:22<[2mTIMESTAMP - __init__ class dBusBluezConnection : 68s 618ms[0m>
+DEBUG<bluetoothConnection>08Sep18:22<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep18:22<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>08Sep18:22<[2mCONNECT DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep18:22<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 68s 684ms[0m>
+DEBUG<bluetoothConnection>08Sep18:22<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 68s 688ms[0m>
+DEBUG<bluetoothConnection>08Sep18:22<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 68s 784ms[0m>
+INFO<MainProcess>08Sep18:27<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep18:27<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep18:27<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep18:27<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep18:27<starting manager thread>
+INFO<MainProcess>08Sep18:27<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep18:27<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep18:27<[2mTIMESTAMP - __init__ class dBusBluezConnection : 26s 554ms[0m>
+DEBUG<bluetoothConnection>08Sep18:27<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep18:27<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>08Sep18:27<[2mDEVICE NOT AVAILABLE TO CONNECT on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+INFO<MainProcess>08Sep18:27<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep18:27<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep18:27<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep18:27<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep18:27<starting manager thread>
+INFO<MainProcess>08Sep18:27<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep18:27<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep18:27<[2mTIMESTAMP - __init__ class dBusBluezConnection : 44s 767ms[0m>
+DEBUG<bluetoothConnection>08Sep18:27<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep18:27<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>08Sep18:27<[2mCONNECT DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep18:27<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 44s 830ms[0m>
+DEBUG<bluetoothConnection>08Sep18:27<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 44s 834ms[0m>
+DEBUG<bluetoothConnection>08Sep18:27<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 44s 902ms[0m>
+DEBUG<bluetoothConnection>08Sep18:27<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 53s 503ms[0m>
+INFO<MainProcess>08Sep18:42<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep18:42<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep18:42<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep18:42<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep18:42<starting manager thread>
+INFO<MainProcess>08Sep18:42<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep18:42<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep18:42<[2mTIMESTAMP - __init__ class dBusBluezConnection : 66s 965ms[0m>
+DEBUG<bluetoothConnection>08Sep18:42<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep18:42<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>08Sep18:42<[2mDEVICE NOT AVAILABLE TO CONNECT on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+INFO<MainProcess>08Sep19:19<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep19:19<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep19:19<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep19:19<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep19:19<starting manager thread>
+INFO<MainProcess>08Sep19:19<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep19:19<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep19:19<[2mTIMESTAMP - __init__ class dBusBluezConnection : 84s 320ms[0m>
+DEBUG<bluetoothConnection>08Sep19:19<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep19:19<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>08Sep19:19<[2mDEVICE NOT AVAILABLE TO CONNECT on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+INFO<MainProcess>08Sep19:20<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep19:20<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep19:20<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep19:20<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep19:20<starting manager thread>
+INFO<MainProcess>08Sep19:20<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep19:20<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep19:20<[2mTIMESTAMP - __init__ class dBusBluezConnection : 10s 490ms[0m>
+DEBUG<bluetoothConnection>08Sep19:20<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep19:20<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>08Sep19:20<[2mCONNECT DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep19:20<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 10s 565ms[0m>
+INFO<MainProcess>08Sep19:21<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep19:21<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep19:21<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep19:21<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep19:21<starting manager thread>
+INFO<MainProcess>08Sep19:21<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep19:21<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - __init__ class dBusBluezConnection : 67s 861ms[0m>
+DEBUG<bluetoothConnection>08Sep19:21<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep19:21<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>08Sep19:21<[2mCONNECT DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 67s 922ms[0m>
+DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 67s 926ms[0m>
+DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 68s 12ms[0m>
+INFO<MainProcess>08Sep19:21<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>08Sep19:21<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>08Sep19:21<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>08Sep19:21<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>08Sep19:21<starting manager thread>
+INFO<MainProcess>08Sep19:21<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>08Sep19:21<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - __init__ class dBusBluezConnection : 82s 468ms[0m>
+DEBUG<bluetoothConnection>08Sep19:21<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>08Sep19:21<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>08Sep19:21<[2mCONNECT DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 82s 529ms[0m>
+DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 82s 533ms[0m>
+DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 82s 589ms[0m>
