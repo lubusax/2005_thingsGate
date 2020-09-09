@@ -16,10 +16,11 @@ from colorama import Fore, Back, Style
 # Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 # Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
-from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL, loggerDEBUGdim, loggerTIMESTAMP
+from log.logger import loggerTIMESTAMPred, loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL, loggerDEBUGdim, loggerTIMESTAMP, loggerDEBUGredDIM
 from common.common import nowInSecondsAndMilliseconds, runShellCommand
+from messaging.messaging import Replier, Requester, cleanPort
 
-
+#########################################################
 BLUEZ 															= 'org.bluez'
 IFACE_OBJECT_MANAGER_DBUS						= 'org.freedesktop.DBus.ObjectManager'
 IFACE_PROPERTIES_DBUS								= "org.freedesktop.DBus.Properties"
@@ -59,7 +60,12 @@ class dBusBluezConnection():
     self.adapterInterface           = dbus.Interface( self.hci0,   IFACE_ADAPTER)
     self.objectManagerInterface     = dbus.Interface(self.bluez, IFACE_OBJECT_MANAGER_DBUS)
 
-    self.deviceInterfacesWaitingForServicesResolved = {}
+    #self.deviceInterfacesWaitingForServicesResolved = {}
+
+    self.portReplierServicesResolved   = "5565"
+    cleanPort(self.portReplierServicesResolved)
+    self.deviceReadyReceiverAndReplier = Replier(self.portReplierServicesResolved) # device ready means connected and services resolved
+    self.servicesResolvedAnnouncer     = Requester(self.portReplierServicesResolved)
 
     self.listenToPropertiesChanged()
     self.listenToInterfacesAdded()
@@ -89,31 +95,53 @@ class dBusBluezConnection():
     try:
       if dbus.String(IFACE_DEVICE) in interfaces:
         self.connectToDevice(path)
-      else:
-        loggerDEBUGdim(f"An interface that was not a Device was added on path: {path}")
+      elif dbus.String(IFACE_GATT_CHARACTERISTIC) in interfaces:
+        if str(interfaces[dbus.String(IFACE_GATT_CHARACTERISTIC)][dbus.String('UUID')])==UUID_SERIAL_NUMBER_CHARACTERISTIC:
+          loggerDEBUGredDIM("SERIAL NUMBER CHARACTERISTIC Interface available", "trying to connect")
+          devicePath = self.convertPathToDevicePath(path)
+          self.connectToDevice(devicePath)
+          replyFromConnectingMethod = self.servicesResolvedAnnouncer.send(devicePath)
+          loggerTIMESTAMPred("SERIAL NUMBER CHARACTERISTIC triggered CONNECTION", f" on path {path} and acknowledged from Connecting Method {replyFromConnectingMethod} ")
+
+      loggerDEBUGdim(f"An interface was added on path: {path}")
+      prettyPrint(interfaces)
     except Exception as e:
       loggerERROR(f"Exception in  -interfaces added-: {e}")
+
+  def convertPathToDevicePath(self, path):
+    try:
+      pathSplitted = path.split("/service")
+      loggerDEBUGdim(f"index {pathSplitted}")
+      devicePath = pathSplitted[0]
+      loggerDEBUGdim(f"path: {path}; device path {devicePath}")
+      return devicePath
+    except Exception as e:
+      loggerERROR(f"ERROR converting to device path: {e}")
+
 
   def getDeviceInterface(self, path):
     deviceObject = self.systemBus.get_object( BLUEZ, path)
     return dbus.Interface( deviceObject, IFACE_DEVICE)
 
   def connectToDevice(self,path):
-    deviceInterface = self.deviceInterfacesWaitingForServicesResolved[path]   = self.getDeviceInterface(path)
-    loggerTIMESTAMP(Fore.RED+"ASK TO CONNECT "+ Fore.RESET+f" to device {path}")
-    deviceInterface.Connect(path, dbus_interface=IFACE_DEVICE)
-    loggerTIMESTAMP(Fore.RED+"CONNECTED "+ Fore.RESET+f" to device {path}")
-    self.readCharacteristicStringValue( path, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC)
+    try:
+      deviceInterface = self.getDeviceInterface(path)
+      loggerTIMESTAMPred("ASK TO CONNECT ",f" to device {path}")
+      deviceInterface.Connect(path, dbus_interface=IFACE_DEVICE)
+      loggerTIMESTAMPred("CONNECTED",f" to device {path}")
+    except Exception as e:
+      loggerERROR(f"ERROR on method Connect to Device: {e}")
 
   def propertiesChanged(self, interface, changed, invalidated, path):
     loggerTIMESTAMP(f"Properties Changed on path {path}")
-    #prettyPrint(changed)
+    prettyPrint(changed)
     try:
       for key in changed:
         if str(key) == "Connected":
-          loggerTIMESTAMP(f"DEVICE CONNECTED on path {path}")
+          loggerTIMESTAMPred("DEVICE CONNECTED", f"on path {path}")
         if str(key) == "ServicesResolved":
-          loggerTIMESTAMP(f"SERVICES RESOLVED on path {path}")
+          replyFromConnectingMethod = self.servicesResolvedAnnouncer.send(path)
+          loggerTIMESTAMPred("SERVICES RESOLVED", f" on path {path} and acknowledged from Connecting Method {replyFromConnectingMethod} ")
     except KeyError:
       loggerERROR(f"DEVICE REMOVED on path {path}")
     except Exception as e:
@@ -136,21 +164,34 @@ class dBusBluezConnection():
           "SerialNumber":     None}
         loggerDEBUG(f"ThingsInTouch device stored locally on path: {path}")
         services = self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
-        #prettyPrint(services)
+        prettyPrint(services)
         gateServiceAvailable = UUID_GATESETUP_SERVICE in self.thingsInTouchDevicesStoredLocally[str(path)]["Services"]
         loggerDEBUGdim(f"Gate Service Available: {gateServiceAvailable}")
         if  gateServiceAvailable:
-          loggerDEBUGdim(f"CONNECT DEVICE on path {path}")
+          loggerDEBUGredDIM("SERVICES AVAILABLE",f"on path {path}")
           self.connectToDevice(path)
-          
+          self.readCharacteristicStringValue( path, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC)
+          return f"DEVICE sucessfully connected on path {path}"
         else:
-          loggerDEBUGdim(f"DEVICE NOT AVAILABLE TO CONNECT on path {path}")
-          #loggerDEBUGdim(f"   ---- delete local stored device on path {path}")
-          #self.deleteDevice(path)
-          # else:
-          #   print(f"   ---- services of connected devices")
-          #   prettyPrint(self.registeredDevices[str(path)]["Services"])
-          #   self.establishBluetoothConnection(path)
+          loggerDEBUGredDIM("SERVICES NOT AVAILABLE",f" on path {path}")
+          try:
+            #self.connectToDevice(path)
+            self.waitForServicesResolved(path)
+            self.readCharacteristicStringValue( path, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC)
+            return f"DEVICE sucessfully connected on path {path}"
+            #return f"DEVICE sucessfully connected and services resolved on path {path}"
+
+          except Exception as e:
+            return f"unable to connect DEVICE on path {path} with exception {e}"
+
+  def waitForServicesResolved(self, path):
+    servicesResolved = False
+    while not servicesResolved:
+      pathResolved = self.deviceReadyReceiverAndReplier.receive()
+      if pathResolved == path:
+        servicesResolved = True
+        loggerINFO(f"Services Resolved on path: {path}, resuming connect procedure after waiting")
+        self.deviceReadyReceiverAndReplier.reply("OK")
 
   def alias(self, path):
     return str(self.objects[path][IFACE_DEVICE]["Alias"])

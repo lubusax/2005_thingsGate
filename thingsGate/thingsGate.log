@@ -2866,3 +2866,1202 @@ DEBUG<bluetoothConnection>08Sep19:21<[2mCONNECT DEVICE on path /org/bluez/hci0/
 DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 82s 529ms[0m>
 DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 82s 533ms[0m>
 DEBUG<bluetoothConnection>08Sep19:21<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 82s 589ms[0m>
+INFO<MainProcess>09Sep10:41<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep10:41<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep10:41<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep10:41<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep10:41<starting manager thread>
+INFO<MainProcess>09Sep10:41<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep10:41<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep10:41<[2mTIMESTAMP - __init__ class dBusBluezConnection : 18s 820ms[0m>
+DEBUG<bluetoothConnection>09Sep10:41<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep10:41<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep10:41<[2mCONNECT DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep10:41<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 880ms[0m>
+DEBUG<bluetoothConnection>09Sep10:41<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 885ms[0m>
+DEBUG<bluetoothConnection>09Sep10:41<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 18s 968ms[0m>
+INFO<MainProcess>09Sep10:45<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep10:45<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep10:45<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep10:45<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep10:45<starting manager thread>
+INFO<MainProcess>09Sep10:45<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep10:45<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep10:45<[2mTIMESTAMP - __init__ class dBusBluezConnection : 27s 618ms[0m>
+DEBUG<bluetoothConnection>09Sep10:45<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep10:45<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep10:45<[2mDEVICE NOT AVAILABLE TO CONNECT on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+INFO<MainProcess>09Sep10:46<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep10:46<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep10:46<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep10:46<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep10:46<starting manager thread>
+INFO<MainProcess>09Sep10:46<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep10:46<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep10:46<[2mTIMESTAMP - __init__ class dBusBluezConnection : 65s 24ms[0m>
+DEBUG<bluetoothConnection>09Sep10:46<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep10:46<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep10:46<[2mDEVICE NOT AVAILABLE TO CONNECT on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+INFO<MainProcess>09Sep10:46<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep10:46<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep10:46<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep10:46<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep10:46<starting manager thread>
+INFO<MainProcess>09Sep10:46<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep10:46<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep10:46<[2mTIMESTAMP - __init__ class dBusBluezConnection : 79s 206ms[0m>
+DEBUG<bluetoothConnection>09Sep10:46<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep10:46<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep10:46<[2mDEVICE NOT AVAILABLE TO CONNECT on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+INFO<MainProcess>09Sep10:46<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep10:46<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep10:46<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep10:46<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep10:46<starting manager thread>
+INFO<MainProcess>09Sep10:46<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep10:46<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep10:46<[2mTIMESTAMP - __init__ class dBusBluezConnection : 93s 401ms[0m>
+DEBUG<bluetoothConnection>09Sep10:46<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep10:46<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep10:46<[2mDEVICE NOT AVAILABLE TO CONNECT on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+INFO<MainProcess>09Sep10:51<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep10:51<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep10:51<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep10:51<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep10:51<starting manager thread>
+INFO<MainProcess>09Sep10:51<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep10:51<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep10:51<[2mTIMESTAMP - __init__ class dBusBluezConnection : 14s 11ms[0m>
+DEBUG<bluetoothConnection>09Sep10:51<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep10:51<[2mGate Service Available: False[0m>
+INFO<MainProcess>09Sep10:52<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep10:52<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep10:52<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep10:52<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep10:52<starting manager thread>
+INFO<MainProcess>09Sep10:52<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep10:52<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep10:52<[2mTIMESTAMP - __init__ class dBusBluezConnection : 60s 510ms[0m>
+DEBUG<bluetoothConnection>09Sep10:52<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep10:52<[2mGate Service Available: False[0m>
+INFO<MainProcess>09Sep10:52<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep10:52<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep10:52<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep10:52<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep10:52<starting manager thread>
+INFO<MainProcess>09Sep10:52<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep10:52<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep10:52<[2mTIMESTAMP - __init__ class dBusBluezConnection : 75s 521ms[0m>
+DEBUG<bluetoothConnection>09Sep10:52<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep10:52<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep10:52<[2m[31mDEVICE NOT AVAILABLE TO CONNECT[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+INFO<MainProcess>09Sep11:08<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep11:08<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep11:08<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep11:08<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep11:08<starting manager thread>
+INFO<MainProcess>09Sep11:08<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep11:08<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - __init__ class dBusBluezConnection : 87s 232ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep11:08<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2m[31mDEVICE NOT AVAILABLE TO CONNECT[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 87s 289ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 88s 952ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - DEVICE CONNECTED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 88s 954ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 89s 243ms[0m>
+INFO<bluetoothConnection>09Sep11:08<[2m[31munable to connect DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 with exception '5468696e-6773-496e-546f-756368000100'[39m[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 89s 625ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 232ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 235ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 240ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0006/char0007/desc0009[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 244ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0078[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 248ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0078/char0079[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 253ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0078/char007b[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 257ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0078/char007b/desc007d[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 260ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0078/char007e[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Interfaces Added : 91s 265ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0078/char0080[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 91s 268ms[0m>
+DEBUG<bluetoothConnection>09Sep11:08<[2mTIMESTAMP - SERVICES RESOLVED on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 91s 270ms[0m>
+INFO<MainProcess>09Sep11:09<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep11:09<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep11:09<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep11:09<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep11:09<starting manager thread>
+INFO<MainProcess>09Sep11:09<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep11:09<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep11:09<[2mTIMESTAMP - __init__ class dBusBluezConnection : 63s 216ms[0m>
+DEBUG<bluetoothConnection>09Sep11:09<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep11:09<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep11:09<[2m[31mCONNECT DEVICE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep11:09<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 63s 359ms[0m>
+DEBUG<bluetoothConnection>09Sep11:09<[2mTIMESTAMP - [31mCONNECTED [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 63s 368ms[0m>
+INFO<bluetoothConnection>09Sep11:09<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep11:09<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 63s 460ms[0m>
+INFO<MainProcess>09Sep12:22<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep12:22<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep12:22<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep12:22<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep12:22<starting manager thread>
+INFO<MainProcess>09Sep12:22<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep12:22<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep12:22<[2mTIMESTAMP - __init__ class dBusBluezConnection : 53s 704ms[0m>
+INFO<MainProcess>09Sep12:23<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep12:23<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep12:23<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep12:23<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep12:23<starting manager thread>
+INFO<MainProcess>09Sep12:23<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep12:23<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep12:23<[2mTIMESTAMP - __init__ class dBusBluezConnection : 96s 929ms[0m>
+INFO<MainProcess>09Sep12:23<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep12:23<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep12:23<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep12:23<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep12:23<starting manager thread>
+INFO<MainProcess>09Sep12:23<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep12:23<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep12:23<[2mTIMESTAMP - __init__ class dBusBluezConnection : 38s 198ms[0m>
+DEBUG<bluetoothConnection>09Sep12:23<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep12:23<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep12:23<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep12:23<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep12:23<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 38s 377ms[0m>
+INFO<MainProcess>09Sep12:35<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep12:35<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep12:35<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep12:35<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep12:35<starting manager thread>
+INFO<MainProcess>09Sep12:35<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep12:35<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep12:35<[2mTIMESTAMP - __init__ class dBusBluezConnection : 41s 276ms[0m>
+DEBUG<bluetoothConnection>09Sep12:35<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep12:35<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep12:35<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep12:35<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep12:35<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 468ms[0m>
+DEBUG<bluetoothConnection>09Sep12:35<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 477ms[0m>
+INFO<bluetoothConnection>09Sep12:35<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep12:35<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 41s 546ms[0m>
+INFO<MainProcess>09Sep12:36<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep12:36<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep12:36<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep12:36<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep12:36<starting manager thread>
+INFO<MainProcess>09Sep12:36<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep12:36<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - __init__ class dBusBluezConnection : 68s 62ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep12:36<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep12:36<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2m[31mSERVICES NOT AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 68s 204ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 68s 211ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 77s 937ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - Interfaces Added : 77s 967ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0082[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - Interfaces Added : 77s 971ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0082/char0083[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - Interfaces Added : 77s 974ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0082/char0085[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - Interfaces Added : 77s 977ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0082/char0085/desc0087[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - Interfaces Added : 77s 981ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0082/char0088[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mTIMESTAMP - Interfaces Added : 77s 984ms[0m>
+DEBUG<bluetoothConnection>09Sep12:36<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0082/char008a[0m>
+INFO<MainProcess>09Sep12:38<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep12:38<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep12:38<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep12:38<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep12:38<starting manager thread>
+INFO<MainProcess>09Sep12:38<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep12:38<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep12:38<[2mTIMESTAMP - __init__ class dBusBluezConnection : 96s 126ms[0m>
+INFO<MainProcess>09Sep12:45<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep12:45<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep12:45<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep12:45<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep12:45<starting manager thread>
+INFO<MainProcess>09Sep12:45<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep12:45<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep12:45<[2mTIMESTAMP - __init__ class dBusBluezConnection : 20s 611ms[0m>
+INFO<MainProcess>09Sep12:59<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep12:59<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep12:59<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep12:59<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep12:59<starting manager thread>
+INFO<MainProcess>09Sep12:59<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep12:59<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep12:59<[2mTIMESTAMP - __init__ class dBusBluezConnection : 86s 512ms[0m>
+INFO<MainProcess>09Sep13:03<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:03<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:03<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:03<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:03<starting manager thread>
+INFO<MainProcess>09Sep13:03<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:03<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:03<[2mTIMESTAMP - __init__ class dBusBluezConnection : 30s 976ms[0m>
+INFO<MainProcess>09Sep13:07<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:07<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:07<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:07<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:07<starting manager thread>
+INFO<MainProcess>09Sep13:07<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:07<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:07<[2mTIMESTAMP - __init__ class dBusBluezConnection : 68s 858ms[0m>
+INFO<MainProcess>09Sep13:08<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:08<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:08<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:08<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:08<starting manager thread>
+INFO<MainProcess>09Sep13:08<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:08<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:08<[2mTIMESTAMP - __init__ class dBusBluezConnection : 2s 712ms[0m>
+INFO<MainProcess>09Sep13:08<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:08<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:08<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:08<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:08<starting manager thread>
+INFO<MainProcess>09Sep13:08<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:08<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:08<[2mTIMESTAMP - __init__ class dBusBluezConnection : 23s 391ms[0m>
+INFO<bluetoothConnection>09Sep13:08<[2m[31mIs the socket on port 5565 closed?[39mFalse[0m>
+INFO<MainProcess>09Sep13:11<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:11<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:11<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:11<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:11<starting manager thread>
+INFO<MainProcess>09Sep13:11<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:11<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:11<[2mTIMESTAMP - __init__ class dBusBluezConnection : 62s 29ms[0m>
+INFO<bluetoothConnection>09Sep13:11<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:11<[2m[31mSocket on port 5565 closed?[39m True[0m>
+INFO<MainProcess>09Sep13:11<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:11<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:11<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:11<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:11<starting manager thread>
+INFO<MainProcess>09Sep13:11<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:11<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:11<[2mTIMESTAMP - __init__ class dBusBluezConnection : 99s 626ms[0m>
+INFO<bluetoothConnection>09Sep13:11<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:11<[2m[31mSocket on port 5565 closed?[39m True[0m>
+INFO<MainProcess>09Sep13:13<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:13<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:13<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:13<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:13<starting manager thread>
+INFO<MainProcess>09Sep13:13<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:13<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:13<[2mTIMESTAMP - __init__ class dBusBluezConnection : 37s 844ms[0m>
+INFO<bluetoothConnection>09Sep13:13<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<MainProcess>09Sep13:14<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:14<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:14<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:14<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:14<starting manager thread>
+INFO<MainProcess>09Sep13:14<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:14<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:14<[2mTIMESTAMP - __init__ class dBusBluezConnection : 88s 735ms[0m>
+INFO<bluetoothConnection>09Sep13:14<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<MainProcess>09Sep13:15<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:15<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:15<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:15<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:15<starting manager thread>
+INFO<MainProcess>09Sep13:15<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:15<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:15<[2mTIMESTAMP - __init__ class dBusBluezConnection : 21s 797ms[0m>
+INFO<bluetoothConnection>09Sep13:15<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<MainProcess>09Sep13:15<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:15<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:15<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:15<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:15<starting manager thread>
+INFO<MainProcess>09Sep13:15<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:15<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:15<[2mTIMESTAMP - __init__ class dBusBluezConnection : 38s 934ms[0m>
+INFO<bluetoothConnection>09Sep13:15<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<MainProcess>09Sep13:18<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:18<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:18<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:18<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:18<starting manager thread>
+INFO<MainProcess>09Sep13:18<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:18<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:18<[2mTIMESTAMP - __init__ class dBusBluezConnection : 89s 119ms[0m>
+INFO<bluetoothConnection>09Sep13:18<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<MainProcess>09Sep13:19<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:19<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:19<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:19<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:19<starting manager thread>
+INFO<MainProcess>09Sep13:19<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:19<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:19<[2mTIMESTAMP - __init__ class dBusBluezConnection : 66s 217ms[0m>
+INFO<bluetoothConnection>09Sep13:19<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:19<[2m[31mSocket on port 5565 closed?[39m True[0m>
+INFO<MainProcess>09Sep13:24<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:24<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:24<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:24<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:24<starting manager thread>
+INFO<MainProcess>09Sep13:24<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:24<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:24<[2mTIMESTAMP - __init__ class dBusBluezConnection : 46s 246ms[0m>
+INFO<bluetoothConnection>09Sep13:24<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:24<[2m[31mSocket on port 5565 closed?[39m True[0m>
+ERROR<bluetoothConnection>09Sep13:24<[2m[31mERROR while binding the REPLIER[39m: Address already in use[0m>
+DEBUG<bluetoothConnection>09Sep13:24<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep13:24<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep13:24<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep13:24<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep13:24<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 46s 393ms[0m>
+ERROR<bluetoothConnection>09Sep13:24<ERROR on method Connect to Device: org.freedesktop.DBus.Error.UnknownMethod: Method "Connect" with signature "o" on interface "org.bluez.Device1" doesn't exist
+>
+INFO<bluetoothConnection>09Sep13:24<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep13:24<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 46s 467ms[0m>
+INFO<MainProcess>09Sep13:29<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:29<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:29<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:29<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:29<starting manager thread>
+INFO<MainProcess>09Sep13:29<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:29<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:29<[2mTIMESTAMP - __init__ class dBusBluezConnection : 65s 81ms[0m>
+INFO<bluetoothConnection>09Sep13:29<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:29<[2m[31mSocket on port 5565 closed?[39m True[0m>
+ERROR<bluetoothConnection>09Sep13:29<[2m[31mERROR while binding the REPLIER[39m: Address already in use[0m>
+DEBUG<bluetoothConnection>09Sep13:29<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep13:29<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep13:29<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep13:29<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep13:29<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 65s 217ms[0m>
+DEBUG<bluetoothConnection>09Sep13:29<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 65s 224ms[0m>
+INFO<bluetoothConnection>09Sep13:29<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep13:29<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 65s 290ms[0m>
+DEBUG<bluetoothConnection>09Sep13:34<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 45s 719ms[0m>
+INFO<MainProcess>09Sep13:35<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:35<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:35<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:35<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:35<starting manager thread>
+INFO<MainProcess>09Sep13:35<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:35<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:35<[2mTIMESTAMP - __init__ class dBusBluezConnection : 35s 636ms[0m>
+INFO<bluetoothConnection>09Sep13:35<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:35<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep13:35<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep13:35<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep13:35<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep13:35<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep13:35<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 35s 712ms[0m>
+DEBUG<bluetoothConnection>09Sep13:35<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 35s 723ms[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 27s 949ms[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mTIMESTAMP - Interfaces Added : 27s 974ms[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service008c[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mTIMESTAMP - Interfaces Added : 27s 979ms[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service008c/char008d[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mTIMESTAMP - Interfaces Added : 27s 986ms[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service008c/char008f[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mTIMESTAMP - Interfaces Added : 27s 990ms[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service008c/char008f/desc0091[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mTIMESTAMP - Interfaces Added : 27s 994ms[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service008c/char0092[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mTIMESTAMP - Interfaces Added : 27s 997ms[0m>
+DEBUG<bluetoothConnection>09Sep13:37<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service008c/char0094[0m>
+INFO<MainProcess>09Sep13:42<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:42<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:42<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:42<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:42<starting manager thread>
+INFO<MainProcess>09Sep13:42<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:42<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - __init__ class dBusBluezConnection : 26s 160ms[0m>
+INFO<bluetoothConnection>09Sep13:42<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:42<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep13:42<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep13:42<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep13:42<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 295ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 302ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 35s 901ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - Interfaces Added : 35s 920ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0096[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - Interfaces Added : 35s 928ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0096/char0097[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - Interfaces Added : 35s 934ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0096/char0099[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - Interfaces Added : 35s 941ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0096/char0099/desc009b[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - Interfaces Added : 35s 947ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0096/char009c[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mTIMESTAMP - Interfaces Added : 35s 953ms[0m>
+DEBUG<bluetoothConnection>09Sep13:42<[2mAn interface that was not a Device was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0096/char009e[0m>
+INFO<MainProcess>09Sep13:50<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:50<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:50<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:50<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:50<starting manager thread>
+INFO<MainProcess>09Sep13:50<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:50<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:50<[2mTIMESTAMP - __init__ class dBusBluezConnection : 55s 9ms[0m>
+INFO<bluetoothConnection>09Sep13:50<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:50<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep13:50<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep13:50<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep13:50<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep13:50<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep13:50<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 55s 217ms[0m>
+DEBUG<bluetoothConnection>09Sep13:50<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 55s 224ms[0m>
+INFO<bluetoothConnection>09Sep13:50<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep13:50<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 55s 316ms[0m>
+INFO<MainProcess>09Sep13:51<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep13:51<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep13:51<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep13:51<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep13:51<starting manager thread>
+INFO<MainProcess>09Sep13:51<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep13:51<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - __init__ class dBusBluezConnection : 96s 101ms[0m>
+INFO<bluetoothConnection>09Sep13:51<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep13:51<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep13:51<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep13:51<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep13:51<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 4s 134ms[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - Interfaces Added : 4s 157ms[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00a0 : 4s 161ms[0m>
+ERROR<bluetoothConnection>09Sep13:51<ERROR on method Connect to Device: org.freedesktop.DBus.Error.UnknownMethod: Method "Connect" with signature "o" on interface "org.bluez.Device1" doesn't exist
+>
+DEBUG<bluetoothConnection>09Sep13:51<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00a0[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - Interfaces Added : 4s 179ms[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00a0/char00a1[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - Interfaces Added : 4s 194ms[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00a0/char00a3[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - Interfaces Added : 4s 206ms[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00a0/char00a3/desc00a5[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - Interfaces Added : 4s 215ms[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00a0/char00a6[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mTIMESTAMP - Interfaces Added : 4s 222ms[0m>
+DEBUG<bluetoothConnection>09Sep13:51<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00a0/char00a8[0m>
+DEBUG<bluetoothConnection>09Sep13:52<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 136ms[0m>
+INFO<MainProcess>09Sep14:03<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:03<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:03<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:03<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:03<starting manager thread>
+INFO<MainProcess>09Sep14:03<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:03<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - __init__ class dBusBluezConnection : 8s 956ms[0m>
+INFO<bluetoothConnection>09Sep14:03<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:03<[2m[31mSocket on port 5565 closed?[39m True[0m>
+ERROR<bluetoothConnection>09Sep14:03<[2m[31mERROR while binding the REPLIER[39m: Address already in use[0m>
+DEBUG<bluetoothConnection>09Sep14:03<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:03<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:03<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 986ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 17s 986ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 10ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 14ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 17ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00ab[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa : 18s 24ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 27ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00ad[0m>
+ERROR<bluetoothConnection>09Sep14:03<ERROR on method Connect to Device: org.freedesktop.DBus.Error.UnknownMethod: Method "Connect" with signature "o" on interface "org.bluez.Device1" doesn't exist
+>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 36ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00ad/desc00af[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 40ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00ab[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 46ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 46ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00ad[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 54ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00b0 : 18s 53ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00ad/desc00af[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 61ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00b0[0m>
+ERROR<bluetoothConnection>09Sep14:03<ERROR on method Connect to Device: org.freedesktop.DBus.Error.UnknownMethod: Method "Connect" with signature "o" on interface "org.bluez.Device1" doesn't exist
+>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00b0[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 67ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mTIMESTAMP - Interfaces Added : 18s 71ms[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00b2[0m>
+DEBUG<bluetoothConnection>09Sep14:03<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00aa/char00b2[0m>
+INFO<MainProcess>09Sep14:19<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:19<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:19<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:19<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:19<starting manager thread>
+INFO<MainProcess>09Sep14:19<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:19<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - __init__ class dBusBluezConnection : 56s 581ms[0m>
+INFO<bluetoothConnection>09Sep14:19<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:19<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:19<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:19<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:19<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 56s 778ms[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 56s 785ms[0m>
+INFO<bluetoothConnection>09Sep14:19<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 56s 891ms[0m>
+INFO<MainProcess>09Sep14:19<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:19<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:19<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:19<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:19<starting manager thread>
+INFO<MainProcess>09Sep14:19<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:19<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - __init__ class dBusBluezConnection : 79s 98ms[0m>
+INFO<bluetoothConnection>09Sep14:19<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:19<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:19<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:19<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:19<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 85s 769ms[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - Interfaces Added : 85s 792ms[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - Interfaces Added : 85s 799ms[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4/char00b5[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - Interfaces Added : 85s 808ms[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4/char00b7[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - Interfaces Added : 85s 818ms[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4/char00b7/desc00b9[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - Interfaces Added : 85s 824ms[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4/char00ba; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4/char00ba[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4/char00ba : 85s 830ms[0m>
+ERROR<bluetoothConnection>09Sep14:19<ERROR on method Connect to Device: org.freedesktop.DBus.Error.UnknownMethod: Method "Connect" with signature "o" on interface "org.bluez.Device1" doesn't exist
+>
+DEBUG<bluetoothConnection>09Sep14:19<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4/char00ba[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mTIMESTAMP - Interfaces Added : 85s 847ms[0m>
+DEBUG<bluetoothConnection>09Sep14:19<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00b4/char00bc[0m>
+INFO<MainProcess>09Sep14:22<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:22<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:22<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:22<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:22<starting manager thread>
+INFO<MainProcess>09Sep14:22<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:22<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:22<[2mTIMESTAMP - __init__ class dBusBluezConnection : 65s 527ms[0m>
+INFO<bluetoothConnection>09Sep14:22<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:22<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:22<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:22<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:22<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:22<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:22<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 65s 721ms[0m>
+DEBUG<bluetoothConnection>09Sep14:22<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 65s 728ms[0m>
+INFO<bluetoothConnection>09Sep14:22<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:22<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 65s 834ms[0m>
+INFO<MainProcess>09Sep14:23<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:23<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:23<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:23<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:23<starting manager thread>
+INFO<MainProcess>09Sep14:23<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:23<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - __init__ class dBusBluezConnection : 2s 44ms[0m>
+INFO<bluetoothConnection>09Sep14:23<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:23<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:23<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:23<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:23<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 2s 225ms[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 2s 233ms[0m>
+INFO<bluetoothConnection>09Sep14:23<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 2s 299ms[0m>
+INFO<MainProcess>09Sep14:23<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:23<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:23<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:23<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:23<starting manager thread>
+INFO<MainProcess>09Sep14:23<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:23<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - __init__ class dBusBluezConnection : 20s 404ms[0m>
+INFO<bluetoothConnection>09Sep14:23<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:23<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:23<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:23<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:23<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 26s 257ms[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - Interfaces Added : 26s 281ms[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - Interfaces Added : 26s 289ms[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be/char00bf[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - Interfaces Added : 26s 300ms[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be/char00c1[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - Interfaces Added : 26s 306ms[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be/char00c1/desc00c3[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - Interfaces Added : 26s 312ms[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be/char00c4; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be/char00c4[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be/char00c4 : 26s 320ms[0m>
+ERROR<bluetoothConnection>09Sep14:23<ERROR on method Connect to Device: org.freedesktop.DBus.Error.UnknownMethod: Method "Connect" with signature "o" on interface "org.bluez.Device1" doesn't exist
+>
+DEBUG<bluetoothConnection>09Sep14:23<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be/char00c4[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mTIMESTAMP - Interfaces Added : 26s 335ms[0m>
+DEBUG<bluetoothConnection>09Sep14:23<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00be/char00c6[0m>
+INFO<MainProcess>09Sep14:26<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:26<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:26<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:26<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:26<starting manager thread>
+INFO<MainProcess>09Sep14:26<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:26<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:26<[2mTIMESTAMP - __init__ class dBusBluezConnection : 7s 812ms[0m>
+INFO<bluetoothConnection>09Sep14:26<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:26<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:26<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:26<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:26<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:26<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:26<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 7s 988ms[0m>
+ERROR<bluetoothConnection>09Sep14:26<ERROR on method Connect to Device: org.freedesktop.DBus.Error.UnknownMethod: Method "Connect" with signature "o" on interface "org.bluez.Device1" doesn't exist
+>
+INFO<bluetoothConnection>09Sep14:26<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:26<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 8s 72ms[0m>
+INFO<MainProcess>09Sep14:27<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:27<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:27<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:27<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:27<starting manager thread>
+INFO<MainProcess>09Sep14:27<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:27<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - __init__ class dBusBluezConnection : 26s 465ms[0m>
+INFO<bluetoothConnection>09Sep14:27<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:27<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:27<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:27<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:27<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 31s 203ms[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - Interfaces Added : 31s 223ms[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - Interfaces Added : 31s 231ms[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8/char00c9[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - Interfaces Added : 31s 238ms[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8/char00cb[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - Interfaces Added : 31s 245ms[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8/char00cb/desc00cd[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - Interfaces Added : 31s 251ms[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mindex 37[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8/char00ce; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8/char00ce[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8/char00ce : 31s 260ms[0m>
+ERROR<bluetoothConnection>09Sep14:27<ERROR on method Connect to Device: org.freedesktop.DBus.Error.UnknownMethod: Method "Connect" with signature "o" on interface "org.bluez.Device1" doesn't exist
+>
+DEBUG<bluetoothConnection>09Sep14:27<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8/char00ce[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mTIMESTAMP - Interfaces Added : 31s 282ms[0m>
+DEBUG<bluetoothConnection>09Sep14:27<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00c8/char00d0[0m>
+INFO<MainProcess>09Sep14:31<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:31<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:31<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:31<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:31<starting manager thread>
+INFO<MainProcess>09Sep14:31<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:31<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - __init__ class dBusBluezConnection : 80s 839ms[0m>
+INFO<bluetoothConnection>09Sep14:31<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:31<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:31<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:31<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:31<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 81s 31ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 81s 39ms[0m>
+INFO<bluetoothConnection>09Sep14:31<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 81s 123ms[0m>
+INFO<MainProcess>09Sep14:31<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:31<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:31<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:31<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:31<starting manager thread>
+INFO<MainProcess>09Sep14:31<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:31<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - __init__ class dBusBluezConnection : 99s 56ms[0m>
+INFO<bluetoothConnection>09Sep14:31<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:31<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:31<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:31<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:31<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 813ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - Interfaces Added : 3s 837ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00d2[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - Interfaces Added : 3s 845ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00d2/char00d3[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - Interfaces Added : 3s 852ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00d2/char00d5[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - Interfaces Added : 3s 858ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00d2/char00d5/desc00d7[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - Interfaces Added : 3s 864ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mindex ['/org/bluez/hci0/dev_B8_27_EB_4D_68_70', '00d2/char00d8'][0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00d2/char00d8; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 873ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 882ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00d2/char00d8[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mTIMESTAMP - Interfaces Added : 3s 888ms[0m>
+DEBUG<bluetoothConnection>09Sep14:31<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00d2/char00da[0m>
+INFO<MainProcess>09Sep14:35<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:35<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:35<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:35<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:35<starting manager thread>
+INFO<MainProcess>09Sep14:35<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:35<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - __init__ class dBusBluezConnection : 6s 832ms[0m>
+INFO<bluetoothConnection>09Sep14:35<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:35<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:35<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:35<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:35<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 7s 13ms[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 7s 21ms[0m>
+INFO<bluetoothConnection>09Sep14:35<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 7s 130ms[0m>
+INFO<MainProcess>09Sep14:35<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:35<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:35<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:35<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:35<starting manager thread>
+INFO<MainProcess>09Sep14:35<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:35<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - __init__ class dBusBluezConnection : 46s 733ms[0m>
+INFO<bluetoothConnection>09Sep14:35<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:35<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:35<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:35<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:35<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 46s 949ms[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 46s 956ms[0m>
+INFO<bluetoothConnection>09Sep14:35<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 47s 54ms[0m>
+INFO<MainProcess>09Sep14:35<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:35<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:35<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:35<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:35<starting manager thread>
+INFO<MainProcess>09Sep14:35<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:35<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:35<[2mTIMESTAMP - __init__ class dBusBluezConnection : 57s 525ms[0m>
+INFO<bluetoothConnection>09Sep14:35<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:35<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:35<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:35<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:35<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:35<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 868ms[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - Interfaces Added : 64s 892ms[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00dc[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - Interfaces Added : 64s 899ms[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00dc/char00dd[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - Interfaces Added : 64s 908ms[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00dc/char00df[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - Interfaces Added : 64s 917ms[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00dc/char00df/desc00e1[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - Interfaces Added : 64s 925ms[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mindex ['/org/bluez/hci0/dev_B8_27_EB_4D_68_70', '00dc/char00e2'][0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00dc/char00e2; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 933ms[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 64s 942ms[0m>
+ERROR<bluetoothConnection>09Sep14:36<Exception in  -interfaces added-: name 'servicesResolvedAnnouncer' is not defined>
+DEBUG<bluetoothConnection>09Sep14:36<[2mTIMESTAMP - Interfaces Added : 64s 947ms[0m>
+DEBUG<bluetoothConnection>09Sep14:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00dc/char00e4[0m>
+INFO<MainProcess>09Sep14:38<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:38<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:38<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:38<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:38<starting manager thread>
+INFO<MainProcess>09Sep14:38<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:38<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - __init__ class dBusBluezConnection : 3s 579ms[0m>
+INFO<bluetoothConnection>09Sep14:38<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:38<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:38<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:38<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:38<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 711ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 3s 718ms[0m>
+INFO<bluetoothConnection>09Sep14:38<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 3s 788ms[0m>
+INFO<MainProcess>09Sep14:38<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:38<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:38<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:38<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:38<starting manager thread>
+INFO<MainProcess>09Sep14:38<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:38<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - __init__ class dBusBluezConnection : 13s 935ms[0m>
+INFO<bluetoothConnection>09Sep14:38<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:38<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:38<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:38<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:38<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 533ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - Interfaces Added : 18s 555ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00e6[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - Interfaces Added : 18s 563ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00e6/char00e7[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - Interfaces Added : 18s 570ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00e6/char00e9[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - Interfaces Added : 18s 578ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00e6/char00e9/desc00eb[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - Interfaces Added : 18s 584ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mindex ['/org/bluez/hci0/dev_B8_27_EB_4D_68_70', '00e6/char00ec'][0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00e6/char00ec; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 593ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 18s 601ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+INFO<bluetoothConnection>09Sep14:38<[2m[31munable to connect DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 with exception name 'message' is not defined[39m[0m>
+ERROR<bluetoothConnection>09Sep14:38<No response from replier>
+DEBUG<bluetoothConnection>09Sep14:38<Reconnecting to replier…>
+DEBUG<bluetoothConnection>09Sep14:38<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:38<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+ERROR<bluetoothConnection>09Sep14:38<No response from replier>
+DEBUG<bluetoothConnection>09Sep14:38<Reconnecting to replier…>
+DEBUG<bluetoothConnection>09Sep14:38<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:38<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+ERROR<bluetoothConnection>09Sep14:38<No response from replier>
+DEBUG<bluetoothConnection>09Sep14:38<Reconnecting to replier…>
+DEBUG<bluetoothConnection>09Sep14:38<Connecting to server…>
+ERROR<bluetoothConnection>09Sep14:38<Replier seems to be offline, abandoning>
+DEBUG<bluetoothConnection>09Sep14:38<[2mTIMESTAMP - [31mSERIAL NUMBER CHARACTERISTIC triggered CONNECTION[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00e6/char00ec and acknowledged from Connecting Method Replier seems to be offline  : 26s 143ms[0m>
+DEBUG<bluetoothConnection>09Sep14:38<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00e6/char00ec[0m>
+INFO<MainProcess>09Sep14:41<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:41<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:41<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:41<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:41<starting manager thread>
+INFO<MainProcess>09Sep14:41<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:41<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - __init__ class dBusBluezConnection : 96s 264ms[0m>
+INFO<bluetoothConnection>09Sep14:41<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:41<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:41<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:41<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:41<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 96s 453ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 96s 460ms[0m>
+INFO<bluetoothConnection>09Sep14:41<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 96s 546ms[0m>
+INFO<MainProcess>09Sep14:41<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:41<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:41<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:41<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:41<starting manager thread>
+INFO<MainProcess>09Sep14:41<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:41<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - __init__ class dBusBluezConnection : 6s 12ms[0m>
+INFO<bluetoothConnection>09Sep14:41<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:41<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:41<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:41<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:41<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 11s 487ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - Interfaces Added : 11s 658ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00f0[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - Interfaces Added : 11s 666ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00f0/char00f1[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - Interfaces Added : 11s 677ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00f0/char00f3[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - Interfaces Added : 11s 691ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00f0/char00f3/desc00f5[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - Interfaces Added : 11s 702ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mindex ['/org/bluez/hci0/dev_B8_27_EB_4D_68_70', '00f0/char00f6'][0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00f0/char00f6; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 11s 713ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 11s 726ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+INFO<bluetoothConnection>09Sep14:41<Services Resolved on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70, resuming connect procedure after waiting>
+INFO<bluetoothConnection>09Sep14:41<[2m[31mDEVICE sucessfully connected and services resolved on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+WARNING<bluetoothConnection>09Sep14:41<Server replied, but it was not an OK:  waiting Connecting Method does not wait anymore and resumes activity>
+ERROR<bluetoothConnection>09Sep14:41<No response from replier>
+DEBUG<bluetoothConnection>09Sep14:41<Reconnecting to replier…>
+DEBUG<bluetoothConnection>09Sep14:41<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:41<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+ERROR<bluetoothConnection>09Sep14:41<No response from replier>
+DEBUG<bluetoothConnection>09Sep14:41<Reconnecting to replier…>
+DEBUG<bluetoothConnection>09Sep14:41<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:41<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+ERROR<bluetoothConnection>09Sep14:41<No response from replier>
+DEBUG<bluetoothConnection>09Sep14:41<Reconnecting to replier…>
+DEBUG<bluetoothConnection>09Sep14:41<Connecting to server…>
+ERROR<bluetoothConnection>09Sep14:41<Replier seems to be offline, abandoning>
+DEBUG<bluetoothConnection>09Sep14:41<[2mTIMESTAMP - [31mSERIAL NUMBER CHARACTERISTIC triggered CONNECTION[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00f0/char00f6 and acknowledged from Connecting Method Replier seems to be offline  : 16s 810ms[0m>
+DEBUG<bluetoothConnection>09Sep14:41<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00f0/char00f6[0m>
+INFO<MainProcess>09Sep14:43<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:43<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:43<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:43<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:43<starting manager thread>
+INFO<MainProcess>09Sep14:43<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:43<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:43<[2mTIMESTAMP - __init__ class dBusBluezConnection : 28s 496ms[0m>
+INFO<bluetoothConnection>09Sep14:43<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:43<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:43<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:43<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:43<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:43<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:43<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 28s 707ms[0m>
+DEBUG<bluetoothConnection>09Sep14:43<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 28s 716ms[0m>
+INFO<bluetoothConnection>09Sep14:43<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:43<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 28s 806ms[0m>
+INFO<MainProcess>09Sep14:43<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:43<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:43<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:43<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:43<starting manager thread>
+INFO<MainProcess>09Sep14:43<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:43<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:43<[2mTIMESTAMP - __init__ class dBusBluezConnection : 36s 792ms[0m>
+INFO<bluetoothConnection>09Sep14:43<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:43<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:43<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:43<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:43<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:43<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 500ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - Interfaces Added : 41s 526ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00fa[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - Interfaces Added : 41s 532ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00fa/char00fb[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - Interfaces Added : 41s 539ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00fa/char00fd[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - Interfaces Added : 41s 545ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00fa/char00fd/desc00ff[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - Interfaces Added : 41s 551ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mindex ['/org/bluez/hci0/dev_B8_27_EB_4D_68_70', '00fa/char0100'][0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00fa/char0100; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 561ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 41s 569ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+INFO<bluetoothConnection>09Sep14:44<Services Resolved on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70, resuming connect procedure after waiting>
+INFO<bluetoothConnection>09Sep14:44<[2m[31mDEVICE sucessfully connected and services resolved on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:44<Replier replied OK: OK>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - [31mSERIAL NUMBER CHARACTERISTIC triggered CONNECTION[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00fa/char0100 and acknowledged from Connecting Method Replier replied OK  : 41s 581ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00fa/char0100[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mTIMESTAMP - Interfaces Added : 41s 587ms[0m>
+DEBUG<bluetoothConnection>09Sep14:44<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service00fa/char0102[0m>
+INFO<MainProcess>09Sep14:46<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:46<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:46<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:46<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:46<starting manager thread>
+INFO<MainProcess>09Sep14:46<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:46<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - __init__ class dBusBluezConnection : 96s 351ms[0m>
+INFO<bluetoothConnection>09Sep14:46<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:46<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:46<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:46<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:46<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 10s 904ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - Interfaces Added : 10s 928ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0104[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - Interfaces Added : 10s 935ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0104/char0105[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - Interfaces Added : 10s 943ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0104/char0107[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - Interfaces Added : 10s 949ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0104/char0107/desc0109[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - Interfaces Added : 10s 955ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mindex ['/org/bluez/hci0/dev_B8_27_EB_4D_68_70', '0104/char010a'][0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0104/char010a; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 10s 962ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 10s 971ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+INFO<bluetoothConnection>09Sep14:46<Services Resolved on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70, resuming connect procedure after waiting>
+INFO<bluetoothConnection>09Sep14:46<[2m[31munable to connect DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 with exception '5468696e-6773-496e-546f-756368000100'[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:46<Replier replied OK: OK>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - [31mSERIAL NUMBER CHARACTERISTIC triggered CONNECTION[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0104/char010a and acknowledged from Connecting Method Replier replied OK  : 10s 985ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0104/char010a[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mTIMESTAMP - Interfaces Added : 10s 995ms[0m>
+DEBUG<bluetoothConnection>09Sep14:46<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0104/char010c[0m>
+INFO<MainProcess>09Sep14:47<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:47<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:47<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:47<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:47<starting manager thread>
+INFO<MainProcess>09Sep14:47<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:47<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - __init__ class dBusBluezConnection : 47s 595ms[0m>
+INFO<bluetoothConnection>09Sep14:47<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:47<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:47<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:47<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:47<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 52s 944ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - Interfaces Added : 52s 966ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service010e[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - Interfaces Added : 52s 973ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service010e/char010f[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - Interfaces Added : 52s 980ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service010e/char0111[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - Interfaces Added : 52s 986ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service010e/char0111/desc0113[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - Interfaces Added : 52s 991ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mindex ['/org/bluez/hci0/dev_B8_27_EB_4D_68_70', '010e/char0114'][0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service010e/char0114; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 52s 998ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 53s 5ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+INFO<bluetoothConnection>09Sep14:47<Services Resolved on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70, resuming connect procedure after waiting>
+INFO<bluetoothConnection>09Sep14:47<[2m[31munable to connect DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 with exception '5468696e-6773-496e-546f-756368000100'[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:47<Replier replied OK: OK>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - [31mSERIAL NUMBER CHARACTERISTIC triggered CONNECTION[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service010e/char0114 and acknowledged from Connecting Method Replier replied OK  : 53s 15ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service010e/char0114[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - Interfaces Added : 53s 21ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service010e/char0116[0m>
+INFO<MainProcess>09Sep14:47<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:47<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:47<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:47<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:47<starting manager thread>
+INFO<MainProcess>09Sep14:47<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:47<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - __init__ class dBusBluezConnection : 66s 137ms[0m>
+INFO<bluetoothConnection>09Sep14:47<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:47<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:47<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:47<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:47<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2m[31mSERVICES AVAILABLE[39mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 66s 315ms[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 66s 324ms[0m>
+INFO<bluetoothConnection>09Sep14:47<[2m[31mDEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - [31mREAD CHARACTERISTIC [39m Value 20200818.000.000.001 : 66s 409ms[0m>
+INFO<MainProcess>09Sep14:47<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>09Sep14:47<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>09Sep14:47<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>09Sep14:47<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>09Sep14:47<starting manager thread>
+INFO<MainProcess>09Sep14:47<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>09Sep14:47<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>09Sep14:47<[2mTIMESTAMP - __init__ class dBusBluezConnection : 75s 887ms[0m>
+INFO<bluetoothConnection>09Sep14:47<[2m[31mSocket on port 5565 closed?[39m False[0m>
+INFO<bluetoothConnection>09Sep14:47<[2m[31mSocket on port 5565 closed?[39m True[0m>
+DEBUG<bluetoothConnection>09Sep14:47<Connecting to server…>
+DEBUG<bluetoothConnection>09Sep14:47<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>09Sep14:47<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>09Sep14:47<[2m[31mSERVICES NOT AVAILABLE[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 133ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - Interfaces Added : 80s 156ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0118[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - Interfaces Added : 80s 163ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0118/char0119[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - Interfaces Added : 80s 170ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0118/char011b[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - Interfaces Added : 80s 176ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0118/char011b/desc011d[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - Interfaces Added : 80s 182ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2m[31mSERIAL NUMBER CHARACTERISTIC Interface available[39mtrying to connect[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mindex ['/org/bluez/hci0/dev_B8_27_EB_4D_68_70', '0118/char011e'][0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mpath: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0118/char011e; device path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - [31mASK TO CONNECT [39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 188ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - [31mCONNECTED[39m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 80s 197ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<Sending /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+INFO<bluetoothConnection>09Sep14:48<Services Resolved on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70, resuming connect procedure after waiting>
+INFO<bluetoothConnection>09Sep14:48<[2m[31munable to connect DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 with exception '5468696e-6773-496e-546f-756368000100'[39m[0m>
+DEBUG<bluetoothConnection>09Sep14:48<Replier replied OK: OK>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - [31mSERIAL NUMBER CHARACTERISTIC triggered CONNECTION[39m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0118/char011e and acknowledged from Connecting Method Replier replied OK  : 80s 209ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0118/char011e[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mTIMESTAMP - Interfaces Added : 80s 212ms[0m>
+DEBUG<bluetoothConnection>09Sep14:48<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service0118/char0120[0m>

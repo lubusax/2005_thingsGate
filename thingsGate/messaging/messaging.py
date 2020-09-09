@@ -7,8 +7,19 @@ from colorama import Fore, Back, Style
 # Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 # Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
-from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL
+from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL, loggerINFOredDIM, loggerERRORredDIM
 from random import randrange
+
+def cleanPort(port):
+  context = zmq.Context()
+  replierEndpoint = "tcp://localhost:"+port
+  replier = context.socket(zmq.REP)
+  requester = context.socket(zmq.REQ)
+  loggerINFOredDIM(f"Socket on port {port} closed?", f" {replier.closed}")
+  if not replier.closed:
+    #replier.unbind(replierEndpoint)
+    replier.close()
+  loggerINFOredDIM(f"Socket on port {port} closed?", f" {replier.closed}")
 
 class Requester():
   '''
@@ -59,7 +70,11 @@ class Replier():
     self.replierEndpoint = "tcp://*:"+port
     self.context = zmq.Context()
     self.replier = self.context.socket(zmq.REP)
-    self.replier.bind(self.replierEndpoint)
+    try:
+      self.replier.bind(self.replierEndpoint)
+    except Exception as e:
+      loggerERRORredDIM("ERROR while binding the REPLIER", f": {e}")
+
 
   def receive(self):
     self.requestMessage = self.replier.recv_pyobj()

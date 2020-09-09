@@ -1,20 +1,22 @@
 import  time
 from    bluetooth.dBusBluezConnection import dBusBluezConnection
 from    common.common import prettyPrint
-from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL
+from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL, loggerINFOredDIM
 
 def bluetoothConnectionThread():
   myBluezConnection = dBusBluezConnection()
 
   # listen to Interfaces Added - get Feedback if there is a device added
 
-  myBluezConnection.connectThingsInTouchDevicesStoredLocally()
+  result = myBluezConnection.connectThingsInTouchDevicesStoredLocally()
+
+  loggerINFOredDIM(result)
 
   #myBluezConnection.discoverThingsInTouchDevices()
 
   #while not myBluezConnection.flagToExit: time.sleep(0.5)
 
-  time.sleep(10)
+  time.sleep(2)
 
   print("client Gate Things exit")
 
