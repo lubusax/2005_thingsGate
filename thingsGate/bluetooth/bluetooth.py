@@ -10,7 +10,7 @@ def bluetoothConnectionThread():
 
   result = myBluezConnection.connectThingsInTouchDevicesStoredLocally()
 
-  loggerINFOredDIM(result)
+  loggerINFOredDIM("BACK TO bluetooth.py: "+result)
 
   #myBluezConnection.discoverThingsInTouchDevices()
 

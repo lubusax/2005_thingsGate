@@ -13,7 +13,7 @@ def loggerTIMESTAMP(message):
   loggerDEBUGdim("TIMESTAMP - "+ message + f" : {nowInSecondsAndMilliseconds()}")
 
 def loggerTIMESTAMPred(messageRED, messageDIMMED=""):
-  loggerTIMESTAMP(Fore.RED+messageRED+Fore.RESET+messageDIMMED)
+  logging.debug("TIMESTAMP-"+Fore.RED+messageRED+Fore.RESET+Style.DIM+messageDIMMED+ f" : {nowInSecondsAndMilliseconds()}"+Style.RESET_ALL)
 
 ######################
 
@@ -24,7 +24,7 @@ def loggerDEBUGdim(message):
   loggerDEBUG(Style.DIM + message + Style.RESET_ALL)
 
 def loggerDEBUGredDIM(messageRED, messageDIMMED=""):
-  loggerDEBUGdim(Fore.RED+messageRED+Fore.RESET+messageDIMMED)
+  logging.debug(Fore.RED+messageRED+Fore.RESET+Style.DIM+messageDIMMED+Style.RESET_ALL)
 
 #######################
 
@@ -35,7 +35,7 @@ def loggerINFOdim(message):
   loggerINFO(Style.DIM + message + Style.RESET_ALL)
 
 def loggerINFOredDIM(messageRED, messageDIMMED=""):
-  loggerINFOdim(Fore.RED+messageRED+Fore.RESET+messageDIMMED)
+  logging.info(Fore.RED+messageRED+Fore.RESET+Style.DIM+messageDIMMED+Style.RESET_ALL)
 
 ########################
 
@@ -51,7 +51,7 @@ def loggerERRORdim(message):
   loggerERROR(Style.DIM + message + Style.RESET_ALL)
 
 def loggerERRORredDIM(messageRED, messageDIMMED=""):
-  loggerERRORdim(Fore.RED+messageRED+Fore.RESET+messageDIMMED)
+  logging.error(Fore.RED+messageRED+Fore.RESET+Style.DIM+messageDIMMED+Style.RESET_ALL)
 
 ########################
 
