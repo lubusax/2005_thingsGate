@@ -124,6 +124,14 @@ class dBusBluezConnection():
     except Exception as e:
       loggerERROR(f"ERROR converting to device path: {e}")
 
+  def convertPathToAddress(self, path):
+    try:
+      pathSplitted = path.split("/dev_")
+      address = pathSplitted[1].replace("_",":")
+      loggerDEBUGredDIM(f"path: {path}; address {address}")
+      return address
+    except Exception as e:
+      loggerERROR(f"ERROR converting to device path: {e}")
 
   def getDeviceInterface(self, path):
     deviceObject = self.systemBus.get_object( BLUEZ, path)
@@ -182,9 +190,11 @@ class dBusBluezConnection():
           loggerDEBUGredDIM("SERVICES NOT AVAILABLE",f" on path {path}")
           try:
             
-            self.discoverThingsInTouchDevices()
+            #self.discoverThingsInTouchDevices()
+            address = self.convertPathToAddress(path)
             self.waitFor(bluezEvents.SerialNumberCharacteristicInterfaceAdded, path)
-            self.connectToDevice(path)
+            self.connectDeviceWithoutDiscovery(address)
+            #self.connectToDevice(path)
             self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
             self.readCharacteristicStringValue( path, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC)
             return f"DEVICE sucessfully connected on path {path}"
@@ -235,15 +245,14 @@ class dBusBluezConnection():
     connectFilter ={}
     connectFilter["Address"]= str(Address)
     connectFilter["AddressType"]= str(AddressType)
-    #self.counterTimeToConnect = time.time()
-    loggerDEBUG(f"TIMESTAMP just before asking to connect w/o discovery  {nowInSecondsAndMilliseconds()} ")
+    loggerTIMESTAMPred("just before asking to connect w/o discovery")
     try:
       deviceConnected = self.adapterInterface.ConnectDevice(connectFilter)
-      print("TIMESTAMP just after asking to connect w/o discovery (ms): ", nowInSecondsAndMilliseconds())
-      prettyPrint(deviceConnected)
-    except:
-      print("TIMESTAMP error (ms): ", nowInSecondsAndMilliseconds())
-      print("some error while connectDeviceWithoutDiscovery")
+      loggerTIMESTAMPred("just after asking to connect w/o discovery")
+      #prettyPrint(deviceConnected)
+      return deviceConnected
+    except Exception as e:
+      loggerTIMESTAMPred(f"error while connecting w/o discovery: {e}")
 
 
   def enterThreadMainLoopGObject(self, exitFlag):
