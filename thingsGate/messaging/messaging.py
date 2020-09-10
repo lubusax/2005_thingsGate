@@ -91,7 +91,7 @@ class zmqSubscriber():
     self.port=port
 
   def subscribe(self, topic):
-    self.socket.setsockopt_string(zmq.SUBSCRIBE, topic)
+    self.socket.setsockopt_string(zmq.SUBSCRIBE, str(topic))
 
   def receive(self):
     string = self.socket.recv_string() # this call is blocking
@@ -108,7 +108,7 @@ class zmqPublisher():
 
   def publish(self, topic, message):
     loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
-    string= topic+" "+ message
+    string= str(topic)+" "+ message
     self.socket.send_string(string)
 
 class zmqRequester():

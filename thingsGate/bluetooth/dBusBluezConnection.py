@@ -19,7 +19,7 @@ from colorama import Fore, Back, Style
 
 from log.logger import loggerINFOredDIM, loggerDEBUGredDIM, loggerTIMESTAMPred, loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL, loggerDEBUGdim, loggerTIMESTAMP, loggerDEBUGredDIM
 from common.common import nowInSecondsAndMilliseconds, runShellCommand
-from messaging.messaging import Replier, Requester, cleanPort
+from messaging.messaging import zmqSubscriber, zmqPublisher
 
 #########################################################
 BLUEZ 															= 'org.bluez'
@@ -69,10 +69,12 @@ class dBusBluezConnection():
 
     #self.deviceInterfacesWaitingForServicesResolved = {}
 
-    self.portAnnouncer   = "5565"
-    cleanPort(self.portAnnouncer)
-    self.receiverAndReplier = Replier   (self.portAnnouncer) # device ready means connected and services resolved
-    self.announcer          = Requester (self.portAnnouncer)
+    self.portPublisher   = "5565"
+    #cleanPort(self.portPublisher)
+    self.subscriber   = zmqSubscriber(self.portPublisher) # device ready means connected and services resolved
+    self.publisher    = zmqPublisher (self.portPublisher)
+    self.subscriber.subscribe(bluezEvents.SerialNumberCharacteristicInterfaceAdded)
+    self.subscriber.subscribe(bluezEvents.ServicesResolved)
 
     self.listenToPropertiesChanged()
     self.listenToInterfacesAdded()
@@ -108,8 +110,8 @@ class dBusBluezConnection():
         if str(interfaces[dbus.String(IFACE_GATT_CHARACTERISTIC)][dbus.String('UUID')])==UUID_SERIAL_NUMBER_CHARACTERISTIC:
           loggerTIMESTAMPred("SERIAL NUMBER CHARACTERISTIC Interface available")
           devicePath = self.convertServicePathToDevicePath(path)
-          reply = self.announcer.send( [bluezEvents.SerialNumberCharacteristicInterfaceAdded, devicePath] )
-          loggerTIMESTAMPred(f"acknowledged with reply {reply} ")
+          self.publisher.publish( bluezEvents.SerialNumberCharacteristicInterfaceAdded, devicePath )
+          #loggerTIMESTAMPred(f"acknowledged with reply {reply} ")
     except Exception as e:
       loggerERROR(f"Exception in  -interfaces added-: {e}")
 
@@ -144,8 +146,8 @@ class dBusBluezConnection():
         if str(key) == "Connected":
           loggerTIMESTAMPred("DEVICE CONNECTED", f"on path {path}")
         if str(key) == "ServicesResolved":
-          reply = self.announcer.send([bluezEvents.ServicesResolved, path])
-          loggerTIMESTAMPred("SERVICES RESOLVED", f" on path {path} and acknowledged from Connecting Method {reply} ")
+          self.publisher.publish(bluezEvents.ServicesResolved, path)
+          loggerTIMESTAMPred("SERVICES RESOLVED", f" on path {path}")
     except KeyError:
       loggerERROR(f"DEVICE REMOVED on path {path}")
     except Exception as e:
@@ -193,11 +195,11 @@ class dBusBluezConnection():
   def waitFor(self, event, path):
     eventHappened = False
     while not eventHappened:
-      eventReceived, pathReceived = self.receiverAndReplier.receive()
-      if eventReceived == event and pathReceived == path:
+      eventReceived, pathReceived = self.subscriber.receive()
+      if eventReceived == str(event) and pathReceived == path:
         eventHappened = True
         loggerINFOredDIM(f"event {event}", f" happened on path {path}")
-        self.receiverAndReplier.reply("OK")
+        #self.subscriber.reply("OK")
 
   def alias(self, path):
     return str(self.objects[path][IFACE_DEVICE]["Alias"])
