@@ -7,7 +7,7 @@ from colorama import Fore, Back, Style
 # Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 # Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
-from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL, loggerINFOredDIM, loggerERRORredDIM
+import log.logger as l
 from random import randrange
 
 def cleanPort(port):
@@ -15,11 +15,11 @@ def cleanPort(port):
   replierEndpoint = "tcp://localhost:"+port
   replier = context.socket(zmq.REP)
   requester = context.socket(zmq.REQ)
-  loggerINFOredDIM(f"Socket on port {port} closed?", f" {replier.closed}")
+  l.loggerINFOredDIM(f"Socket on port {port} closed?", f" {replier.closed}")
   if not replier.closed:
     #replier.unbind(replierEndpoint)
     replier.close()
-  loggerINFOredDIM(f"Socket on port {port} closed?", f" {replier.closed}")
+  l.loggerINFOredDIM(f"Socket on port {port} closed?", f" {replier.closed}")
 
 class Requester():
   '''
@@ -33,7 +33,7 @@ class Requester():
     self.connectToReplier()
 
   def connectToReplier(self):
-    loggerDEBUG("Connecting to server…")
+    l.loggerDEBUG("Connecting to server…")
     self.requester = self.context.socket(zmq.REQ)
     self.requester.connect(self.replierEndpoint)
 
@@ -45,21 +45,21 @@ class Requester():
     #request = str(message).encode()
     request = message
     for _ in range(self.requestRetries):
-      loggerDEBUG(f"Sending {request}")
+      l.loggerDEBUG(f"Sending {request}")
       self.requester.send_pyobj(request)
       if (self.requester.poll(self.requestTimeout) & zmq.POLLIN) != 0:
         reply = self.requester.recv_pyobj()
         if reply == "OK":
-          loggerDEBUG(f"Replier replied OK: {reply}")
+          l.loggerDEBUG(f"Replier replied OK: {reply}")
           return "Replier replied OK"
         else:
-          loggerWARNING(f"Server replied, but it was not an OK:  {reply}")
-      loggerERROR("No response from replier")
+          l.loggerWARNING(f"Server replied, but it was not an OK:  {reply}")
+      l.loggerERROR("No response from replier")
       self.closeAndRemoveSocket()    # Socket is confused. Close and remove it.
-      loggerDEBUG("Reconnecting to replier…")
+      l.loggerDEBUG("Reconnecting to replier…")
       self.connectToReplier()    # Create new connection
 
-    loggerERROR("Replier seems to be offline, abandoning")
+    l.loggerERROR("Replier seems to be offline, abandoning")
     return "Replier seems to be offline"
 
 class Replier():
@@ -73,7 +73,7 @@ class Replier():
     try:
       self.replier.bind(self.replierEndpoint)
     except Exception as e:
-      loggerERRORredDIM("ERROR while binding the REPLIER", f": {e}")
+      l.loggerERRORredDIM("ERROR while binding the REPLIER", f": {e}")
 
 
   def receive(self):
@@ -96,7 +96,7 @@ class zmqSubscriber():
   def receive(self):
     string = self.socket.recv_string() # this call is blocking
     topic, message = string.split()
-    loggerDEBUG(Fore.GREEN + f"time STAMP: {time.ctime()}; topic:{topic}; message: {message} " + Style.RESET_ALL)
+    l.loggerDEBUG(Fore.GREEN + f"time STAMP: {time.ctime()}; topic:{topic}; message: {message} " + Style.RESET_ALL)
     return topic, message
 
 class zmqPublisher():
@@ -107,7 +107,7 @@ class zmqPublisher():
     self.port=port
 
   def publish(self, topic, message):
-    loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    l.loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
     string= str(topic)+" "+ message
     self.socket.send_string(string)
 
@@ -120,7 +120,7 @@ class zmqRequester():
     self.port=port
 
   def request(self, topic, message):
-    loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    l.loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
     string= topic+" "+ message
     self.socket.send(bytes(string, 'utf-8'))
     message = self.socket.recv()
@@ -139,7 +139,7 @@ class zmqReplier():
     message = self.socket.recv()
     answerString = str(message, 'utf-8')
     topic, message = answerString.split()
-    loggerDEBUG(Fore.RED + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    l.loggerDEBUG(Fore.RED + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
     return topic, message
   
   def reply(self, topic, message):

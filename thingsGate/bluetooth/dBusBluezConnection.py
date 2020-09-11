@@ -17,7 +17,7 @@ from colorama import Fore, Back, Style
 # Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 # Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
-from log.logger import loggerINFOredDIM, loggerDEBUGredDIM, loggerTIMESTAMPred, loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL, loggerDEBUGdim, loggerTIMESTAMP, loggerDEBUGredDIM
+import log.logger as l
 from common.common import nowInSecondsAndMilliseconds, runShellCommand
 from messaging.messaging import zmqSubscriber, zmqPublisher
 
@@ -51,7 +51,7 @@ DEVICE_NAME 												= 'ThingsInTouch-Gate-01'
 class dBusBluezConnection():
   def __init__(self):
     
-    loggerTIMESTAMP("__init__ class dBusBluezConnection")
+    l.loggerTIMESTAMP("__init__ class dBusBluezConnection")
 
     DBusGMainLoop(set_as_default=True)
 
@@ -95,43 +95,40 @@ class dBusBluezConnection():
                         signal_name = "InterfacesAdded")
 
   def interfacesAdded(self, path, interfaces):
-    loggerTIMESTAMP("Interfaces Added")
-    loggerDEBUGdim(f"An interface was added on path: {path}")
+    l.loggerTIMESTAMP("Interfaces Added")
+    l.loggerDEBUGdim(f"An interface was added on path: {path}")
     prettyPrint(interfaces)
     try:
       if dbus.String(IFACE_DEVICE) in interfaces:
         self.connectToDevice(path)
       elif dbus.String(IFACE_GATT_CHARACTERISTIC) in interfaces:
         if str(interfaces[dbus.String(IFACE_GATT_CHARACTERISTIC)][dbus.String('UUID')])== UUID_SERIAL_NUMBER_CHARACTERISTIC:
-          loggerTIMESTAMPred("SERIAL NUMBER Characteristic Interface available")
-          #devicePath = self.convertServicePathToDevicePath(path)
+          l.loggerTIMESTAMPred("SERIAL NUMBER Characteristic Interface available")
           self.publisher.publish( ev.bluezEvents.SerialNumberCharacteristicInterfaceAdded, path )
-          #loggerTIMESTAMPred(f"acknowledged with reply {reply} ")
       elif dbus.String(IFACE_GATT_SERVICE) in interfaces:
         if str(interfaces[dbus.String(IFACE_GATT_SERVICE)][dbus.String('UUID')])== UUID_GATESETUP_SERVICE :
-          loggerTIMESTAMPred("GATE SETUP Service Interface available")
-          #devicePath = self.convertServicePathToDevicePath(path)
+          l.loggerTIMESTAMPred("GATE SETUP Service Interface available")
           self.publisher.publish( ev.bluezEvents.GateSetupServiceInterfaceAdded, path )      
     except Exception as e:
-      loggerERROR(f"Exception in  -interfaces added-: {e}")
+      l.loggerERROR(f"Exception in  -interfaces added-: {e}")
 
   def convertServicePathToDevicePath(self, path):
     try:
       pathSplitted = path.split("/service")
       devicePath = pathSplitted[0]
-      #loggerDEBUGdim(f"path: {path}; device path {devicePath}")
+      #l.loggerDEBUGdim(f"path: {path}; device path {devicePath}")
       return devicePath
     except Exception as e:
-      loggerERROR(f"ERROR converting to device path: {e}")
+      l.loggerERROR(f"ERROR converting to device path: {e}")
 
   def convertPathToAddress(self, path):
     try:
       pathSplitted = path.split("/dev_")
       address = pathSplitted[1].replace("_",":")
-      #loggerDEBUGredDIM(f"path: {path}; address {address}")
+      #l.loggerDEBUGredDIM(f"path: {path}; address {address}")
       return address
     except Exception as e:
-      loggerERROR(f"ERROR converting to device path: {e}")
+      l.loggerERROR(f"ERROR converting to device path: {e}")
 
   def getDeviceInterface(self, path):
     deviceObject = self.systemBus.get_object( BLUEZ, path)
@@ -140,26 +137,26 @@ class dBusBluezConnection():
   def connectToDevice(self,path):
     try:
       deviceInterface = self.getDeviceInterface(path)
-      loggerTIMESTAMPred("ASK TO CONNECT ",f" to device {path}")
+      l.loggerTIMESTAMPred("ASK TO CONNECT ",f" to device {path}")
       deviceInterface.Connect(path, dbus_interface=IFACE_DEVICE)
-      loggerTIMESTAMPred("CONNECTED",f" to device {path}")
+      l.loggerTIMESTAMPred("CONNECTED",f" to device {path}")
     except Exception as e:
-      loggerERROR(f"ERROR on method Connect to Device: {e}")
+      l.loggerERROR(f"ERROR on method Connect to Device: {e}")
 
   def propertiesChanged(self, interface, changed, invalidated, path):
-    loggerTIMESTAMP(f"Properties Changed on path {path}")
+    l.loggerTIMESTAMP(f"Properties Changed on path {path}")
     prettyPrint(changed)
     try:
       for key in changed:
         if str(key) == "Connected":
-          loggerTIMESTAMPred("DEVICE CONNECTED", f"on path {path}")
+          l.loggerTIMESTAMPred("DEVICE CONNECTED", f"on path {path}")
         if str(key) == "ServicesResolved":
           self.publisher.publish(ev.bluezEvents.ServicesResolved, path)
-          loggerTIMESTAMPred("SERVICES RESOLVED", f" on path {path}")
+          l.loggerTIMESTAMPred("SERVICES RESOLVED", f" on path {path}")
     except KeyError:
-      loggerERROR(f"DEVICE REMOVED on path {path}")
+      l.loggerERROR(f"DEVICE REMOVED on path {path}")
     except Exception as e:
-      loggerERROR(f"ERROR in Properties Changed (callback method): {e}")
+      l.loggerERROR(f"ERROR in Properties Changed (callback method): {e}")
 
   def connectThingsInTouchDevicesStoredLocally(self):
     self.objects = self.objectManagerInterface.GetManagedObjects()
@@ -176,17 +173,17 @@ class dBusBluezConnection():
           "Services":         None,
           "deviceInterface":  self.getDeviceInterface(path),
           "SerialNumber":     None}
-        loggerDEBUG(f"ThingsInTouch device stored locally on path: {path}")
+        l.loggerDEBUG(f"ThingsInTouch device stored locally on path: {path}")
         self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
         gateServiceAvailable = UUID_GATESETUP_SERVICE in self.thingsInTouchDevicesStoredLocally[str(path)]["Services"]
-        loggerDEBUGdim(f"Gate Service Available: {gateServiceAvailable}")
+        l.loggerDEBUGdim(f"Gate Service Available: {gateServiceAvailable}")
         if  gateServiceAvailable:
-          loggerDEBUGredDIM("SERVICES AVAILABLE",f"on path {path}")
+          l.loggerDEBUGredDIM("SERVICES AVAILABLE",f"on path {path}")
           self.connectToDevice(path)
           self.readCharacteristicStringValue( path, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC)
           return f"DEVICE sucessfully connected on path {path}"
         else:
-          loggerDEBUGredDIM("SERVICES NOT AVAILABLE",f" on path {path}")
+          l.loggerDEBUGredDIM("SERVICES NOT AVAILABLE",f" on path {path}")
           try:
             
             #self.discoverThingsInTouchDevices()
@@ -203,12 +200,12 @@ class dBusBluezConnection():
 
   def waitFor(self, event, path):
     eventHappened = False
-    loggerDEBUGredDIM(f"waiting for event ", f"{event} on path {path}")
+    l.loggerDEBUGredDIM(f"waiting for event ", f"{event} on path {path}")
     while not eventHappened:
       eventReceived, pathReceived = self.subscriber.receive()
       if eventReceived == str(event) and pathReceived.startswith(path):
         eventHappened = True
-        loggerINFOredDIM(f"event {event}", f" happened on path {path}")
+        l.loggerINFOredDIM(f"event {event}", f" happened on path {path}")
         #self.subscriber.reply("OK")
 
   def alias(self, path):
@@ -218,7 +215,7 @@ class dBusBluezConnection():
     self.objects = self.objectManagerInterface.GetManagedObjects()
     for path in self.objects:
       if IFACE_ADAPTER in self.objects[path]:
-        loggerDEBUGdim(f"path (adapter object): {path} -- devicePath (to delete): {devicePath} ")
+        l.loggerDEBUGdim(f"path (adapter object): {path} -- devicePath (to delete): {devicePath} ")
         adapterObject =  self.systemBus.get_object(BLUEZ , path)
         adapterInterface = dbus.Interface(adapterObject, IFACE_ADAPTER)
         adapterInterface.RemoveDevice(devicePath)
@@ -230,7 +227,7 @@ class dBusBluezConnection():
 
   def showReadStringValue(self, value):
     valueString = ''.join([str(v) for v in value])
-    loggerTIMESTAMPred("READ CHARACTERISTIC ", f" Value {valueString}")
+    l.loggerTIMESTAMPred("READ CHARACTERISTIC ", f" Value {valueString}")
 
   def genericErrorCallback(self, error):
     print('D-Bus call failed: ' + str(error))
@@ -245,14 +242,14 @@ class dBusBluezConnection():
     connectFilter ={}
     connectFilter["Address"]= str(Address)
     connectFilter["AddressType"]= str(AddressType)
-    loggerTIMESTAMPred("just before asking to connect w/o discovery")
+    l.loggerTIMESTAMPred("just before asking to connect w/o discovery")
     try:
       deviceConnected = self.adapterInterface.ConnectDevice(connectFilter)
-      loggerTIMESTAMPred("just after asking to connect w/o discovery")
+      l.loggerTIMESTAMPred("just after asking to connect w/o discovery")
       #prettyPrint(deviceConnected)
       return deviceConnected
     except Exception as e:
-      loggerTIMESTAMPred(f"error while connecting w/o discovery: {e}")
+      l.loggerTIMESTAMPred(f"error while connecting w/o discovery: {e}")
 
 
   def enterThreadMainLoopGObject(self, exitFlag):
@@ -427,6 +424,6 @@ class dBusBluezConnection():
   # def runShellCommand(self, command):
   #   try:
   #     completed = subprocess.run(command.split())
-  #     loggerDEBUG(f'command {command} - returncode: {completed.returncode}')
+  #     l.loggerDEBUG(f'command {command} - returncode: {completed.returncode}')
   #   except:
-  #     loggerERROR(f"error on method run shell command: {command}")       
+  #     l.loggerERROR(f"error on method run shell command: {command}")       
