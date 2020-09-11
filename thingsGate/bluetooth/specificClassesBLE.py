@@ -1,7 +1,7 @@
 import sys
 import dbus 
 from gi.repository import GLib, GObject
-from genericClassesBLE_03 import Application, Advertisement, Service, Characteristic
+from bluetooth.genericClassesBLE import Application, Advertisement, Service, Characteristic
 from pprint import PrettyPrinter
 import time
 from dbus.mainloop.glib import DBusGMainLoop

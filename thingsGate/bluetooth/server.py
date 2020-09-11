@@ -1,7 +1,7 @@
 import sys
 import os
 
-from specificClassesBLE_03 import GateSetupApplication, GateSetupAdvertisement
+from bluetooth.specificClassesBLE import GateSetupApplication, GateSetupAdvertisement
 
 DEVICE_NAME = 'ThingsInTouch-Gate-03'
 IP_HOSTNAME = '127.0.1.1'
@@ -33,7 +33,7 @@ def changeDeviceHostname(): # the bluetooth device listening reads the DeviceHos
     os.system("invoke-rc.d dhcpcd force-reload")
 
 
-def main():
+def server():
     #changeDeviceHostname()
     application     = GateSetupApplication()
     application.registerApplication()
@@ -42,6 +42,9 @@ def main():
     advertisement.makeDeviceDiscoverable()
     advertisement.registerAdvertisement()
     advertisement.infiniteLoop()
+
+def main():
+    server()
 
 if __name__ == '__main__':
     main()
