@@ -10,7 +10,7 @@ import time
 import threading
 import os
 import subprocess
-from enum import Enum, auto, unique
+import common.events as ev
 
 from colorama import Fore, Back, Style
 # Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
@@ -47,11 +47,6 @@ UUID_BEGIN_THINGSINTOUCH            = '5468696e-6773-496e-546f-756368'
 
 DEVICE_NAME 												= 'ThingsInTouch-Gate-01'
 #########################################################
-@unique
-class bluezEvents(Enum):
-  SerialNumberRead                          = auto()
-  ServicesResolved                          = auto()
-  SerialNumberCharacteristicInterfaceAdded  = auto()
 
 class dBusBluezConnection():
   def __init__(self):
@@ -69,12 +64,12 @@ class dBusBluezConnection():
 
     #self.deviceInterfacesWaitingForServicesResolved = {}
 
-    self.portPublisher   = "5565"
-    #cleanPort(self.portPublisher)
-    self.subscriber   = zmqSubscriber(self.portPublisher) # device ready means connected and services resolved
-    self.publisher    = zmqPublisher (self.portPublisher)
-    self.subscriber.subscribe(bluezEvents.SerialNumberCharacteristicInterfaceAdded)
-    self.subscriber.subscribe(bluezEvents.ServicesResolved)
+    self.portForBluezEvents   = "5565"
+    self.subscriber   = zmqSubscriber(self.portForBluezEvents) 
+    self.publisher    = zmqPublisher (self.portForBluezEvents)
+    self.subscriber.subscribe(ev.bluezEvents.SerialNumberCharacteristicInterfaceAdded)
+    self.subscriber.subscribe(ev.bluezEvents.ServicesResolved)
+    self.subscriber.subscribe(ev.bluezEvents.GateSetupServiceInterfaceAdded)
 
     self.listenToPropertiesChanged()
     self.listenToInterfacesAdded()
@@ -107,11 +102,16 @@ class dBusBluezConnection():
       if dbus.String(IFACE_DEVICE) in interfaces:
         self.connectToDevice(path)
       elif dbus.String(IFACE_GATT_CHARACTERISTIC) in interfaces:
-        if str(interfaces[dbus.String(IFACE_GATT_CHARACTERISTIC)][dbus.String('UUID')])==UUID_SERIAL_NUMBER_CHARACTERISTIC:
-          loggerTIMESTAMPred("SERIAL NUMBER CHARACTERISTIC Interface available")
-          devicePath = self.convertServicePathToDevicePath(path)
-          self.publisher.publish( bluezEvents.SerialNumberCharacteristicInterfaceAdded, devicePath )
+        if str(interfaces[dbus.String(IFACE_GATT_CHARACTERISTIC)][dbus.String('UUID')])== UUID_SERIAL_NUMBER_CHARACTERISTIC:
+          loggerTIMESTAMPred("SERIAL NUMBER Characteristic Interface available")
+          #devicePath = self.convertServicePathToDevicePath(path)
+          self.publisher.publish( ev.bluezEvents.SerialNumberCharacteristicInterfaceAdded, path )
           #loggerTIMESTAMPred(f"acknowledged with reply {reply} ")
+      elif dbus.String(IFACE_GATT_SERVICE) in interfaces:
+        if str(interfaces[dbus.String(IFACE_GATT_SERVICE)][dbus.String('UUID')])== UUID_GATESETUP_SERVICE :
+          loggerTIMESTAMPred("GATE SETUP Service Interface available")
+          #devicePath = self.convertServicePathToDevicePath(path)
+          self.publisher.publish( ev.bluezEvents.GateSetupServiceInterfaceAdded, path )      
     except Exception as e:
       loggerERROR(f"Exception in  -interfaces added-: {e}")
 
@@ -128,7 +128,7 @@ class dBusBluezConnection():
     try:
       pathSplitted = path.split("/dev_")
       address = pathSplitted[1].replace("_",":")
-      loggerDEBUGredDIM(f"path: {path}; address {address}")
+      #loggerDEBUGredDIM(f"path: {path}; address {address}")
       return address
     except Exception as e:
       loggerERROR(f"ERROR converting to device path: {e}")
@@ -154,7 +154,7 @@ class dBusBluezConnection():
         if str(key) == "Connected":
           loggerTIMESTAMPred("DEVICE CONNECTED", f"on path {path}")
         if str(key) == "ServicesResolved":
-          self.publisher.publish(bluezEvents.ServicesResolved, path)
+          self.publisher.publish(ev.bluezEvents.ServicesResolved, path)
           loggerTIMESTAMPred("SERVICES RESOLVED", f" on path {path}")
     except KeyError:
       loggerERROR(f"DEVICE REMOVED on path {path}")
@@ -177,8 +177,7 @@ class dBusBluezConnection():
           "deviceInterface":  self.getDeviceInterface(path),
           "SerialNumber":     None}
         loggerDEBUG(f"ThingsInTouch device stored locally on path: {path}")
-        services = self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
-        #prettyPrint(services)
+        self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
         gateServiceAvailable = UUID_GATESETUP_SERVICE in self.thingsInTouchDevicesStoredLocally[str(path)]["Services"]
         loggerDEBUGdim(f"Gate Service Available: {gateServiceAvailable}")
         if  gateServiceAvailable:
@@ -192,7 +191,7 @@ class dBusBluezConnection():
             
             #self.discoverThingsInTouchDevices()
             address = self.convertPathToAddress(path)
-            self.waitFor(bluezEvents.SerialNumberCharacteristicInterfaceAdded, path)
+            self.waitFor(ev.bluezEvents.GateSetupServiceInterfaceAdded, path)
             self.connectDeviceWithoutDiscovery(address)
             #self.connectToDevice(path)
             self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
@@ -204,9 +203,10 @@ class dBusBluezConnection():
 
   def waitFor(self, event, path):
     eventHappened = False
+    loggerDEBUGredDIM(f"waiting for event ", f"{event} on path {path}")
     while not eventHappened:
       eventReceived, pathReceived = self.subscriber.receive()
-      if eventReceived == str(event) and pathReceived == path:
+      if eventReceived == str(event) and pathReceived.startswith(path):
         eventHappened = True
         loggerINFOredDIM(f"event {event}", f" happened on path {path}")
         #self.subscriber.reply("OK")
