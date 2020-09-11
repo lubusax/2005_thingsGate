@@ -12,12 +12,9 @@ from random import randrange
 
 def cleanPort(port):
   context = zmq.Context()
-  replierEndpoint = "tcp://localhost:"+port
   replier = context.socket(zmq.REP)
-  requester = context.socket(zmq.REQ)
   l.loggerINFOredDIM(f"Socket on port {port} closed?", f" {replier.closed}")
   if not replier.closed:
-    #replier.unbind(replierEndpoint)
     replier.close()
   l.loggerINFOredDIM(f"Socket on port {port} closed?", f" {replier.closed}")
 

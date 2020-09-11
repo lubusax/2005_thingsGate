@@ -11,6 +11,7 @@ import threading
 import os
 import subprocess
 import common.events as ev
+from common.ports import ports as pt
 
 from colorama import Fore, Back, Style
 # Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
@@ -64,7 +65,7 @@ class dBusBluezConnection():
 
     #self.deviceInterfacesWaitingForServicesResolved = {}
 
-    self.portForBluezEvents   = "5565"
+    self.portForBluezEvents   = pt.portForBluezEvents.value
     self.subscriber   = zmqSubscriber(self.portForBluezEvents) 
     self.publisher    = zmqPublisher (self.portForBluezEvents)
     self.subscriber.subscribe(ev.bluezEvents.SerialNumberCharacteristicInterfaceAdded)
