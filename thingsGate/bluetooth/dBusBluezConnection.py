@@ -1,53 +1,35 @@
 # connectDeviceWithoutDiscovery needs flag --experimental on the bluetooth service (daemon bluetoothd)
 # https://learn.adafruit.com/install-bluez-on-the-raspberry-pi/installation#enable-bluetooth-low-energy-features
 # https://pythonhosted.org/txdbus/dbus_overview.html
-import dbus
-from dbus.mainloop.glib import DBusGMainLoop
-from gi.repository import GObject
-from bluetooth.thingsSpecificClasses import Thing
-from    common.common import prettyPrint
-import time
-import threading
-import os
-import subprocess
-import common.enumsEvents as ev
-from common.enumsPorts import port
+
+
+import  time
+import  threading
+import  os
+import  subprocess
+
+import  dbus
+from    dbus.mainloop.glib              import  DBusGMainLoop
+from    gi.repository                   import  GObject
+
+import  common.enumsEvents              as      ev
+import  log.logger                      as      l
+  
+from    bluetooth.thingsSpecificClasses import  Thing
+from    common.common                   import  prettyPrint
+from    common.enumsPorts               import  port
+from    common.enumsDbusBluez           import  orgBluezEnums         as bluezEnum
+from    common.enumsDbusBluez           import  thingsInTouchEnums    as thingsEnum
+from    common.common                   import  nowInSecondsAndMilliseconds, runShellCommand
+from    messaging.messaging             import  zmqSubscriber, zmqPublisher
 
 from colorama import Fore, Back, Style
 # Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 # Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 # Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
-import log.logger as l
-from common.common import nowInSecondsAndMilliseconds, runShellCommand
-from messaging.messaging import zmqSubscriber, zmqPublisher
 
-#########################################################
-BLUEZ 															= 'org.bluez'
-IFACE_OBJECT_MANAGER_DBUS						= 'org.freedesktop.DBus.ObjectManager'
-IFACE_PROPERTIES_DBUS								= "org.freedesktop.DBus.Properties"
-IFACE_LE_ADVERTISING_MANAGER 				= 'org.bluez.LEAdvertisingManager1'
-IFACE_GATT_MANAGER 									= 'org.bluez.GattManager1'
-IFACE_GATT_CHARACTERISTIC 					= 'org.bluez.GattCharacteristic1'
-IFACE_GATT_SERVICE                  = 'org.bluez.GattService1'
-IFACE_ADAPTER 											= 'org.bluez.Adapter1'
-IFACE_DEVICE                        = 'org.bluez.Device1'
 
-PATH_HCI0 													= '/org/bluez/hci0'
-
-UUID_GATESETUP_SERVICE      				= '5468696e-6773-496e-546f-756368000100'
-ALIAS_THINGSINTOUCH_BEGINING				= 'ThingsInTouch'
-# ThingsInTouch Services        go from 0x001000 to 0x001FFF
-# ThingsInTouch Characteristics go from 0x100000 to 0x1FFFFF
-UUID_READ_WRITE_TEST_CHARACTERISTIC = '5468696e-6773-496e-546f-756368100000'
-UUID_NOTIFY_TEST_CHARACTERISTIC     = '5468696e-6773-496e-546f-756368100001'
-UUID_SERIAL_NUMBER_CHARACTERISTIC   = '5468696e-6773-496e-546f-756368100002'
-UUID_DEVICE_TYPE_CHARACTERISTIC     = '5468696e-6773-496e-546f-756368100003'
-
-UUID_BEGIN_THINGSINTOUCH            = '5468696e-6773-496e-546f-756368'
-
-DEVICE_NAME 												= 'ThingsInTouch-Gate-01'
-#########################################################
 
 class dBusBluezConnection():
   def __init__(self):
@@ -58,10 +40,10 @@ class dBusBluezConnection():
 
     self.systemBus 	                = dbus.SystemBus()
 
-    self.hci0 	                    = self.systemBus.get_object(BLUEZ, PATH_HCI0)
-    self.bluez                      = self.systemBus.get_object(BLUEZ , "/")
-    self.adapterInterface           = dbus.Interface( self.hci0,   IFACE_ADAPTER)
-    self.objectManagerInterface     = dbus.Interface(self.bluez, IFACE_OBJECT_MANAGER_DBUS)
+    self.hci0 	                    = self.systemBus.get_object(bluezEnum.BLUEZ.value, bluezEnum.PATH_HCI0.value)
+    self.bluez                      = self.systemBus.get_object(bluezEnum.BLUEZ.value , "/")
+    self.adapterInterface           = dbus.Interface( self.hci0,   bluezEnum.IFACE_ADAPTER.value)
+    self.objectManagerInterface     = dbus.Interface(self.bluez, bluezEnum.IFACE_OBJECT_MANAGER_DBUS.value)
 
     #self.deviceInterfacesWaitingForServicesResolved = {}
 
@@ -83,16 +65,16 @@ class dBusBluezConnection():
   def discoverThingsInTouchDevices(self):
     scanFilter = {}
     scanFilter["Transport"] 	= "le" 
-    scanFilter['UUIDs'] 			= [UUID_GATESETUP_SERVICE]
+    scanFilter['UUIDs'] 			= [thingsEnum.UUID_GATESETUP_SERVICE.value]
     self.adapterInterface.SetDiscoveryFilter(scanFilter)
     self.adapterInterface.StartDiscovery()
 
   def listenToPropertiesChanged(self):
-    self.systemBus.add_signal_receiver(self.propertiesChanged, dbus_interface = IFACE_PROPERTIES_DBUS,
-                        signal_name = "PropertiesChanged", arg0 = IFACE_DEVICE, path_keyword = "path")
+    self.systemBus.add_signal_receiver(self.propertiesChanged, dbus_interface = bluezEnum.IFACE_PROPERTIES_DBUS.value,
+                        signal_name = "PropertiesChanged", arg0 = bluezEnum.IFACE_DEVICE.value, path_keyword = "path")
 
   def listenToInterfacesAdded(self):
-    self.systemBus.add_signal_receiver(self.interfacesAdded, dbus_interface = IFACE_OBJECT_MANAGER_DBUS,
+    self.systemBus.add_signal_receiver(self.interfacesAdded, dbus_interface = bluezEnum.IFACE_OBJECT_MANAGER_DBUS.value,
                         signal_name = "InterfacesAdded")
 
   def interfacesAdded(self, path, interfaces):
@@ -100,14 +82,14 @@ class dBusBluezConnection():
     l.loggerDEBUGdim(f"An interface was added on path: {path}")
     prettyPrint(interfaces)
     try:
-      if dbus.String(IFACE_DEVICE) in interfaces:
+      if dbus.String(bluezEnum.IFACE_DEVICE.value) in interfaces:
         self.connectToDevice(path)
-      elif dbus.String(IFACE_GATT_CHARACTERISTIC) in interfaces:
-        if str(interfaces[dbus.String(IFACE_GATT_CHARACTERISTIC)][dbus.String('UUID')])== UUID_SERIAL_NUMBER_CHARACTERISTIC:
+      elif dbus.String(bluezEnum.IFACE_GATT_CHARACTERISTIC.value) in interfaces:
+        if str(interfaces[dbus.String(bluezEnum.IFACE_GATT_CHARACTERISTIC.value)][dbus.String('UUID')])== thingsEnum.UUID_SERIAL_NUMBER_CHARACTERISTIC.value:
           l.loggerTIMESTAMPred("SERIAL NUMBER Characteristic Interface available")
           self.publisher.publish( ev.bluezEvents.SerialNumberCharacteristicInterfaceAdded, path )
-      elif dbus.String(IFACE_GATT_SERVICE) in interfaces:
-        if str(interfaces[dbus.String(IFACE_GATT_SERVICE)][dbus.String('UUID')])== UUID_GATESETUP_SERVICE :
+      elif dbus.String(bluezEnum.IFACE_GATT_SERVICE.value) in interfaces:
+        if str(interfaces[dbus.String(bluezEnum.IFACE_GATT_SERVICE.value)][dbus.String('UUID')])== thingsEnum.UUID_GATESETUP_SERVICE.value :
           l.loggerTIMESTAMPred("GATE SETUP Service Interface available")
           self.publisher.publish( ev.bluezEvents.GateSetupServiceInterfaceAdded, path )      
     except Exception as e:
@@ -132,14 +114,14 @@ class dBusBluezConnection():
       l.loggerERROR(f"ERROR converting to device path: {e}")
 
   def getDeviceInterface(self, path):
-    deviceObject = self.systemBus.get_object( BLUEZ, path)
-    return dbus.Interface( deviceObject, IFACE_DEVICE)
+    deviceObject = self.systemBus.get_object( bluezEnum.BLUEZ.value, path)
+    return dbus.Interface( deviceObject, bluezEnum.IFACE_DEVICE.value)
 
   def connectToDevice(self,path):
     try:
       deviceInterface = self.getDeviceInterface(path)
       l.loggerTIMESTAMPred("ASK TO CONNECT ",f" to device {path}")
-      deviceInterface.Connect(path, dbus_interface=IFACE_DEVICE)
+      deviceInterface.Connect(path, dbus_interface=bluezEnum.IFACE_DEVICE.value)
       l.loggerTIMESTAMPred("CONNECTED",f" to device {path}")
     except Exception as e:
       l.loggerERROR(f"ERROR on method Connect to Device: {e}")
@@ -163,9 +145,9 @@ class dBusBluezConnection():
     self.objects = self.objectManagerInterface.GetManagedObjects()
     self.thingsInTouchDevicesStoredLocally = {}
     for path in self.objects:
-      if IFACE_DEVICE in self.objects[path]:
-        deviceObject = self.systemBus.get_object(BLUEZ , path)
-        deviceProperties = deviceObject.GetAll(IFACE_DEVICE, dbus_interface=IFACE_PROPERTIES_DBUS)
+      if bluezEnum.IFACE_DEVICE.value in self.objects[path]:
+        deviceObject = self.systemBus.get_object(bluezEnum.BLUEZ.value , path)
+        deviceProperties = deviceObject.GetAll(bluezEnum.IFACE_DEVICE.value, dbus_interface=bluezEnum.IFACE_PROPERTIES_DBUS.value)
         self.thingsInTouchDevicesStoredLocally[str(path)]= {
           "Alias":            self.alias(path),
           "Address":          str(deviceProperties["Address"]),
@@ -176,12 +158,12 @@ class dBusBluezConnection():
           "SerialNumber":     None}
         l.loggerDEBUG(f"ThingsInTouch device stored locally on path: {path}")
         self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
-        gateServiceAvailable = UUID_GATESETUP_SERVICE in self.thingsInTouchDevicesStoredLocally[str(path)]["Services"]
+        gateServiceAvailable = thingsEnum.UUID_GATESETUP_SERVICE.value in self.thingsInTouchDevicesStoredLocally[str(path)]["Services"]
         l.loggerDEBUGdim(f"Gate Service Available: {gateServiceAvailable}")
         if  gateServiceAvailable:
           l.loggerDEBUGredDIM("SERVICES AVAILABLE",f"on path {path}")
           self.connectToDevice(path)
-          self.readCharacteristicStringValue( path, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC)
+          self.readCharacteristicStringValue( path, thingsEnum.UUID_GATESETUP_SERVICE.value, thingsEnum.UUID_SERIAL_NUMBER_CHARACTERISTIC.value)
           return f"DEVICE sucessfully connected on path {path}"
         else:
           l.loggerDEBUGredDIM("SERVICES NOT AVAILABLE",f" on path {path}")
@@ -193,7 +175,7 @@ class dBusBluezConnection():
             self.connectDeviceWithoutDiscovery(address)
             #self.connectToDevice(path)
             self.thingsInTouchDevicesStoredLocally[str(path)]["Services"] = self.getServicesOfDevice(path)
-            self.readCharacteristicStringValue( path, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC)
+            self.readCharacteristicStringValue( path, thingsEnum.UUID_GATESETUP_SERVICE.value, thingsEnum.UUID_SERIAL_NUMBER_CHARACTERISTIC.value)
             return f"DEVICE sucessfully connected on path {path}"
 
           except Exception as e:
@@ -210,21 +192,21 @@ class dBusBluezConnection():
         #self.subscriber.reply("OK")
 
   def alias(self, path):
-    return str(self.objects[path][IFACE_DEVICE]["Alias"])
+    return str(self.objects[path][bluezEnum.IFACE_DEVICE.value]["Alias"])
 
   def deleteDevice(self, devicePath):
     self.objects = self.objectManagerInterface.GetManagedObjects()
     for path in self.objects:
-      if IFACE_ADAPTER in self.objects[path]:
+      if bluezEnum.IFACE_ADAPTER.value in self.objects[path]:
         l.loggerDEBUGdim(f"path (adapter object): {path} -- devicePath (to delete): {devicePath} ")
-        adapterObject =  self.systemBus.get_object(BLUEZ , path)
-        adapterInterface = dbus.Interface(adapterObject, IFACE_ADAPTER)
+        adapterObject =  self.systemBus.get_object(bluezEnum.BLUEZ.value , path)
+        adapterInterface = dbus.Interface(adapterObject, bluezEnum.IFACE_ADAPTER.value)
         adapterInterface.RemoveDevice(devicePath)
 
   def readCharacteristicStringValue(self,devicePath, uuidService, uuidCharacteristic):
     characteristicObject = self.thingsInTouchDevicesStoredLocally[str(devicePath)]["Services"][uuidService]["Characteristics"][uuidCharacteristic]["CharacteristicObject"]
     characteristicObject.ReadValue({}, reply_handler= self.showReadStringValue,
-        error_handler=self.genericErrorCallback, dbus_interface=IFACE_GATT_CHARACTERISTIC)
+        error_handler=self.genericErrorCallback, dbus_interface=bluezEnum.IFACE_GATT_CHARACTERISTIC.value)
 
   def showReadStringValue(self, value):
     valueString = ''.join([str(v) for v in value])
@@ -276,9 +258,9 @@ class dBusBluezConnection():
     self.objects = self.objectManagerInterface.GetManagedObjects()
     self.registeredDevices = {}
     for path in self.objects:
-      if IFACE_DEVICE in self.objects[path]:
-        deviceObject = self.systemBus.get_object(BLUEZ , path)
-        deviceProperties = deviceObject.GetAll(IFACE_DEVICE, dbus_interface=IFACE_PROPERTIES_DBUS)
+      if bluezEnum.IFACE_DEVICE.value in self.objects[path]:
+        deviceObject = self.systemBus.get_object(bluezEnum.BLUEZ.value , path)
+        deviceProperties = deviceObject.GetAll(bluezEnum.IFACE_DEVICE.value, dbus_interface=bluezEnum.IFACE_PROPERTIES_DBUS.value)
         connected = bool(deviceProperties["Connected"])
         self.registeredDevices[str(path)]= {
           "Alias":            self.alias(path),
@@ -292,7 +274,7 @@ class dBusBluezConnection():
         print(f"updateRegisteredDevices -  path: {path}, connected: {connected} ")
         if connected:
           self.registeredDevices[str(path)]["Services"] = self.getServicesOfDevice(path)
-          if  UUID_GATESETUP_SERVICE not in self.registeredDevices[str(path)]["Services"]:
+          if  thingsEnum.UUID_GATESETUP_SERVICE.value not in self.registeredDevices[str(path)]["Services"]:
             print(f"   ---- device not connected")
             self.registeredDevices[str(path)]["Connected"]= False
             # Set Property ["Connected"]= False
@@ -303,13 +285,13 @@ class dBusBluezConnection():
     return self.registeredDevices
   
   def isDeviceConnected(self, path):
-    return bool(self.objects[path][IFACE_DEVICE]["Connected"])
+    return bool(self.objects[path][bluezEnum.IFACE_DEVICE.value]["Connected"])
   
   def alias(self, path):
-    return str(self.objects[path][IFACE_DEVICE]["Alias"])
+    return str(self.objects[path][bluezEnum.IFACE_DEVICE.value]["Alias"])
 
   def isServiceOfThingsInTouch(self, uuid):
-    if str(uuid).startswith(UUID_BEGIN_THINGSINTOUCH):
+    if str(uuid).startswith(thingsEnum.UUID_BEGIN_THINGSINTOUCH.value):
       return True
     else:
       return False
@@ -324,16 +306,16 @@ class dBusBluezConnection():
 
     for path in self.objects:
       if str(path).startswith(str(devicePath)):
-        if IFACE_GATT_SERVICE in self.objects[path]:
-          serviceObject = self.systemBus.get_object(BLUEZ , path)
-          serviceProperties = serviceObject.GetAll(IFACE_GATT_SERVICE, dbus_interface=IFACE_PROPERTIES_DBUS)
+        if bluezEnum.IFACE_GATT_SERVICE.value in self.objects[path]:
+          serviceObject = self.systemBus.get_object(bluezEnum.BLUEZ.value , path)
+          serviceProperties = serviceObject.GetAll(bluezEnum.IFACE_GATT_SERVICE.value, dbus_interface=bluezEnum.IFACE_PROPERTIES_DBUS.value)
           uuid = serviceProperties['UUID']
           if self.isServiceOfThingsInTouch(uuid):
             characteristicsOfService = {}
             for c in characteristicsOfDevice:
               if c.startswith(str(path)):
-                characteristicObject = self.systemBus.get_object(BLUEZ , c)
-                characteristicProperties = characteristicObject.GetAll(IFACE_GATT_CHARACTERISTIC, dbus_interface=IFACE_PROPERTIES_DBUS)
+                characteristicObject = self.systemBus.get_object(bluezEnum.BLUEZ.value , c)
+                characteristicProperties = characteristicObject.GetAll(bluezEnum.IFACE_GATT_CHARACTERISTIC.value, dbus_interface=bluezEnum.IFACE_PROPERTIES_DBUS.value)
                 characteristicsOfService[str(characteristicProperties['UUID'])]= {
                               "Path":str(c),
                               "Value":characteristicProperties['Value'],
@@ -350,18 +332,18 @@ class dBusBluezConnection():
 
 
   def pairToDevice(self,path):
-    self.registeredDevices[str(path)]["deviceInterface"].Pair(path, dbus_interface=IFACE_DEVICE)
+    self.registeredDevices[str(path)]["deviceInterface"].Pair(path, dbus_interface=bluezEnum.IFACE_DEVICE.value)
 
   def disconnectAllDevices(self):
     for path in self.registeredDevices:
       self.disconnectDevice(path)
   
   def disconnectDevice(self, path):
-    self.registeredDevices[str(path)]["deviceInterface"].Disconnect(path, dbus_interface=IFACE_DEVICE)
+    self.registeredDevices[str(path)]["deviceInterface"].Disconnect(path, dbus_interface=bluezEnum.IFACE_DEVICE.value)
 
 
   def establishBluetoothConnection(self,devicePath):
-    self.readCharacteristicStringValue( devicePath, UUID_GATESETUP_SERVICE, UUID_SERIAL_NUMBER_CHARACTERISTIC) # async answer
+    self.readCharacteristicStringValue( devicePath, thingsEnum.UUID_GATESETUP_SERVICE.value, thingsEnum.UUID_SERIAL_NUMBER_CHARACTERISTIC.value) # async answer
 
 
   def ensureDeviceKnown(self,path):
@@ -376,7 +358,7 @@ class dBusBluezConnection():
     characteristics = []
     for path in self.objects:
       if str(path).startswith(str(devicePath)):
-        if IFACE_GATT_CHARACTERISTIC in self.objects[path]:
+        if bluezEnum.IFACE_GATT_CHARACTERISTIC.value in self.objects[path]:
           characteristics.append(str(path))
 
     # print("\n")
@@ -399,7 +381,7 @@ class dBusBluezConnection():
     #self.flagToExit = True
 
   def aliasFromThingsInTouch(self, alias):
-    if alias.startswith(ALIAS_THINGSINTOUCH_BEGINING):
+    if alias.startswith(thingsEnum.ALIAS_THINGSINTOUCH_BEGINING.value):
       return True
     else:
       return False

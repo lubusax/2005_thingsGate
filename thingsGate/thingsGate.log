@@ -5918,3 +5918,191 @@ ERROR<bluetoothConnection>11Sep17:13<ERROR on method Connect to Device: org.free
 >
 INFO<bluetoothConnection>11Sep17:13<[31mBACK TO bluetooth.py: DEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[2m[0m>
 DEBUG<bluetoothConnection>11Sep17:13<TIMESTAMP-[31mREAD CHARACTERISTIC [39m[2m Value 20200818.000.000.001 : 82s 932ms[0m>
+INFO<MainProcess>11Sep17:33<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>11Sep17:33<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>11Sep17:33<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>11Sep17:33<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>11Sep17:33<starting manager thread>
+INFO<MainProcess>11Sep17:33<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>11Sep17:33<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>11Sep17:33<[2mTIMESTAMP - __init__ class dBusBluezConnection : 19s 866ms[0m>
+DEBUG<bluetoothConnection>11Sep17:33<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+INFO<MainProcess>11Sep17:34<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>11Sep17:34<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>11Sep17:34<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>11Sep17:34<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>11Sep17:34<starting manager thread>
+INFO<MainProcess>11Sep17:34<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>11Sep17:34<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>11Sep17:34<[2mTIMESTAMP - __init__ class dBusBluezConnection : 86s 657ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>11Sep17:34<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[31mSERVICES NOT AVAILABLE[39m[2m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[31mwaiting for event [39m[2mbluezEvents.GateSetupServiceInterfaceAdded on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 91s 272ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mTIMESTAMP - Interfaces Added : 91s 314ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02a8[0m>
+DEBUG<bluetoothConnection>11Sep17:34<TIMESTAMP-[31mGATE SETUP Service Interface available[39m[2m : 91s 329ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[36mtimestamp: Fri Sep 11 17:34:51 2020, topic: bluezEvents.GateSetupServiceInterfaceAdded, message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02a8[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mTIMESTAMP - Interfaces Added : 91s 333ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[32mtime STAMP: Fri Sep 11 17:34:51 2020; topic:bluezEvents.GateSetupServiceInterfaceAdded; message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02a8 [0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02a8/char02a9[0m>
+INFO<bluetoothConnection>11Sep17:34<[31mevent bluezEvents.GateSetupServiceInterfaceAdded[39m[2m happened on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:34<TIMESTAMP-[31mjust before asking to connect w/o discovery[39m[2m : 91s 343ms[0m>
+ERROR<bluetoothConnection>11Sep17:34<Exception in  -interfaces added-: name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined>
+DEBUG<bluetoothConnection>11Sep17:34<TIMESTAMP-[31merror while connecting w/o discovery: org.bluez.Error.AlreadyExists: Already Exists[39m[2m : 91s 350ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mTIMESTAMP - Interfaces Added : 91s 356ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02a8/char02ab[0m>
+ERROR<bluetoothConnection>11Sep17:34<Exception in  -interfaces added-: name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined>
+DEBUG<bluetoothConnection>11Sep17:34<[2mTIMESTAMP - Interfaces Added : 91s 402ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02a8/char02ab/desc02ad[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mTIMESTAMP - Interfaces Added : 91s 424ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02a8/char02ae[0m>
+ERROR<bluetoothConnection>11Sep17:34<Exception in  -interfaces added-: name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined>
+DEBUG<bluetoothConnection>11Sep17:34<[2mTIMESTAMP - Interfaces Added : 91s 450ms[0m>
+DEBUG<bluetoothConnection>11Sep17:34<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02a8/char02b0[0m>
+ERROR<bluetoothConnection>11Sep17:34<Exception in  -interfaces added-: name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined>
+INFO<bluetoothConnection>11Sep17:34<[31mBACK TO bluetooth.py: unable to connect DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 with exception name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined[39m[2m[0m>
+INFO<MainProcess>11Sep17:36<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>11Sep17:36<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>11Sep17:36<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>11Sep17:36<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>11Sep17:36<starting manager thread>
+INFO<MainProcess>11Sep17:36<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>11Sep17:36<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - __init__ class dBusBluezConnection : 73s 989ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>11Sep17:36<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[31mSERVICES NOT AVAILABLE[39m[2m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[31mwaiting for event [39m[2mbluezEvents.GateSetupServiceInterfaceAdded on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 78s 571ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 78s 750ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02b2[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mGATE SETUP Service Interface available[39m[2m : 78s 766ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[36mtimestamp: Fri Sep 11 17:36:18 2020, topic: bluezEvents.GateSetupServiceInterfaceAdded, message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02b2[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[32mtime STAMP: Fri Sep 11 17:36:18 2020; topic:bluezEvents.GateSetupServiceInterfaceAdded; message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02b2 [0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 78s 777ms[0m>
+INFO<bluetoothConnection>11Sep17:36<[31mevent bluezEvents.GateSetupServiceInterfaceAdded[39m[2m happened on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02b2/char02b3[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mjust before asking to connect w/o discovery[39m[2m : 78s 785ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31merror while connecting w/o discovery: org.bluez.Error.AlreadyExists: Already Exists[39m[2m : 78s 795ms[0m>
+ERROR<bluetoothConnection>11Sep17:36<Exception in  -interfaces added-: name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 78s 813ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02b2/char02b5[0m>
+ERROR<bluetoothConnection>11Sep17:36<Exception in  -interfaces added-: name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 78s 860ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02b2/char02b5/desc02b7[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 78s 888ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02b2/char02b8[0m>
+INFO<bluetoothConnection>11Sep17:36<[31mBACK TO bluetooth.py: unable to connect DEVICE on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 with exception name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined[39m[2m[0m>
+ERROR<bluetoothConnection>11Sep17:36<Exception in  -interfaces added-: name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 78s 921ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02b2/char02ba[0m>
+ERROR<bluetoothConnection>11Sep17:36<Exception in  -interfaces added-: name 'UUID_SERIAL_NUMBER_CHARACTERISTIC' is not defined>
+INFO<MainProcess>11Sep17:36<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>11Sep17:36<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>11Sep17:36<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>11Sep17:36<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>11Sep17:36<starting manager thread>
+INFO<MainProcess>11Sep17:36<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>11Sep17:36<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - __init__ class dBusBluezConnection : 1s 204ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>11Sep17:36<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[31mSERVICES NOT AVAILABLE[39m[2m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[31mwaiting for event [39m[2mbluezEvents.GateSetupServiceInterfaceAdded on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 4s 596ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 4s 614ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mGATE SETUP Service Interface available[39m[2m : 4s 626ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[36mtimestamp: Fri Sep 11 17:36:44 2020, topic: bluezEvents.GateSetupServiceInterfaceAdded, message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 4s 630ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[32mtime STAMP: Fri Sep 11 17:36:44 2020; topic:bluezEvents.GateSetupServiceInterfaceAdded; message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc [0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc/char02bd[0m>
+INFO<bluetoothConnection>11Sep17:36<[31mevent bluezEvents.GateSetupServiceInterfaceAdded[39m[2m happened on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mjust before asking to connect w/o discovery[39m[2m : 4s 640ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31merror while connecting w/o discovery: org.bluez.Error.AlreadyExists: Already Exists[39m[2m : 4s 645ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 4s 648ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc/char02bf[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 4s 660ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc/char02bf/desc02c1[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 4s 672ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc/char02c2[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mSERIAL NUMBER Characteristic Interface available[39m[2m : 4s 688ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[36mtimestamp: Fri Sep 11 17:36:44 2020, topic: bluezEvents.SerialNumberCharacteristicInterfaceAdded, message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc/char02c2[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - Interfaces Added : 4s 704ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02bc/char02c4[0m>
+INFO<bluetoothConnection>11Sep17:36<[31mBACK TO bluetooth.py: DEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[2m[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mREAD CHARACTERISTIC [39m[2m Value 20200818.000.000.001 : 4s 826ms[0m>
+INFO<MainProcess>11Sep17:36<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>11Sep17:36<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>11Sep17:36<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>11Sep17:36<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>11Sep17:36<starting manager thread>
+INFO<MainProcess>11Sep17:36<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>11Sep17:36<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>11Sep17:36<[2mTIMESTAMP - __init__ class dBusBluezConnection : 13s 977ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>11Sep17:36<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>11Sep17:36<[31mSERVICES AVAILABLE[39m[2mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mASK TO CONNECT [39m[2m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 14s 149ms[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mCONNECTED[39m[2m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 14s 157ms[0m>
+INFO<bluetoothConnection>11Sep17:36<[31mBACK TO bluetooth.py: DEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[2m[0m>
+DEBUG<bluetoothConnection>11Sep17:36<TIMESTAMP-[31mREAD CHARACTERISTIC [39m[2m Value 20200818.000.000.001 : 14s 235ms[0m>
+INFO<MainProcess>11Sep17:57<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>11Sep17:57<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>11Sep17:57<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>11Sep17:57<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>11Sep17:57<starting manager thread>
+INFO<MainProcess>11Sep17:57<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>11Sep17:57<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>11Sep17:57<[2mTIMESTAMP - __init__ class dBusBluezConnection : 77s 652ms[0m>
+DEBUG<bluetoothConnection>11Sep17:57<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>11Sep17:57<[2mGate Service Available: False[0m>
+DEBUG<bluetoothConnection>11Sep17:57<[31mSERVICES NOT AVAILABLE[39m[2m on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:57<[31mwaiting for event [39m[2mbluezEvents.GateSetupServiceInterfaceAdded on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mTIMESTAMP - Properties Changed on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 81s 714ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mTIMESTAMP - Interfaces Added : 81s 742ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6[0m>
+DEBUG<bluetoothConnection>11Sep17:58<TIMESTAMP-[31mGATE SETUP Service Interface available[39m[2m : 81s 754ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[36mtimestamp: Fri Sep 11 17:58:01 2020, topic: bluezEvents.GateSetupServiceInterfaceAdded, message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mTIMESTAMP - Interfaces Added : 81s 764ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[32mtime STAMP: Fri Sep 11 17:58:01 2020; topic:bluezEvents.GateSetupServiceInterfaceAdded; message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6 [0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6/char02c7[0m>
+INFO<bluetoothConnection>11Sep17:58<[31mevent bluezEvents.GateSetupServiceInterfaceAdded[39m[2m happened on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:58<TIMESTAMP-[31mjust before asking to connect w/o discovery[39m[2m : 81s 773ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mTIMESTAMP - Interfaces Added : 81s 779ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<TIMESTAMP-[31merror while connecting w/o discovery: org.bluez.Error.AlreadyExists: Already Exists[39m[2m : 81s 780ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6/char02c9[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mTIMESTAMP - Interfaces Added : 81s 791ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6/char02c9/desc02cb[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mTIMESTAMP - Interfaces Added : 81s 806ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6/char02cc[0m>
+DEBUG<bluetoothConnection>11Sep17:58<TIMESTAMP-[31mSERIAL NUMBER Characteristic Interface available[39m[2m : 81s 816ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[36mtimestamp: Fri Sep 11 17:58:01 2020, topic: bluezEvents.SerialNumberCharacteristicInterfaceAdded, message: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6/char02cc[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mTIMESTAMP - Interfaces Added : 81s 825ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service02c6/char02ce[0m>
+INFO<bluetoothConnection>11Sep17:58<[31mBACK TO bluetooth.py: DEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[2m[0m>
+DEBUG<bluetoothConnection>11Sep17:58<TIMESTAMP-[31mREAD CHARACTERISTIC [39m[2m Value 20200818.000.000.001 : 81s 981ms[0m>
+INFO<MainProcess>11Sep17:58<running on python version: 3.8.5 (default, Aug 26 2020, 18:32:37) 
+[GCC 6.3.0 20170516]>
+DEBUG<MainProcess>11Sep17:58<running on directory: /home/pi/Documents/2005_thingsGate/thingsGate>
+DEBUG<MainProcess>11Sep17:58<PYTHONPATH: /home/pi/Documents/2005_thingsGate/thingsGate>
+INFO<MainProcess>11Sep17:58<process number 0, preimporting bluetooth.bluetooth>
+DEBUG<MainProcess>11Sep17:58<starting manager thread>
+INFO<MainProcess>11Sep17:58<green Temp Processes {'bluetoothConnection': 'bluetooth.bluetooth'}>
+INFO<MainProcess>11Sep17:58<starting python process bluetooth.bluetooth>
+DEBUG<bluetoothConnection>11Sep17:58<[2mTIMESTAMP - __init__ class dBusBluezConnection : 88s 55ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<ThingsInTouch device stored locally on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70>
+DEBUG<bluetoothConnection>11Sep17:58<[2mGate Service Available: True[0m>
+DEBUG<bluetoothConnection>11Sep17:58<[31mSERVICES AVAILABLE[39m[2mon path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[0m>
+DEBUG<bluetoothConnection>11Sep17:58<TIMESTAMP-[31mASK TO CONNECT [39m[2m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 88s 274ms[0m>
+DEBUG<bluetoothConnection>11Sep17:58<TIMESTAMP-[31mCONNECTED[39m[2m to device /org/bluez/hci0/dev_B8_27_EB_4D_68_70 : 88s 283ms[0m>
+INFO<bluetoothConnection>11Sep17:58<[31mBACK TO bluetooth.py: DEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[2m[0m>
+DEBUG<bluetoothConnection>11Sep17:58<TIMESTAMP-[31mREAD CHARACTERISTIC [39m[2m Value 20200818.000.000.001 : 88s 372ms[0m>
