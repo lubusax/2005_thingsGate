@@ -15,6 +15,12 @@ def loggerTIMESTAMP(message):
 def loggerTIMESTAMPred(messageRED, messageDIMMED=""):
   logging.debug("TIMESTAMP-"+Fore.RED+messageRED+Fore.RESET+Style.DIM+messageDIMMED+ f" : {nowInSecondsAndMilliseconds()}"+Style.RESET_ALL)
 
+def loggerTIMESTAMPgreen(message, messageDIMMED=""):
+  logging.debug("TIMESTAMP-"+Fore.GREEN+message+Fore.RESET+Style.DIM+messageDIMMED+ f" : {nowInSecondsAndMilliseconds()}"+Style.RESET_ALL)
+
+def loggerTIMESTAMPcyan(message, messageDIMMED=""):
+  logging.debug("TIMESTAMP-"+Fore.CYAN+message+Fore.RESET+Style.DIM+messageDIMMED+ f" : {nowInSecondsAndMilliseconds()}"+Style.RESET_ALL)
+
 ######################
 
 def loggerDEBUG(message):
@@ -25,6 +31,9 @@ def loggerDEBUGdim(message):
 
 def loggerDEBUGredDIM(messageRED, messageDIMMED=""):
   logging.debug(Fore.RED+messageRED+Fore.RESET+Style.DIM+messageDIMMED+Style.RESET_ALL)
+
+def loggerDEBUGgreenDIM(message, messageDIMMED=""):
+  logging.debug(Fore.GREEN+message+Fore.RESET+Style.DIM+messageDIMMED+Style.RESET_ALL)
 
 #######################
 

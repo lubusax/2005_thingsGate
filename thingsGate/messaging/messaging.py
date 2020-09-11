@@ -1,14 +1,46 @@
 import time
 import zmq
 import itertools
+import pickle
 
-from colorama import Fore, Back, Style
-# Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
-# Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
-# Style: DIM, NORMAL, BRIGHT, RESET_ALL
+# from colorama import Fore, Back, Style
+# # Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
+# # Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
+# # Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
 import log.logger as l
 from random import randrange
+
+class SubscriberMultipart():
+  def __init__(self,port):
+    self.context = zmq.Context()  
+    self.socket = self.context.socket(zmq.SUB)
+    self.socket.connect(f"tcp://localhost:{port}")
+    self.port=port
+
+  def subscribe(self, topic):
+    self.socket.setsockopt(zmq.SUBSCRIBE, topic.encode('utf-8'))
+
+  def receive(self):
+    topic_bytes, message_bytes = self.socket.recv_multipart() # this call is blocking
+    topic = topic_bytes.decode('utf-8')
+    message = pickle.loads(message_bytes)
+    l.loggerTIMESTAMPgreen(f"topic:{topic}",f"; message: {message}")
+    return topic, message
+
+class PublisherMultipart():
+  def __init__(self,port):
+    self.context = zmq.Context()  
+    self.socket = self.context.socket(zmq.PUB)
+    self.socket.bind(f"tcp://*:{port}")
+    self.port=port
+
+  def publish(self, topic, message):
+    l.loggerTIMESTAMPcyan(f"topic:{topic}",f"; message: {message}")
+    topic_bytes = topic.encode('utf-8')
+    message_bytes = pickle.dump(message)
+    self.socket.send_multipart([topic_bytes, message_bytes])
+
 
 def cleanPort(port):
   context = zmq.Context()

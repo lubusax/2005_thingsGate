@@ -23,13 +23,6 @@ from    common.enumsDbusBluez           import  thingsInTouchEnums    as thingsE
 from    common.common                   import  nowInSecondsAndMilliseconds, runShellCommand
 from    messaging.messaging             import  zmqSubscriber, zmqPublisher
 
-from colorama import Fore, Back, Style
-# Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
-# Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
-# Style: DIM, NORMAL, BRIGHT, RESET_ALL
-
-
-
 
 class dBusBluezConnection():
   def __init__(self):
@@ -44,8 +37,6 @@ class dBusBluezConnection():
     self.bluez                      = self.systemBus.get_object(bluezEnum.BLUEZ.value , "/")
     self.adapterInterface           = dbus.Interface( self.hci0,   bluezEnum.IFACE_ADAPTER.value)
     self.objectManagerInterface     = dbus.Interface(self.bluez, bluezEnum.IFACE_OBJECT_MANAGER_DBUS.value)
-
-    #self.deviceInterfacesWaitingForServicesResolved = {}
 
     self.portForBluezEvents   = port.bluez.value
     self.subscriber   = zmqSubscriber(self.portForBluezEvents) 
