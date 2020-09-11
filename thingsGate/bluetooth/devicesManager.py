@@ -1,23 +1,17 @@
-from common.device import Device
-from log.logger import loggerDEBUG, loggerINFO, loggerWARNING, loggerERROR, loggerCRITICAL
 import time
+from common.device import Device
+import log.logger as l
 
-from messaging.messaging import Replier
-
-# device= 
-# device = Device()
+import messaging.messaging as m
 
 def devicesManagerThread():
-  portReplierDevicesManager   = "5555"
-  newDevicesReceiverAndReplier = Replier(portReplierDevicesManager)
-  #time.sleep(2)
+  listOfDevicesStoredLocally = getListOfDevicesStoredLocally()
+  for device in listOfDevicesStoredLocally:
+    launchDeviceManager(device)
 
   while True:
-    newDeviceAddress = newDevicesReceiverAndReplier.receive()
-
-    loggerINFO(f"devices Manager - NEW DEVICE --- newDeviceAddress: {newDeviceAddress}")
-    newDevicesReceiverAndReplier.reply("OK")
-
+    eventReceived, pathReceived = subscriber.receive()
+    l.loggerINFOredDIM(f"DEVICES MANAGER event received: {eventReceived}", f"on path: {pathReceived}")
       
 def main():
   devicesManagerThread()
