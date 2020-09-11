@@ -2,7 +2,7 @@ import os, sys, time # pylint: disable=import-error
 from crontab.crontabSetup import minuteTrigger 
 from rpi.rpiSetup import setHostname
 from internet.internet import ensureInternet
-from odoo.gate import gateInit
+#from odoo.gate import gateInit
 from multiprocessing import Process, Manager
 #import logging, logging.config
 from launcher import launcher
