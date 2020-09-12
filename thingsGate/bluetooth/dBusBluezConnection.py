@@ -177,6 +177,7 @@ class dBusBluezConnection():
     l.loggerDEBUGredDIM(f"waiting for event ", f"{event} on path {path}")
     while not eventHappened:
       eventReceived, pathReceived = self.subscriber.receive()
+      l.loggerINFOredDIM(f"received - event {event}", f" on path {path}")
       if eventReceived == str(event) and pathReceived.startswith(path):
         eventHappened = True
         l.loggerINFOredDIM(f"event {event}", f" happened on path {path}")

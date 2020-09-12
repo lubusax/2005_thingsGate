@@ -3,11 +3,6 @@ import zmq
 import itertools
 import pickle
 
-# from colorama import Fore, Back, Style
-# # Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
-# # Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
-# # Style: DIM, NORMAL, BRIGHT, RESET_ALL
-
 import log.logger as l
 from random import randrange
 
@@ -25,7 +20,7 @@ class SubscriberMultipart():
     topic_bytes, message_bytes = self.socket.recv_multipart() # this call is blocking
     topic = topic_bytes.decode('utf-8')
     message = pickle.loads(message_bytes)
-    l.loggerTIMESTAMPgreen(f"topic:{topic}",f"; message: {message}")
+    l.loggerTIMESTAMPgreen(f"TOPIC: {topic}",f"; MESSAGE: {message}")
     return topic, message
 
 class PublisherMultipart():
@@ -36,7 +31,7 @@ class PublisherMultipart():
     self.port=port
 
   def publish(self, topic, message):
-    l.loggerTIMESTAMPcyan(f"topic:{topic}",f"; message: {message}")
+    l.loggerTIMESTAMPcyan(f"TOPIC: {topic}",f"; MESSAGE: {message}")
     topic_bytes = topic.encode('utf-8')
     message_bytes = pickle.dump(message)
     self.socket.send_multipart([topic_bytes, message_bytes])
@@ -125,7 +120,7 @@ class zmqSubscriber():
   def receive(self):
     string = self.socket.recv_string() # this call is blocking
     topic, message = string.split()
-    l.loggerDEBUG(Fore.GREEN + f"time STAMP: {time.ctime()}; topic:{topic}; message: {message} " + Style.RESET_ALL)
+    l.loggerTIMESTAMPgreen(f"TOPIC: {topic}",f"; MESSAGE: {message}")
     return topic, message
 
 class zmqPublisher():
@@ -136,7 +131,7 @@ class zmqPublisher():
     self.port=port
 
   def publish(self, topic, message):
-    l.loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    l.loggerTIMESTAMPcyan(f"TOPIC: {topic}",f"; MESSAGE: {message}")
     string= str(topic)+" "+ message
     self.socket.send_string(string)
 
@@ -149,7 +144,7 @@ class zmqRequester():
     self.port=port
 
   def request(self, topic, message):
-    l.loggerDEBUG(Fore.CYAN + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    l.loggerTIMESTAMPcyan(f"TOPIC: {topic}",f"; MESSAGE: {message}")
     string= topic+" "+ message
     self.socket.send(bytes(string, 'utf-8'))
     message = self.socket.recv()
@@ -168,7 +163,7 @@ class zmqReplier():
     message = self.socket.recv()
     answerString = str(message, 'utf-8')
     topic, message = answerString.split()
-    l.loggerDEBUG(Fore.RED + f"timestamp: {time.ctime()}, topic: {topic}, message: {message}" + Style.RESET_ALL)
+    l.loggerTIMESTAMPgreen(f"TOPIC: {topic}",f"; MESSAGE: {message}")
     return topic, message
   
   def reply(self, topic, message):
