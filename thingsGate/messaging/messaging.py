@@ -14,13 +14,14 @@ class SubscriberMultipart():
     self.port=port
 
   def subscribe(self, topic):
-    self.socket.setsockopt(zmq.SUBSCRIBE, topic.encode('utf-8'))
+    l.loggerDEBUGredDIM(f"SUBSCRIPTION TO TOPIC: {topic}")
+    self.socket.setsockopt(zmq.SUBSCRIBE, str(topic).encode('utf-8'))
 
   def receive(self):
     topic_bytes, message_bytes = self.socket.recv_multipart() # this call is blocking
     topic = topic_bytes.decode('utf-8')
     message = pickle.loads(message_bytes)
-    l.loggerTIMESTAMPgreen(f"TOPIC: {topic}",f"; MESSAGE: {message}")
+    l.loggerTIMESTAMPgreen(f"received TOPIC: {topic}",f"; MESSAGE: {message}")
     return topic, message
 
 class PublisherMultipart():
@@ -31,9 +32,9 @@ class PublisherMultipart():
     self.port=port
 
   def publish(self, topic, message):
-    l.loggerTIMESTAMPcyan(f"TOPIC: {topic}",f"; MESSAGE: {message}")
-    topic_bytes = topic.encode('utf-8')
-    message_bytes = pickle.dump(message)
+    l.loggerTIMESTAMPcyan(f"published TOPIC: {topic}",f"; MESSAGE: {message}")
+    topic_bytes = str(topic).encode('utf-8')
+    message_bytes = pickle.dumps(message)
     self.socket.send_multipart([topic_bytes, message_bytes])
 
 

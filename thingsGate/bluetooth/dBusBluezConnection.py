@@ -14,14 +14,14 @@ from    gi.repository                   import  GObject
 
 import  common.enumsEvents              as      ev
 import  log.logger                      as      l
-  
+import  messaging.messaging             as      m
+
 from    bluetooth.thingsSpecificClasses import  Thing
 from    common.common                   import  prettyPrint
 from    common.enumsPorts               import  port
 from    common.enumsDbusBluez           import  orgBluezEnums         as bluezEnum
 from    common.enumsDbusBluez           import  thingsInTouchEnums    as thingsEnum
 from    common.common                   import  nowInSecondsAndMilliseconds, runShellCommand
-from    messaging.messaging             import  zmqSubscriber, zmqPublisher
 
 
 class dBusBluezConnection():
@@ -39,8 +39,8 @@ class dBusBluezConnection():
     self.objectManagerInterface     = dbus.Interface(self.bluez, bluezEnum.IFACE_OBJECT_MANAGER_DBUS.value)
 
     self.portForBluezEvents   = port.bluez.value
-    self.subscriber   = zmqSubscriber(self.portForBluezEvents) 
-    self.publisher    = zmqPublisher (self.portForBluezEvents)
+    self.subscriber   = m.SubscriberMultipart(self.portForBluezEvents) 
+    self.publisher    = m.PublisherMultipart(self.portForBluezEvents)
     self.subscriber.subscribe(ev.bluezEvents.SerialNumberCharacteristicInterfaceAdded)
     self.subscriber.subscribe(ev.bluezEvents.ServicesResolved)
     self.subscriber.subscribe(ev.bluezEvents.GateSetupServiceInterfaceAdded)
@@ -181,7 +181,6 @@ class dBusBluezConnection():
       if eventReceived == str(event) and pathReceived.startswith(path):
         eventHappened = True
         l.loggerINFOredDIM(f"event {event}", f" happened on path {path}")
-        #self.subscriber.reply("OK")
 
   def alias(self, path):
     return str(self.objects[path][bluezEnum.IFACE_DEVICE.value]["Alias"])
