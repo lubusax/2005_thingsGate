@@ -1,4 +1,4 @@
-from    pprint import PrettyPrinter
+from pprint import PrettyPrinter
 pPrint = PrettyPrinter(indent=1).pprint
 
 import time
