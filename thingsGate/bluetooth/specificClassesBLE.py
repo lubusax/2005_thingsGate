@@ -25,6 +25,7 @@ UUID_READ_WRITE_TEST_CHARACTERISTIC     = '5468696e-6773-496e-546f-756368100000'
 UUID_NOTIFY_TEST_CHARACTERISTIC         = '5468696e-6773-496e-546f-756368100001'
 UUID_SERIAL_NUMBER_CHARACTERISTIC       = '5468696e-6773-496e-546f-756368100002'
 UUID_DEVICE_TYPE_CHARACTERISTIC         = '5468696e-6773-496e-546f-756368100003'
+UUID_INTERNET_CONNECTED_CHARACTERISTIC  = '5468696e-6773-496e-546f-756368100004'
 
 DEVICE_NAME = 'ThingsInTouch-RAS'
 
@@ -66,6 +67,27 @@ class DeviceTypeCharacteristic(Characteristic):
 
     def ReadValue(self, options):
         print("Device Type Read: {}".format(self.value))
+        return self.value
+
+class InternetConnectedCharacteristic(Characteristic):
+    """
+    InternetConnected
+    "true" or "false"
+    """
+
+    def __init__(self, service):
+        self.bus = dbus.SystemBus()
+        self.uuid = UUID_INTERNET_CONNECTED_CHARACTERISTIC
+        self.index = self.uuid[-6:]
+        Characteristic.__init__(self, self.bus, self.index,self.uuid,        
+                ['read'], #['read', 'write', 'writable-auxiliaries', 'notify'],
+                service)
+        self.internetConnected = "true" # Test Device
+        self.value = self.internetConnected.encode()
+        self.notifying = False
+
+    def ReadValue(self, options):
+        print("Internet Connected Char. was read: {}".format(self.value))
         return self.value
 
 class ReadAndWriteTestCharacteristic(Characteristic):
@@ -150,9 +172,10 @@ class GateSetupService(Service):
     def __init__(self, bus):
         Service.__init__(self, bus, UUID_GATESETUP_SERVICE)
         self.add_characteristic(ReadAndWriteTestCharacteristic(self))
-        self.add_characteristic(NotifyTestCharacteristic(self))
+        #self.add_characteristic(NotifyTestCharacteristic(self))
         self.add_characteristic(SerialNumberCharacteristic(self))
         self.add_characteristic(DeviceTypeCharacteristic(self))
+        self.add_characteristic(InternetConnectedCharacteristic(self))
 
 class GateSetupApplication(Application):
     def __init__(self):
