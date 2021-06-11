@@ -18,14 +18,18 @@ ADAPTER_IFACE =                'org.Bluez.Adapter1'
 PATH_HCI0 =                    '/org/bluez/hci0'
 
 UUID_GATESETUP_SERVICE      = '5468696e-6773-496e-546f-756368000100'
+UUID_GATE_SSIDs_SERVICE     = '5468696e-6773-496e-546f-756368000101'
 # ThingsInTouch Services        go from 0x001000 to 0x001FFF
 # ThingsInTouch Characteristics go from 0x100000 to 0x1FFFFF
-
+# EMPTY 005 to 00f - 020 to 02f - 
 UUID_READ_WRITE_TEST_CHARACTERISTIC     = '5468696e-6773-496e-546f-756368100000'
 UUID_NOTIFY_TEST_CHARACTERISTIC         = '5468696e-6773-496e-546f-756368100001'
 UUID_SERIAL_NUMBER_CHARACTERISTIC       = '5468696e-6773-496e-546f-756368100002'
 UUID_DEVICE_TYPE_CHARACTERISTIC         = '5468696e-6773-496e-546f-756368100003'
 UUID_INTERNET_CONNECTED_CHARACTERISTIC  = '5468696e-6773-496e-546f-756368100004'
+#uuid ssids characteristics ...10 to ...1f
+UUID_SSID_CHARACTERISTIC                = '5468696e-6773-496e-546f-75636810001'
+UUID_START_SEARCH_SSIDS_CHARACTERISTIC  = '5468696e-6773-496e-546f-756368100030'
 
 DEVICE_NAME = 'ThingsInTouch-RAS'
 
@@ -82,12 +86,57 @@ class InternetConnectedCharacteristic(Characteristic):
         Characteristic.__init__(self, self.bus, self.index,self.uuid,        
                 ['read'], #['read', 'write', 'writable-auxiliaries', 'notify'],
                 service)
-        self.internetConnected = "true" # Test Device
+        self.internetConnected = "false" 
         self.value = self.internetConnected.encode()
         self.notifying = False
 
     def ReadValue(self, options):
         print("Internet Connected Char. was read: {}".format(self.value))
+        return self.value
+
+class SSIDCharacteristic(Characteristic):
+    """
+    SSID seen from the Device
+    SSID index goes from 0 to f (16 SSIDs are possible)
+    """
+
+    def __init__(self, service, SSID_index, SSID_name):
+        self.bus = dbus.SystemBus()
+        self.uuid = UUID_SSID_CHARACTERISTIC+str(SSID_index)
+        self.SSID_index = SSID_index
+        self.index = self.uuid[-6:]
+        Characteristic.__init__(self, self.bus, self.index,self.uuid,        
+                ['read'], #['read', 'write', 'writable-auxiliaries', 'notify'],
+                service)
+        self.SSID_name = SSID_name
+        self.value = self.SSID_name.encode()
+        self.notifying = False
+
+    def ReadValue(self, options):
+        print(f"SSID Char. {self.SSID_index} was read: {self.value}")
+        return self.value
+
+class StartSSIDsSearchCharacteristic(Characteristic):
+    """
+    when this characteristic is read it starts the SSIDs Search method
+    It returns "search started".
+    When the search is finished it returns "search finished" and resets the answer to
+    "ready to search"
+    """
+
+    def __init__(self, service):
+        self.bus = dbus.SystemBus()
+        self.uuid = UUID_START_SEARCH_SSIDS_CHARACTERISTIC
+        self.index = self.uuid[-6:]
+        Characteristic.__init__(self, self.bus, self.index,self.uuid,        
+                ['read'], #['read', 'write', 'writable-auxiliaries', 'notify'],
+                service)
+        self.SSID_search_status = "ready to search"
+        self.value =  self.SSID_search_status.encode()
+        self.notifying = False
+
+    def ReadValue(self, options):
+        print(f"StartSSIDsSearchCharacteristic was read: {self.value}")
         return self.value
 
 class ReadAndWriteTestCharacteristic(Characteristic):
@@ -177,19 +226,35 @@ class GateSetupService(Service):
         self.add_characteristic(DeviceTypeCharacteristic(self))
         self.add_characteristic(InternetConnectedCharacteristic(self))
 
+class GateSSIDsService(Service):
+    """
+    Service that exposes SSIDs that are seen from the Gate Device
+    There are 16 Characteristics with 16 different SSIDs 010 to 01f
+    There is 1 characteristic to start the method to "fill" the 16
+      characteristics with the appropiate SSIDs
+    """
+    def __init__(self, bus):
+        Service.__init__(self, bus, UUID_GATE_SSIDs_SERVICE)
+        for i in range(0,16):
+            i_hex = hex(i)
+            print(f"SSIDCharacteristic created {i_hex[2:]}")
+            self.add_characteristic(SSIDCharacteristic(self, i_hex[2:] , "SSID_name"+i_hex[2:]))
+
 class GateSetupApplication(Application):
     def __init__(self):
         DBusGMainLoop(set_as_default=True)
         bus = dbus.SystemBus()
         Application.__init__(self, bus)
         self.add_service(GateSetupService(bus))
+        self.add_service(GateSSIDsService(bus))
 
 class GateSetupAdvertisement(Advertisement):
     def __init__(self):
         bus = dbus.SystemBus()
         index = 0
         Advertisement.__init__(self, bus, index, 'peripheral')
-        self.add_service_uuid( UUID_GATESETUP_SERVICE) 
+        self.add_service_uuid(UUID_GATESETUP_SERVICE)
+        #self.add_service_uuid(UUID_GATE_SSIDs_SERVICE)
         self.add_local_name( DEVICE_NAME)
         self.add_alias( DEVICE_NAME)
         self.include_tx_power = True

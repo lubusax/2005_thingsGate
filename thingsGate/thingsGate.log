@@ -6724,3 +6724,6 @@ DEBUG<bluetoothConnection>12Sep12:30<[2mTIMESTAMP - Interfaces Added : 28s 272m
 DEBUG<bluetoothConnection>12Sep12:30<[2mAn interface was added on path: /org/bluez/hci0/dev_B8_27_EB_4D_68_70/service033e/char0346[0m>
 INFO<bluetoothConnection>12Sep12:30<[31mBACK TO bluetooth.py: DEVICE sucessfully connected on path /org/bluez/hci0/dev_B8_27_EB_4D_68_70[39m[2m[0m>
 DEBUG<bluetoothConnection>12Sep12:30<TIMESTAMP-[31mREAD CHARACTERISTIC [39m[2m Value 20200818.000.000.001 : 28s 408ms[0m>
+ERROR<MainProcess>10Jun12:22<[31m__init__() missing 2 required positional arguments: 'SSID_index' and 'SSID_name'[39m[2m[0m>
+ERROR<MainProcess>10Jun12:23<[31m__init__() missing 1 required positional argument: 'SSID_name'[39m[2m[0m>
+ERROR<MainProcess>10Jun12:26<[31mname 'UUID_SSID_CHARACTERISTIC' is not defined[39m[2m[0m>
